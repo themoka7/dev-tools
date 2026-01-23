@@ -1,0 +1,67 @@
+<div
+  class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom"
+>
+  <h1 class="h2">JSON to YAML</h1>
+</div>
+
+<div class="row">
+  <div class="col-md-6">
+    <label for="yaml-input" class="form-label">Input JSON:</label>
+    <textarea
+      class="form-control"
+      id="yaml-input"
+      rows="10"
+      placeholder="Paste your JSON here..."
+    ></textarea>
+    <button class="btn btn-primary mt-2" onclick="convertToYAML()">
+      Convert
+    </button>
+    <button class="btn btn-secondary mt-2" onclick="clearYAML()">Clear</button>
+  </div>
+  <div class="col-md-6">
+    <label for="yaml-output" class="form-label">YAML Output:</label>
+    <textarea
+      class="form-control"
+      id="yaml-output"
+      rows="10"
+      placeholder="YAML will appear here..."
+      readonly
+    ></textarea>
+  </div>
+</div>
+
+<script>
+  function convertToYAML() {
+    try {
+      const json = JSON.parse(document.getElementById("yaml-input").value);
+      document.getElementById("yaml-output").value = jsonToYaml(json);
+    } catch (e) {
+      document.getElementById("yaml-output").value = "Error: " + e.message;
+    }
+  }
+
+  function jsonToYaml(obj, indent = 0) {
+    let yaml = "";
+    const spaces = " ".repeat(indent);
+
+    if (Array.isArray(obj)) {
+      obj.forEach((item) => {
+        yaml += spaces + "- " + jsonToYaml(item, indent + 2).trim() + "\n";
+      });
+    } else if (typeof obj === "object" && obj !== null) {
+      Object.keys(obj).forEach((key) => {
+        yaml +=
+          spaces + key + ": " + jsonToYaml(obj[key], indent + 2).trim() + "\n";
+      });
+    } else {
+      yaml = String(obj);
+    }
+
+    return yaml;
+  }
+
+  function clearYAML() {
+    document.getElementById("yaml-input").value = "";
+    document.getElementById("yaml-output").value = "";
+  }
+</script>

@@ -1,0 +1,45 @@
+<div
+  class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom"
+>
+  <h1 class="h2">JSON Formatter</h1>
+</div>
+
+<div class="row">
+  <div class="col-md-6">
+    <label for="input" class="form-label">Input JSON:</label>
+    <textarea
+      class="form-control"
+      id="input"
+      rows="10"
+      placeholder="Paste your JSON here..."
+    ></textarea>
+    <button class="btn btn-primary mt-2" onclick="formatJSON()">Format</button>
+    <button class="btn btn-secondary mt-2" onclick="clearJSON()">Clear</button>
+  </div>
+  <div class="col-md-6">
+    <label for="output" class="form-label">Formatted JSON:</label>
+    <textarea
+      class="form-control"
+      id="output"
+      rows="10"
+      placeholder="Formatted JSON will appear here..."
+      readonly
+    ></textarea>
+  </div>
+</div>
+
+<script>
+  function formatJSON() {
+    try {
+      const obj = JSON.parse(document.getElementById("input").value);
+      document.getElementById("output").value = JSON.stringify(obj, null, 2);
+    } catch (e) {
+      document.getElementById("output").value = "Error: " + e.message;
+    }
+  }
+
+  function clearJSON() {
+    document.getElementById("input").value = "";
+    document.getElementById("output").value = "";
+  }
+</script>

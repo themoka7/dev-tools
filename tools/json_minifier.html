@@ -1,0 +1,47 @@
+<div
+  class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom"
+>
+  <h1 class="h2">JSON Minifier</h1>
+</div>
+
+<div class="row">
+  <div class="col-md-6">
+    <label for="minify-input" class="form-label">Input JSON:</label>
+    <textarea
+      class="form-control"
+      id="minify-input"
+      rows="10"
+      placeholder="Paste your JSON here..."
+    ></textarea>
+    <button class="btn btn-primary mt-2" onclick="minifyJSON()">Minify</button>
+    <button class="btn btn-secondary mt-2" onclick="clearMinify()">
+      Clear
+    </button>
+  </div>
+  <div class="col-md-6">
+    <label for="minify-output" class="form-label">Minified JSON:</label>
+    <textarea
+      class="form-control"
+      id="minify-output"
+      rows="10"
+      placeholder="Minified JSON will appear here..."
+      readonly
+    ></textarea>
+  </div>
+</div>
+
+<script>
+  function minifyJSON() {
+    try {
+      const json = JSON.parse(document.getElementById("minify-input").value);
+      document.getElementById("minify-output").value = JSON.stringify(json);
+    } catch (e) {
+      document.getElementById("minify-output").value = "Error: " + e.message;
+    }
+  }
+
+  function clearMinify() {
+    document.getElementById("minify-input").value = "";
+    document.getElementById("minify-output").value = "";
+  }
+</script>

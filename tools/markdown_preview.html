@@ -1,0 +1,38 @@
+<div
+  class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom"
+>
+  <h1 class="h2">Markdown Preview</h1>
+</div>
+
+<div class="row">
+  <div class="col-md-6">
+    <label for="md-input" class="form-label">Markdown:</label>
+    <textarea
+      class="form-control"
+      id="md-input"
+      rows="10"
+      placeholder="# Hello&#10;&#10;Type markdown here..."
+    ></textarea>
+  </div>
+  <div class="col-md-6">
+    <label class="form-label">Preview:</label>
+    <div
+      id="md-output"
+      class="border rounded p-3"
+      style="min-height: 300px; background-color: #f8f9fa; overflow-y: auto"
+    ></div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script>
+  const mdInput = document.getElementById("md-input");
+  const mdOutput = document.getElementById("md-output");
+
+  function updatePreview() {
+    mdOutput.innerHTML = marked(mdInput.value);
+  }
+
+  mdInput.addEventListener("input", updatePreview);
+  updatePreview();
+</script>

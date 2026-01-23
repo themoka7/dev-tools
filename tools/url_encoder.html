@@ -1,0 +1,55 @@
+<div
+  class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom"
+>
+  <h1 class="h2">URL Encoder/Decoder</h1>
+</div>
+
+<div class="row">
+  <div class="col-md-6">
+    <label for="url-input" class="form-label">Input:</label>
+    <textarea
+      class="form-control"
+      id="url-input"
+      rows="10"
+      placeholder="Paste URL or text to encode/decode..."
+    ></textarea>
+    <button class="btn btn-primary mt-2" onclick="encodeURL()">Encode</button>
+    <button class="btn btn-secondary mt-2" onclick="decodeURL()">Decode</button>
+    <button class="btn btn-warning mt-2" onclick="clearURL()">Clear</button>
+  </div>
+  <div class="col-md-6">
+    <label for="url-output" class="form-label">Output:</label>
+    <textarea
+      class="form-control"
+      id="url-output"
+      rows="10"
+      placeholder="Result will appear here..."
+      readonly
+    ></textarea>
+  </div>
+</div>
+
+<script>
+  function encodeURL() {
+    try {
+      const text = document.getElementById("url-input").value;
+      document.getElementById("url-output").value = encodeURIComponent(text);
+    } catch (e) {
+      document.getElementById("url-output").value = "Error: " + e.message;
+    }
+  }
+
+  function decodeURL() {
+    try {
+      const text = document.getElementById("url-input").value;
+      document.getElementById("url-output").value = decodeURIComponent(text);
+    } catch (e) {
+      document.getElementById("url-output").value = "Error: " + e.message;
+    }
+  }
+
+  function clearURL() {
+    document.getElementById("url-input").value = "";
+    document.getElementById("url-output").value = "";
+  }
+</script>
