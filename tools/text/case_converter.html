@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+  <head>
+    <!-- ====== Online Tools Cafe 공통 head 시작 ====== -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Case Converter - Free online text case conversion tool. Convert between camelCase, PascalCase, snake_case, kebab-case, UPPER CASE, and more."
+    />
+    <meta name="author" content="Online Tools Cafe" />
+    <meta
+      name="keywords"
+      content="case converter, camelCase, PascalCase, snake_case, kebab-case, online tools, developer tools"
+    />
+    <title>Case Converter - Online Tools Cafe</title>
+    <script src="../../assets/dist/js/jquery-3.7.1.min.js"></script>
+    <link href="../../assets/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../dashboard.css" rel="stylesheet" />
+    <meta name="theme-color" content="#712cf9" />
+    <!-- ====== Online Tools Cafe 공통 head 끝 (각 도구 페이지에도 복사) ====== -->
+  </head>
+  <body>
+    <div id="symbols"></div>
+    <div id="mode"></div>
+    <div id="header"></div>
+    <div class="container-fluid">
+      <div class="row">
+        <div
+          class="sidebar border border-right col-md-3 col-lg-2 p-0 bg-body-tertiary"
+        >
+          <div
+            class="offcanvas-md offcanvas-end bg-body-tertiary"
+            tabindex="-1"
+            id="sidebarMenu"
+            aria-labelledby="sidebarMenuLabel"
+          >
+            <div class="offcanvas-header">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                data-bs-target="#sidebarMenu"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div
+              class="offcanvas-body d-md-flex flex-column p-0 pt-lg-3 overflow-y-auto"
+              id="sidebar"
+            ></div>
+          </div>
+        </div>
+        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+          <!-- Case Converter Tool Start -->
+          <div
+            class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom"
+          >
+            <h1 class="h2">Case Converter</h1>
+            <small class="text-muted"
+              >Verified and tested on: January 26, 2026</small
+            >
+          </div>
+
+          <section class="mb-4">
+            <p class="text-muted">
+              Convert text between different naming conventions with a single
+              click. Each line is handled independently — great for batch
+              renaming.
+            </p>
+            <p class="small text-muted">
+              <strong>Supports:</strong> camelCase, PascalCase, snake_case,
+              kebab-case, UPPER, lower, Title, and Sentence case. No install.
+              Just paste and go.
+            </p>
+          </section>
+
+          <div class="row">
+            <div class="col-md-6">
+              <div
+                class="d-flex justify-content-between align-items-center mb-2"
+              >
+                <label for="input" class="form-label mb-0">Input:</label>
+                <button
+                  type="button"
+                  class="btn btn-outline-secondary"
+                  style="font-size: 0.85rem; padding: 0.25rem 0.75rem"
+                  onclick="loadExample()"
+                >
+                  📝 Sample
+                </button>
+              </div>
+              <textarea
+                class="form-control"
+                id="input"
+                rows="12"
+                placeholder="Enter text (one item per line)..."
+              ></textarea>
+            </div>
+            <div class="col-md-6">
+              <label for="output" class="form-label">Output:</label>
+              <textarea
+                class="form-control"
+                id="output"
+                rows="12"
+                placeholder="Converted output will appear here..."
+                readonly
+              ></textarea>
+            </div>
+          </div>
+
+          <div class="mt-5 mb-5">
+            <h5 class="mb-4">✨ Choose Your Case Format</h5>
+            <div class="row row-cols-2 row-cols-md-4 g-3">
+              <div class="col">
+                <button
+                  type="button"
+                  class="btn btn-outline-primary w-100 py-2 text-start"
+                  onclick="convertCase('camel')"
+                >
+                  <strong>camelCase</strong>
+                  <br />
+                  <small class="text-muted">firstName, userId</small>
+                </button>
+              </div>
+              <div class="col">
+                <button
+                  type="button"
+                  class="btn btn-outline-primary w-100 py-2 text-start"
+                  onclick="convertCase('pascal')"
+                >
+                  <strong>PascalCase</strong>
+                  <br />
+                  <small class="text-muted">FirstName, UserId</small>
+                </button>
+              </div>
+              <div class="col">
+                <button
+                  type="button"
+                  class="btn btn-outline-primary w-100 py-2 text-start"
+                  onclick="convertCase('snake')"
+                >
+                  <strong>snake_case</strong>
+                  <br />
+                  <small class="text-muted">first_name, user_id</small>
+                </button>
+              </div>
+              <div class="col">
+                <button
+                  type="button"
+                  class="btn btn-outline-primary w-100 py-2 text-start"
+                  onclick="convertCase('kebab')"
+                >
+                  <strong>kebab-case</strong>
+                  <br />
+                  <small class="text-muted">first-name, user-id</small>
+                </button>
+              </div>
+              <div class="col">
+                <button
+                  type="button"
+                  class="btn btn-outline-primary w-100 py-2 text-start"
+                  onclick="convertCase('upper')"
+                >
+                  <strong>UPPER CASE</strong>
+                  <br />
+                  <small class="text-muted">FIRST NAME, USER ID</small>
+                </button>
+              </div>
+              <div class="col">
+                <button
+                  type="button"
+                  class="btn btn-outline-primary w-100 py-2 text-start"
+                  onclick="convertCase('lower')"
+                >
+                  <strong>lower case</strong>
+                  <br />
+                  <small class="text-muted">first name, user id</small>
+                </button>
+              </div>
+              <div class="col">
+                <button
+                  type="button"
+                  class="btn btn-outline-primary w-100 py-2 text-start"
+                  onclick="convertCase('title')"
+                >
+                  <strong>Title Case</strong>
+                  <br />
+                  <small class="text-muted">First Name, User Id</small>
+                </button>
+              </div>
+              <div class="col">
+                <button
+                  type="button"
+                  class="btn btn-outline-primary w-100 py-2 text-start"
+                  onclick="convertCase('sentence')"
+                >
+                  <strong>Sentence case</strong>
+                  <br />
+                  <small class="text-muted">First name, user id</small>
+                </button>
+              </div>
+            </div>
+            <button
+              type="button"
+              class="btn btn-secondary mt-4 w-100"
+              onclick="clearConverter()"
+            >
+              Clear All
+            </button>
+          </div>
+          <!-- Case Converter Tool End -->
+        </main>
+      </div>
+    </div>
+    <script src="../../assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../dashboard.js"></script>
+    <script>
+      // sidebar, mode, symbols, header 동적 로드
+      $(function () {
+        loadFragment("#sidebar", "../../assets/sidebar.html");
+        loadFragment("#mode", "../../assets/mode.html", initializeTheme);
+        loadFragment("#symbols", "../../assets/symbols.html");
+        loadFragment("#header", "../../assets/header.html");
+      });
+    </script>
+
+    <!-- script Tool Start -->
+    <script>
+      // Normalize text: convert to words
+      function normalizeToWords(str) {
+        if (!str || str.trim() === "") return [];
+
+        // Replace underscores and hyphens with spaces
+        let normalized = str.replace(/[_-]/g, " ");
+
+        // Split camelCase/PascalCase
+        normalized = normalized.replace(/([a-z])([A-Z])/g, "$1 $2");
+
+        // Split on spaces and filter empty
+        return normalized.split(/\s+/).filter((word) => word.length > 0);
+      }
+
+      // Convert case functions
+      function toCamelCase(words) {
+        if (words.length === 0) return "";
+        return words
+          .map((word, i) => {
+            const lower = word.toLowerCase();
+            return i === 0
+              ? lower
+              : lower.charAt(0).toUpperCase() + lower.slice(1);
+          })
+          .join("");
+      }
+
+      function toPascalCase(words) {
+        if (words.length === 0) return "";
+        return words
+          .map((word) => {
+            const lower = word.toLowerCase();
+            return lower.charAt(0).toUpperCase() + lower.slice(1);
+          })
+          .join("");
+      }
+
+      function toSnakeCase(words) {
+        if (words.length === 0) return "";
+        return words.map((word) => word.toLowerCase()).join("_");
+      }
+
+      function toKebabCase(words) {
+        if (words.length === 0) return "";
+        return words.map((word) => word.toLowerCase()).join("-");
+      }
+
+      function toUpperCase(words) {
+        if (words.length === 0) return "";
+        return words.map((word) => word.toUpperCase()).join(" ");
+      }
+
+      function toLowerCase(words) {
+        if (words.length === 0) return "";
+        return words.map((word) => word.toLowerCase()).join(" ");
+      }
+
+      function toTitleCase(words) {
+        if (words.length === 0) return "";
+        return words
+          .map((word) => {
+            const lower = word.toLowerCase();
+            return lower.charAt(0).toUpperCase() + lower.slice(1);
+          })
+          .join(" ");
+      }
+
+      function toSentenceCase(words) {
+        if (words.length === 0) return "";
+        const result = words.map((word) => word.toLowerCase()).join(" ");
+        return result.charAt(0).toUpperCase() + result.slice(1);
+      }
+
+      // Main conversion function
+      function convertCase(caseType) {
+        const inputText = $("#input").val();
+        const lines = inputText.split("\n");
+
+        const convertedLines = lines.map((line) => {
+          // Preserve empty/whitespace lines
+          if (!line || line.trim() === "") return line;
+
+          const words = normalizeToWords(line);
+
+          switch (caseType) {
+            case "camel":
+              return toCamelCase(words);
+            case "pascal":
+              return toPascalCase(words);
+            case "snake":
+              return toSnakeCase(words);
+            case "kebab":
+              return toKebabCase(words);
+            case "upper":
+              return toUpperCase(words);
+            case "lower":
+              return toLowerCase(words);
+            case "title":
+              return toTitleCase(words);
+            case "sentence":
+              return toSentenceCase(words);
+            default:
+              return line;
+          }
+        });
+
+        $("#output").val(convertedLines.join("\n"));
+      }
+
+      function clearConverter() {
+        $("#input").val("");
+        $("#output").val("");
+      }
+
+      function loadExample() {
+        const examples = [
+          "user_name",
+          "user_id",
+          "created_at",
+          "updated at",
+          "FirstName",
+          "EmailAddress",
+        ];
+        $("#input").val(examples.join("\n"));
+        $("#output").val("");
+      }
+    </script>
+    <!-- script Tool End -->
+  </body>
+</html>
