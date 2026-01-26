@@ -1,48 +1,99 @@
-/* globals Chart:false */
+// 테마 초기화 함수
+function initializeTheme() {
+  const getStoredTheme = () => localStorage.getItem("theme");
+  const setStoredTheme = (theme) => localStorage.setItem("theme", theme);
 
-(() => {
-  'use strict'
-
-  // Graphs
-  const ctx = document.getElementById('myChart')
-  new Chart(ctx, {
-    type: 'line',
-    data: {
-      labels: [
-        'Sunday',
-        'Monday',
-        'Tuesday',
-        'Wednesday',
-        'Thursday',
-        'Friday',
-        'Saturday'
-      ],
-      datasets: [{
-        data: [
-          15339,
-          21345,
-          18483,
-          24003,
-          23489,
-          24092,
-          12034
-        ],
-        lineTension: 0,
-        backgroundColor: 'transparent',
-        borderColor: '#007bff',
-        borderWidth: 4,
-        pointBackgroundColor: '#007bff'
-      }]
-    },
-    options: {
-      plugins: {
-        legend: {
-          display: false
-        },
-        tooltip: {
-          boxPadding: 3
-        }
-      }
+  const getPreferredTheme = () => {
+    const storedTheme = getStoredTheme();
+    if (storedTheme) {
+      return storedTheme;
     }
-  })
-})()
+    return window.matchMedia("(prefers-color-scheme: dark)").matches
+      ? "dark"
+      : "light";
+  };
+
+  const setTheme = (theme) => {
+    if (theme === "auto") {
+      document.documentElement.setAttribute(
+        "data-bs-theme",
+        window.matchMedia("(prefers-color-scheme: dark)").matches
+          ? "dark"
+          : "light",
+      );
+    } else {
+      document.documentElement.setAttribute("data-bs-theme", theme);
+    }
+  };
+
+  const showActiveTheme = (theme, focus = false) => {
+    const themeSwitcher = document.querySelector("#bd-theme");
+
+    if (!themeSwitcher) {
+      return;
+    }
+
+    const themeSwitcherText = document.querySelector("#bd-theme-text");
+    const activeThemeIcon = document.querySelector(".theme-icon-active");
+    const btnToActive = document.querySelector(
+      `[data-bs-theme-value="${theme}"]`,
+    );
+
+    if (!btnToActive) {
+      return;
+    }
+
+    document
+      .querySelectorAll("[data-bs-theme-value]")
+      .forEach((element) => {
+        element.classList.remove("active");
+        element.setAttribute("aria-pressed", "false");
+      });
+
+    btnToActive.classList.add("active");
+    btnToActive.setAttribute("aria-pressed", "true");
+
+    if (activeThemeIcon) {
+      const themeIcons = {
+        light: "☀️",
+        dark: "🌙",
+        auto: "🌓",
+      };
+      activeThemeIcon.textContent = themeIcons[theme] || "🌓";
+    }
+
+    const themeSwitcherLabel = `${themeSwitcherText.textContent} (${btnToActive.dataset.bsThemeValue})`;
+    themeSwitcher.setAttribute("aria-label", themeSwitcherLabel);
+
+    if (focus) {
+      themeSwitcher.focus();
+    }
+  };
+
+  setTheme(getPreferredTheme());
+  showActiveTheme(getPreferredTheme());
+
+  document.querySelectorAll("[data-bs-theme-value]").forEach((toggle) => {
+    toggle.addEventListener("click", () => {
+      const theme = toggle.getAttribute("data-bs-theme-value");
+      setStoredTheme(theme);
+      setTheme(theme);
+      showActiveTheme(theme, true);
+    });
+  });
+}
+
+const stripLiveReload = (html) => {
+  // live-server 주석 시작부터 다음 </script> 태그까지 제거
+  return html.replace(
+    /<!-- Code injected by live-server -->[\s\S]*?<\/script>/g,
+    ""
+  );
+};
+
+const loadFragment = (selector, url, callback) => {
+  $.get(url, (data) => {
+    $(selector).html(stripLiveReload(data));
+    if (callback) callback();
+  });
+};

@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+  <head>
+    <!-- ====== Online Tools Cafe 공통 head 시작 ====== -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="JSON Validator - Free online JSON validation and syntax checking tool. Validate JSON data, detect errors, and ensure proper formatting."
+    />
+    <meta name="author" content="Online Tools Cafe" />
+    <meta
+      name="keywords"
+      content="json validator, json checker, validate json, syntax validation, online tools"
+    />
+    <title>JSON Validator - Free Online JSON Validation Tool</title>
+    <script src="../../assets/dist/js/jquery-3.7.1.min.js"></script>
+    <link href="../../assets/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../dashboard.css" rel="stylesheet" />
+    <meta name="theme-color" content="#712cf9" />
+    <!-- ====== Online Tools Cafe 공통 head 끝 (각 도구 페이지에도 복사) ====== -->
+  </head>
+  <body>
+    <div id="symbols"></div>
+    <div id="mode"></div>
+    <div id="header"></div>
+    <div class="container-fluid">
+      <div class="row">
+        <div
+          class="sidebar border border-right col-md-3 col-lg-2 p-0 bg-body-tertiary"
+        >
+          <div
+            class="offcanvas-md offcanvas-end bg-body-tertiary"
+            tabindex="-1"
+            id="sidebarMenu"
+            aria-labelledby="sidebarMenuLabel"
+          >
+            <div class="offcanvas-header">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                data-bs-target="#sidebarMenu"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div
+              class="offcanvas-body d-md-flex flex-column p-0 pt-lg-3 overflow-y-auto"
+              id="sidebar"
+            ></div>
+          </div>
+        </div>
+        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+          <!-- JSON Formatter Tool Start -->
+
+          <div
+            class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom"
+          >
+            <h1 class="h2">JSON Validator</h1>
+            <small class="text-muted"
+              >Verified and tested on: January 23, 2026</small
+            >
+          </div>
+
+          <section class="mb-4">
+            <p class="text-muted">
+              Free online JSON validator tool for checking JSON syntax and
+              structure. Instantly validate your JSON data, detect errors, and
+              ensure proper formatting. Essential for developers working with
+              APIs, configuration files, and data integration.
+            </p>
+            <p class="small text-muted">
+              <strong>Features:</strong> Real-time JSON validation, detailed
+              error messages with line numbers, JSON schema checking, and
+              instant feedback. No installation needed - validate JSON directly
+              in your browser.
+            </p>
+          </section>
+
+          <div class="row">
+            <div class="col-md-6">
+              <label for="validate-input" class="form-label"
+                >Paste JSON to validate:</label
+              >
+              <textarea
+                class="form-control"
+                id="validate-input"
+                rows="10"
+                placeholder="Paste your JSON here..."
+              ></textarea>
+              <button class="btn btn-primary mt-2" onclick="validateJSON()">
+                Validate
+              </button>
+              <button class="btn btn-secondary mt-2" onclick="clearValidate()">
+                Clear
+              </button>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Result:</label>
+              <div
+                id="validate-output"
+                class="alert alert-info"
+                style="min-height: 252px; word-break: break-all"
+              >
+                Validation result will appear here...
+              </div>
+            </div>
+          </div>
+
+          <!-- JSON Formatter Tool End -->
+        </main>
+      </div>
+    </div>
+    <script src="../../assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../dashboard.js"></script>
+    <script>
+      // sidebar, mode, symbols, header 동적 로드
+      $(function () {
+        loadFragment("#sidebar", "../../assets/sidebar.html");
+        loadFragment("#mode", "../../assets/mode.html", initializeTheme);
+        loadFragment("#symbols", "../../assets/symbols.html");
+        loadFragment("#header", "../../assets/header.html");
+      });
+    </script>
+
+    <!-- JSON Formatter Tool Start -->
+    <script>
+      function validateJSON() {
+        try {
+          const json = document.getElementById("validate-input").value;
+          JSON.parse(json);
+          document.getElementById("validate-output").className =
+            "alert alert-success";
+          document.getElementById("validate-output").textContent =
+            "✓ Valid JSON!";
+        } catch (e) {
+          document.getElementById("validate-output").className =
+            "alert alert-danger";
+          document.getElementById("validate-output").textContent =
+            "✗ Invalid JSON: " + e.message;
+        }
+      }
+
+      function clearValidate() {
+        document.getElementById("validate-input").value = "";
+        document.getElementById("validate-output").textContent =
+          "Validation result will appear here...";
+        document.getElementById("validate-output").className =
+          "alert alert-info";
+      }
+    </script>
+    <!-- JSON Formatter Tool End -->
+  </body>
+</html>
