@@ -84,16 +84,54 @@ function initializeTheme() {
 }
 
 const stripLiveReload = (html) => {
-  // live-server 주석 시작부터 다음 </script> 태그까지 제거
-  return html.replace(
-    /<!-- Code injected by live-server -->[\s\S]*?<\/script>/g,
-    ""
-  );
+  // live-server 주석 시작부터 파일 끝까지 제거
+  html = html.replace(/<!-- Code injected by live-server -->[\s\S]*$/g, "");
+  
+  // WebSocket 코드도 제거 (live-server 코드)
+  html = html.replace(/if\s*\(\s*['"]WebSocket['"]\s+in\s+window\s*\)[\s\S]*$/g, "");
+  
+  return html.trim();
 };
 
 const loadFragment = (selector, url, callback) => {
-  $.get(url, (data) => {
-    $(selector).html(stripLiveReload(data));
-    if (callback) callback();
+  $.ajax({
+    url: url,
+    type: 'GET',
+    dataType: 'html',
+    success: function(data) {
+      try {
+        console.log(`Raw data from ${url}:`, data.substring(0, 200));
+        const cleanedData = stripLiveReload(data);
+        console.log(`Cleaned data from ${url}:`, cleanedData.substring(0, 200));
+        if (cleanedData && cleanedData.length > 0) {
+          let processedData = cleanedData;
+          
+          // selector가 sidebar인 경우, 현재 페이지 깊이에 맞게 경로 조정
+          if (selector === "#sidebar") {
+            const currentPath = window.location.pathname;
+            const depth = (currentPath.match(/\//g) || []).length - 1;
+            
+            // 도구 페이지에서는 depth가 2 이상 (예: /tools/json/json_formatter.html)
+            if (depth >= 2) {
+              // ./tools/를 ../../tools/로 변경
+              processedData = cleanedData.replace(/href="\.\/tools\//g, 'href="../../tools/')
+                                          .replace(/data-tool="\.\/tools\//g, 'data-tool="../../tools/');
+            }
+          }
+          
+          $(selector).html(processedData);
+          console.log(`✓ Loaded: ${url}`);
+          if (callback) callback();
+        } else {
+          console.warn(`⚠ Empty content after cleanup: ${url}`);
+        }
+      } catch(e) {
+        console.error(`✗ Error processing ${url}:`, e);
+        console.error(`Raw data was:`, data);
+      }
+    },
+    error: function(jqXHR, textStatus, errorThrown) {
+      console.error(`✗ Failed to load ${url}:`, textStatus, errorThrown);
+    }
   });
 };

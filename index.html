@@ -17,7 +17,7 @@
     <title>Online Tools Cafe - Free Developer Tools</title>
     <script src="./assets/dist/js/jquery-3.7.1.min.js"></script>
     <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="dashboard.css" rel="stylesheet" />
+    <link href="./dashboard.css" rel="stylesheet" />
     <meta name="theme-color" content="#712cf9" />
     <!-- ====== Online Tools Cafe 공통 head 끝 (각 도구 페이지에도 복사) ====== -->
   </head>
@@ -186,25 +186,24 @@
       </div>
     </div>
     <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="dashboard.js"></script>
+    <script src="./dashboard.js"></script>
     <script>
       $(function () {
-        loadFragment("#symbols", "assets/symbols.html");
-        loadFragment("#header", "assets/header.html");
-        loadFragment("#mode", "assets/mode.html", initializeTheme);
-        loadFragment("#sidebar", "assets/sidebar.html", function () {
+        loadFragment("#symbols", "./assets/symbols.html");
+        loadFragment("#header", "./assets/header.html");
+        loadFragment("#mode", "./assets/mode.html", initializeTheme);
+        loadFragment("#sidebar", "./assets/sidebar.html", function () {
           $(document).on("click", ".tool-link", function (e) {
-            const toolPath = $(this).attr("data-tool");
-            if (
-              toolPath === "tools/json/json_formatter.html" ||
-              toolPath === "/tools/json/json_formatter.html"
-            ) {
-              window.location.href = "/tools/json/json_formatter.html";
-              return;
-            }
             e.preventDefault();
-            $(".tool-link").removeClass("active").attr("aria-current", "false");
-            $(this).addClass("active").attr("aria-current", "page");
+            const toolPath = $(this).attr("data-tool");
+            if (toolPath) {
+              // 상대경로를 절대경로로 변환
+              const url = toolPath.startsWith("./")
+                ? toolPath.substring(2)
+                : toolPath;
+              window.location.href =
+                "/" + (url.startsWith("/") ? url.substring(1) : url);
+            }
           });
         });
       });
