@@ -1,0 +1,26 @@
+name: Generate sitemap.xml
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  sitemap:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Generate sitemap
+        uses: cicirello/generate-sitemap@v1
+        with:
+          base-url-path: https://themoka7.github.io/dev-tools/
+
+      - name: Commit sitemap.xml
+        run: |
+          git config user.name "themoka7"
+          git config user.email "jm3280@pusan.ac.kr"
+          git add sitemap.xml
+          git commit -m "Auto-generate sitemap.xml" || echo "No changes"
+          git push
