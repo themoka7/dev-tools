@@ -99,6 +99,20 @@
               <label for="regex-input" class="form-label mt-2"
                 >Test String:</label
               >
+              <div
+                class="d-flex justify-content-between align-items-center"
+                style="margin-bottom: 0.5rem"
+              >
+                <span></span>
+                <button
+                  type="button"
+                  class="btn btn-outline-secondary"
+                  style="font-size: 0.85rem; padding: 0.25rem 0.75rem"
+                  onclick="loadRegexSample()"
+                >
+                  📝 Sample
+                </button>
+              </div>
               <textarea
                 class="form-control"
                 id="regex-input"
@@ -118,7 +132,7 @@
                 id="regex-output"
                 class="alert alert-info"
                 style="
-                  min-height: 300px;
+                  min-height: 350px;
                   word-break: break-all;
                   font-family: monospace;
                   overflow-y: auto;
@@ -177,6 +191,13 @@
         document.getElementById("regex-input").value = "";
         document.getElementById("regex-output").textContent =
           "Result will appear here...";
+      }
+      function loadRegexSample() {
+        document.getElementById("regex-pattern").value =
+          "\\b\\w+@\\w+\\.\\w+\\b";
+        document.getElementById("regex-flags").value = "gi";
+        document.getElementById("regex-input").value =
+          "Contact us at hello@example.com or support@test.org for more info.";
       }
     </script>
 

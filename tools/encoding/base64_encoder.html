@@ -75,7 +75,21 @@
 
           <div class="row">
             <div class="col-md-6">
-              <label for="base64-input" class="form-label">Input Text:</label>
+              <div
+                class="d-flex justify-content-between align-items-center mb-2"
+              >
+                <label for="base64-input" class="form-label mb-0"
+                  >Input Text:</label
+                >
+                <button
+                  type="button"
+                  class="btn btn-outline-secondary"
+                  style="font-size: 0.85rem; padding: 0.25rem 0.75rem"
+                  onclick="loadBase64Sample()"
+                >
+                  📝 Sample
+                </button>
+              </div>
               <textarea
                 class="form-control"
                 id="base64-input"
@@ -150,6 +164,10 @@
       function clearBase64() {
         document.getElementById("base64-input").value = "";
         document.getElementById("base64-output").value = "";
+      }
+      function loadBase64Sample() {
+        document.getElementById("base64-input").value =
+          "Hello, World! This is a Base64 encoding example.";
       }
     </script>
 

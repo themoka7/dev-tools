@@ -76,7 +76,19 @@
 
           <div class="row">
             <div class="col-md-6">
-              <label for="md-input" class="form-label">Markdown:</label>
+              <div
+                class="d-flex justify-content-between align-items-center mb-2"
+              >
+                <label for="md-input" class="form-label mb-0">Markdown:</label>
+                <button
+                  type="button"
+                  class="btn btn-outline-secondary"
+                  style="font-size: 0.85rem; padding: 0.25rem 0.75rem"
+                  onclick="loadMarkdownSample()"
+                >
+                  📝 Sample
+                </button>
+              </div>
               <textarea
                 class="form-control"
                 id="md-input"
@@ -138,6 +150,27 @@
           initMarkdownPreview();
         }
       })();
+
+      function loadMarkdownSample() {
+        const sample = `# Welcome to Markdown Preview
+
+## Getting Started
+This is a **sample** markdown document to help you get started.
+
+### Features
+- Live preview
+- Real-time rendering
+- Support for common markdown syntax
+
+#### Code Example
+\`\`\`javascript
+console.log("Hello, World!");
+\`\`\`
+
+Visit [Online Tools Cafe](https://example.com) for more tools.`;
+        document.getElementById("md-input").value = sample;
+        document.getElementById("md-input").dispatchEvent(new Event("input"));
+      }
     </script>
 
     <!-- JSON Formatter Tool End -->

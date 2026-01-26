@@ -70,7 +70,19 @@
 
           <div class="row">
             <div class="col-md-6">
-              <label for="input" class="form-label">Input JSON:</label>
+              <div
+                class="d-flex justify-content-between align-items-center mb-2"
+              >
+                <label for="input" class="form-label mb-0">Input JSON:</label>
+                <button
+                  type="button"
+                  class="btn btn-outline-secondary"
+                  style="font-size: 0.85rem; padding: 0.25rem 0.75rem"
+                  onclick="loadSample()"
+                >
+                  📝 Sample
+                </button>
+              </div>
               <textarea
                 class="form-control"
                 id="input"
@@ -127,6 +139,21 @@
       }
       function clearJSON() {
         document.getElementById("input").value = "";
+        document.getElementById("output").value = "";
+      }
+      function loadSample() {
+        const sample = {
+          name: "John Doe",
+          email: "john@example.com",
+          age: 30,
+          skills: ["JavaScript", "Python", "React"],
+          address: {
+            street: "123 Main St",
+            city: "Springfield",
+            zip: "12345",
+          },
+        };
+        document.getElementById("input").value = JSON.stringify(sample);
         document.getElementById("output").value = "";
       }
     </script>

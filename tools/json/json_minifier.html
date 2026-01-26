@@ -71,7 +71,21 @@
 
           <div class="row">
             <div class="col-md-6">
-              <label for="minify-input" class="form-label">Input JSON:</label>
+              <div
+                class="d-flex justify-content-between align-items-center mb-2"
+              >
+                <label for="minify-input" class="form-label mb-0"
+                  >Input JSON:</label
+                >
+                <button
+                  type="button"
+                  class="btn btn-outline-secondary"
+                  style="font-size: 0.85rem; padding: 0.25rem 0.75rem"
+                  onclick="loadMinifySample()"
+                >
+                  📝 Sample
+                </button>
+              </div>
               <textarea
                 class="form-control"
                 id="minify-input"
@@ -133,6 +147,18 @@
       function clearMinify() {
         document.getElementById("minify-input").value = "";
         document.getElementById("minify-output").value = "";
+      }
+      function loadMinifySample() {
+        const sample = {
+          name: "Sample Data",
+          config: { debug: true, timeout: 5000 },
+          items: [1, 2, 3, 4, 5],
+        };
+        document.getElementById("minify-input").value = JSON.stringify(
+          sample,
+          null,
+          2,
+        );
       }
     </script>
 
