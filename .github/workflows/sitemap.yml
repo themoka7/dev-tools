@@ -16,6 +16,9 @@ jobs:
         uses: cicirello/generate-sitemap@v1
         with:
           base-url-path: https://themoka7.github.io/dev-tools/
+          exclude-paths: |
+            assets/
+            tools/template.html
 
       - name: Commit sitemap.xml
         run: |
