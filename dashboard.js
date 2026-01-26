@@ -106,16 +106,13 @@ const loadFragment = (selector, url, callback) => {
         if (cleanedData && cleanedData.length > 0) {
           let processedData = cleanedData;
           
-          // selector가 sidebar인 경우, 현재 페이지 깊이에 맞게 경로 조정
+          // selector가 sidebar인 경우, GitHub Pages 경로(/dev-tools/)에 맞게 조정
           if (selector === "#sidebar") {
             const currentPath = window.location.pathname;
-            const depth = (currentPath.match(/\//g) || []).length - 1;
-            
-            // 도구 페이지에서는 depth가 2 이상 (예: /tools/json/json_formatter.html)
-            if (depth >= 2) {
-              // ./tools/를 ../../tools/로 변경
-              processedData = cleanedData.replace(/href="\.\/tools\//g, 'href="../../tools/')
-                                          .replace(/data-tool="\.\/tools\//g, 'data-tool="../../tools/');
+            // GitHub Pages에서 /dev-tools/로 시작하는 경로를 /dev-tools/tools/로 변경
+            if (currentPath.includes('/dev-tools/')) {
+              processedData = cleanedData.replace(/href="\.\/ tools\//g, 'href="/dev-tools/tools/')
+                                          .replace(/data-tool="\.\/ tools\//g, 'data-tool="/dev-tools/tools/');
             }
           }
           
