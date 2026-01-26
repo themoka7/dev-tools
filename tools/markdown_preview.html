@@ -2,6 +2,7 @@
   class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom"
 >
   <h1 class="h2">Markdown Preview</h1>
+  <small class="text-muted">Verified and tested on: January 23, 2026</small>
 </div>
 
 <div class="row">
@@ -23,16 +24,27 @@
     ></div>
   </div>
 </div>
-
-<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 <script>
-  const mdInput = document.getElementById("md-input");
-  const mdOutput = document.getElementById("md-output");
+  (function () {
+    function initMarkdownPreview() {
+      const mdInput = document.getElementById("md-input");
+      const mdOutput = document.getElementById("md-output");
 
-  function updatePreview() {
-    mdOutput.innerHTML = marked(mdInput.value);
-  }
+      function updatePreview() {
+        mdOutput.innerHTML = marked.parse(mdInput.value);
+      }
 
-  mdInput.addEventListener("input", updatePreview);
-  updatePreview();
+      mdInput.addEventListener("input", updatePreview);
+      updatePreview();
+    }
+
+    if (typeof marked === "undefined") {
+      const script = document.createElement("script");
+      script.src = "https://cdn.jsdelivr.net/npm/marked/marked.min.js";
+      script.onload = initMarkdownPreview;
+      document.head.appendChild(script);
+    } else {
+      initMarkdownPreview();
+    }
+  })();
 </script>

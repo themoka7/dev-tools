@@ -2,6 +2,7 @@
   class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom"
 >
   <h1 class="h2">JSON to CSV</h1>
+  <small class="text-muted">Verified and tested on: January 23, 2026</small>
 </div>
 
 <div class="row">
@@ -13,12 +14,19 @@
       class="form-control"
       id="csv-input"
       rows="10"
-      placeholder='[{"name":"John","age":30}]'
+      placeholder='[
+  { "id": 1, "title": "JSON Formatter", "enabled": true },
+  { "id": 2, "title": "Base64 Encoder", "enabled": false }
+]
+'
     ></textarea>
     <button class="btn btn-primary mt-2" onclick="convertToCSV()">
       Convert
     </button>
     <button class="btn btn-secondary mt-2" onclick="clearCSV()">Clear</button>
+    <button class="btn btn-secondary mt-2" onclick="downloadCSV()">
+      Download
+    </button>
   </div>
   <div class="col-md-6">
     <label for="csv-output" class="form-label">CSV Output:</label>
@@ -33,6 +41,19 @@
 </div>
 
 <script>
+  function downloadCSV() {
+    if (!document.getElementById("csv-output").value) return;
+    if (document.getElementById("csv-output").value.startsWith("Error:"))
+      return;
+
+    const csvContent = document.getElementById("csv-output").value;
+    const blob = new Blob([csvContent], { type: "text/csv;charset=utf-8;" });
+    const link = document.createElement("a");
+    link.href = URL.createObjectURL(blob);
+    link.download = "output.csv";
+    link.click();
+  }
+
   function convertToCSV() {
     try {
       const json = JSON.parse(document.getElementById("csv-input").value);
