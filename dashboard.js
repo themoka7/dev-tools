@@ -133,3 +133,17 @@ const loadFragment = (selector, url, callback) => {
     }
   });
 };
+
+
+function include(selector, url, callback) {
+  fetch(url)
+    .then(res => {
+      if (!res.ok) throw new Error(url);
+      return res.text();
+    })
+    .then(html => {
+      document.querySelector(selector).innerHTML = html;
+      if (callback) callback();
+    })
+    .catch(err => console.error("include failed:", err));
+}

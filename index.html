@@ -15,9 +15,12 @@
       content="online tools, developer tools, JSON formatter, Base64 encoder, URL encoder, RegEx tester"
     />
     <title>Online Tools Cafe - Free Developer Tools</title>
-    <script src="./assets/dist/js/jquery-3.7.1.min.js"></script>
-    <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="./dashboard.css" rel="stylesheet" />
+    <script src="/dev-tools/assets/dist/js/jquery-3.7.1.min.js"></script>
+    <link
+      href="/dev-tools/assets/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="/dev-tools/dashboard.css" rel="stylesheet" />
     <meta name="theme-color" content="#712cf9" />
     <meta
       name="google-site-verification"
@@ -209,23 +212,10 @@
     <script src="./dashboard.js"></script>
     <script>
       $(function () {
-        loadFragment("#symbols", "./assets/symbols.html");
-        loadFragment("#header", "./assets/header.html");
-        loadFragment("#mode", "./assets/mode.html", initializeTheme);
-        loadFragment("#sidebar", "./assets/sidebar.html", function () {
-          $(document).on("click", ".tool-link", function (e) {
-            e.preventDefault();
-            const toolPath = $(this).attr("data-tool");
-            if (toolPath) {
-              // 상대경로를 절대경로로 변환
-              const url = toolPath.startsWith("./")
-                ? toolPath.substring(2)
-                : toolPath;
-              window.location.href =
-                "/" + (url.startsWith("/") ? url.substring(1) : url);
-            }
-          });
-        });
+        include("#symbols", "/dev-tools/assets/symbols.html");
+        include("#header", "/dev-tools/assets/header.html");
+        include("#mode", "/dev-tools/assets/mode.html", initializeTheme);
+        include("#sidebar", "/dev-tools/assets/sidebar.html");
       });
 
       function formatJSON() {

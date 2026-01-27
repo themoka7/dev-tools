@@ -14,9 +14,12 @@
       content="case converter, camelCase, PascalCase, snake_case, kebab-case, online tools, developer tools"
     />
     <title>Case Converter - Online Tools Cafe</title>
-    <script src="../../assets/dist/js/jquery-3.7.1.min.js"></script>
-    <link href="../../assets/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="../../dashboard.css" rel="stylesheet" />
+    <script src="/dev-tools/assets/dist/js/jquery-3.7.1.min.js"></script>
+    <link
+      href="/dev-tools/assets/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="/dev-tools/dashboard.css" rel="stylesheet" />
     <meta name="theme-color" content="#712cf9" />
     <!-- ====== Online Tools Cafe 공통 head 끝 (각 도구 페이지에도 복사) ====== -->
   </head>
@@ -212,15 +215,15 @@
         </main>
       </div>
     </div>
-    <script src="../../assets/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="../../dashboard.js"></script>
+    <script src="/dev-tools/assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/dev-tools/dashboard.js"></script>
     <script>
       // sidebar, mode, symbols, header 동적 로드
       $(function () {
-        loadFragment("#sidebar", "../../assets/sidebar.html");
-        loadFragment("#mode", "../../assets/mode.html", initializeTheme);
-        loadFragment("#symbols", "../../assets/symbols.html");
-        loadFragment("#header", "../../assets/header.html");
+        loadFragment("#sidebar", "/dev-tools/assets/sidebar.html");
+        loadFragment("#mode", "/dev-tools/assets/mode.html", initializeTheme);
+        loadFragment("#symbols", "/dev-tools/assets/symbols.html");
+        loadFragment("#header", "/dev-tools/assets/header.html");
       });
     </script>
 
