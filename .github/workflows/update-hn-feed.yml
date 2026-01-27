@@ -1,0 +1,38 @@
+name: Update HN Feed
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"   # 30분마다
+  workflow_dispatch:
+
+jobs:
+  update-hn-feed:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. 레포 체크아웃
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # 2. Python 설치
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      # 3. 의존성 설치
+      - name: Install Python dependencies
+        run: pip install feedparser
+
+      # 4. HN RSS 가져오기
+      - name: Fetch Hacker News feed
+        run: python /python_job/fetch_hn.py
+
+      # 5. 변경사항 커밋
+      - name: Commit updated feed
+        run: |
+          git config user.name "hn-bot"
+          git config user.email "hn-bot@users.noreply.github.com"
+          git add src/data/hn.json
+          git commit -m "chore: update HN feed" || echo "No changes"
+          git push
