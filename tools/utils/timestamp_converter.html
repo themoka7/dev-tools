@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+  <head>
+    <!-- ====== Online Tools Cafe 공통 head 시작 ====== -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Timestamp Converter - Online Tools Cafe"
+    />
+    <meta name="author" content="Online Tools Cafe" />
+    <meta
+      name="keywords"
+      content="timestamp converter, unix timestamp, online tools, developer tools"
+    />
+    <title>Timestamp Converter - Online Tools Cafe</title>
+    <script src="/dev-tools/assets/dist/js/jquery-3.7.1.min.js"></script>
+    <link
+      href="/dev-tools/assets/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="/dev-tools/dashboard.css" rel="stylesheet" />
+    <meta name="theme-color" content="#712cf9" />
+    <!-- ====== Online Tools Cafe 공통 head 끝 (각 도구 페이지에도 복사) ====== -->
+  </head>
+  <body>
+    <div id="symbols"></div>
+    <div id="mode"></div>
+    <div id="header"></div>
+    <div class="container-fluid">
+      <div class="row">
+        <div
+          class="sidebar border border-right col-md-3 col-lg-2 p-0 bg-body-tertiary"
+        >
+          <div
+            class="offcanvas-md offcanvas-end bg-body-tertiary"
+            tabindex="-1"
+            id="sidebarMenu"
+            aria-labelledby="sidebarMenuLabel"
+          >
+            <div class="offcanvas-header">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                data-bs-target="#sidebarMenu"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div
+              class="offcanvas-body d-md-flex flex-column p-0 pt-lg-3 overflow-y-auto"
+              id="sidebar"
+            ></div>
+          </div>
+        </div>
+        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+
+          <!-- Timestamp Converter Tool Start -->
+
+          <div
+            class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom"
+          >
+            <h1 class="h2">Timestamp Converter</h1>
+          </div>
+
+          <p class="text-muted mb-4">Convert between Unix timestamps and readable dates instantly.</p>
+
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label for="timestamp-input" class="form-label fw-5">Unix Timestamp</label>
+              <div class="input-group">
+                <input
+                  type="number"
+                  class="form-control"
+                  id="timestamp-input"
+                  placeholder="1704067200"
+                />
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  id="ts-convert-btn"
+                >
+                  Convert
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-secondary"
+                  id="ts-now-btn"
+                >
+                  Now
+                </button>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label for="date-output" class="form-label fw-5">Date & Time</label>
+              <div class="input-group">
+                <input
+                  type="datetime-local"
+                  class="form-control"
+                  id="date-output"
+                />
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  id="date-convert-btn"
+                >
+                  Convert
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-secondary"
+                  id="date-now-btn"
+                >
+                  Now
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="alert alert-info mt-3" id="result-box" style="display: none;">
+            <span id="result-text"></span>
+          </div>
+
+          <!-- Timestamp Converter Tool End -->
+
+        </main>
+      </div>
+    </div>
+    <script src="/dev-tools/assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/dev-tools/dashboard.js"></script>
+    <script>
+      // sidebar, mode, symbols, header 동적 로드
+      $(function () {
+        loadFragment("#sidebar", "/dev-tools/assets/sidebar.html");
+        loadFragment("#mode", "/dev-tools/assets/mode.html", initializeTheme);
+        loadFragment("#symbols", "/dev-tools/assets/symbols.html");
+        loadFragment("#header", "/dev-tools/assets/header.html");
+      });
+    </script>
+
+    <!-- Timestamp Converter Tool Start -->
+
+    <script>
+      // Convert timestamp to local datetime
+      function timestampToLocalDateTime(timestamp) {
+        const date = new Date(timestamp * 1000);
+        const year = date.getFullYear();
+        const month = String(date.getMonth() + 1).padStart(2, '0');
+        const day = String(date.getDate()).padStart(2, '0');
+        const hours = String(date.getHours()).padStart(2, '0');
+        const minutes = String(date.getMinutes()).padStart(2, '0');
+        return `${year}-${month}-${day}T${hours}:${minutes}`;
+      }
+
+      // Left Convert: Timestamp → Date
+      $('#ts-convert-btn').on('click', function () {
+        const timestamp = $('#timestamp-input').val().trim();
+        
+        if (!timestamp) {
+          $('#result-text').text('Enter a timestamp first');
+          $('#result-box').show();
+          return;
+        }
+
+        const ts = parseInt(timestamp);
+        if (isNaN(ts)) {
+          $('#result-text').text('Invalid timestamp');
+          $('#result-box').show();
+          return;
+        }
+
+        const date = new Date(ts * 1000);
+        $('#date-output').val(timestampToLocalDateTime(ts));
+        $('#result-text').text('✓ ' + date.toString());
+        $('#result-box').show();
+      });
+
+      // Right Convert: Date → Timestamp
+      $('#date-convert-btn').on('click', function () {
+        const dateStr = $('#date-output').val().trim();
+        
+        if (!dateStr) {
+          $('#result-text').text('Select a date and time first');
+          $('#result-box').show();
+          return;
+        }
+
+        const ts = Math.floor(new Date(dateStr).getTime() / 1000);
+        $('#timestamp-input').val(ts);
+        $('#result-text').text('✓ ' + ts);
+        $('#result-box').show();
+      });
+
+      // Left Now: Insert current timestamp
+      $('#ts-now-btn').on('click', function () {
+        const now = Math.floor(Date.now() / 1000);
+        $('#timestamp-input').val(now);
+      });
+
+      // Right Now: Insert current date & time
+      $('#date-now-btn').on('click', function () {
+        const now = Math.floor(Date.now() / 1000);
+        const dateTime = timestampToLocalDateTime(now);
+        $('#date-output').val(dateTime);
+      });
+    </script>
+
+    <!-- Timestamp Converter Tool End -->
+
+    <!-- script Tool End -->
+</html>
