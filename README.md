@@ -26,7 +26,5 @@ https://themoka7.github.io/dev-tools/
 - JavaScript (jQuery)
 - GitHub Pages
 
----
 
-## 📁 Project Structure
-
+“Don’t forget to bookmark this site!”
