@@ -106,6 +106,236 @@
                 </div>
               </div>
 
+              <!-- news -->
+
+              <style>
+                .news-carousel {
+                  position: relative;
+                  overflow: hidden;
+                }
+
+                .news-slide {
+                  display: none;
+                  animation: slideIn 0.4s ease-in-out;
+                }
+
+                .news-slide.active {
+                  display: grid;
+                  grid-template-columns: repeat(3, 1fr);
+                  gap: 1rem;
+                }
+
+                .news-card {
+                  border: 1px solid #e9ecef;
+                  border-radius: 0.375rem;
+                  background: #f8f9fa;
+                  display: flex;
+                  flex-direction: column;
+                  padding: 1.25rem;
+                  transition:
+                    transform 0.2s,
+                    box-shadow 0.2s;
+                }
+
+                .news-card:hover {
+                  transform: translateY(-2px);
+                  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+                }
+
+                .news-card h5 {
+                  font-size: 0.95rem;
+                  line-height: 1.4;
+                  margin-bottom: 0.75rem;
+                  flex-grow: 1;
+                }
+
+                .news-card .badge {
+                  font-size: 0.75rem;
+                  margin-bottom: 0.5rem;
+                }
+
+                .news-card a {
+                  margin-top: auto;
+                  align-self: flex-start;
+                }
+
+                .carousel-controls {
+                  display: flex;
+                  gap: 0.5rem;
+                  justify-content: center;
+                  align-items: center;
+                  margin-top: 1rem;
+                }
+
+                .carousel-btn {
+                  background: #6c757d;
+                  border: none;
+                  color: white;
+                  padding: 0.5rem 1rem;
+                  border-radius: 0.25rem;
+                  cursor: pointer;
+                  font-size: 0.9rem;
+                }
+
+                .carousel-btn:hover {
+                  background: #5a6268;
+                }
+
+                .carousel-indicator {
+                  color: #6c757d;
+                  font-size: 0.9rem;
+                  margin: 0 0.5rem;
+                }
+
+                @media (max-width: 768px) {
+                  .news-slide.active {
+                    grid-template-columns: 1fr;
+                  }
+                }
+
+                @keyframes slideIn {
+                  from {
+                    opacity: 0;
+                    transform: translateX(20px);
+                  }
+                  to {
+                    opacity: 1;
+                    transform: translateX(0);
+                  }
+                }
+              </style>
+
+              <div class="row" id="newsSection" style="display: none">
+                <div class="col-md-12 mb-4">
+                  <div class="news-carousel">
+                    <div id="newsSlides"></div>
+                    <div class="carousel-controls">
+                      <button class="carousel-btn" id="prevBtn">← Prev</button>
+                      <span class="carousel-indicator"
+                        ><span id="currentSlide">1</span> /
+                        <span id="totalSlides">1</span></span
+                      >
+                      <button class="carousel-btn" id="nextBtn">Next →</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <script>
+                let newsData = [];
+                let currentSlideIndex = 0;
+                const itemsPerSlide = 3;
+
+                // hn.json에서 데이터 로드
+                fetch("/dev-tools/python_job/data/hn.json")
+                  .then((response) => response.json())
+                  .then((data) => {
+                    newsData = data;
+                    if (newsData && newsData.length > 0) {
+                      renderNewsSlides();
+                      updateSlideDisplay();
+                      document.getElementById("newsSection").style.display =
+                        "block";
+                    }
+                  })
+                  .catch((error) => console.log("News data not available"));
+
+                function timestampToLocalDateTime(timestamp) {
+                  const date = new Date(timestamp * 1000);
+                  const year = date.getFullYear();
+                  const month = String(date.getMonth() + 1).padStart(2, "0");
+                  const day = String(date.getDate()).padStart(2, "0");
+                  const hours = String(date.getHours()).padStart(2, "0");
+                  const minutes = String(date.getMinutes()).padStart(2, "0");
+                  return `${year}-${month}-${day}T${hours}:${minutes}`;
+                }
+
+                function renderNewsSlides() {
+                  const container = document.getElementById("newsSlides");
+                  const totalSlides = Math.ceil(
+                    newsData.length / itemsPerSlide,
+                  );
+
+                  container.innerHTML = "";
+
+                  for (let i = 0; i < totalSlides; i++) {
+                    const slide = document.createElement("div");
+                    slide.className = "news-slide" + (i === 0 ? " active" : "");
+
+                    const startIdx = i * itemsPerSlide;
+                    const endIdx = Math.min(
+                      startIdx + itemsPerSlide,
+                      newsData.length,
+                    );
+
+                    for (let j = startIdx; j < endIdx; j++) {
+                      const item = newsData[j];
+                      const newsCard = document.createElement("div");
+                      newsCard.className = "news-card";
+
+                      const date = new Date(item.date);
+                      const formattedDate = date.toLocaleDateString("en-US", {
+                        month: "short",
+                        day: "numeric",
+                      });
+
+                      newsCard.innerHTML = `
+        <span class="badge bg-info text-white">${formattedDate}</span>
+        <h5>${item.title}</h5>
+        <a href="${item.link}" target="_blank" class="btn btn-sm btn-outline-primary">Read →</a>
+      `;
+
+                      slide.appendChild(newsCard);
+                    }
+
+                    container.appendChild(slide);
+                  }
+
+                  document.getElementById("totalSlides").textContent =
+                    totalSlides;
+                }
+
+                function updateSlideDisplay() {
+                  const slides = document.querySelectorAll(".news-slide");
+                  slides.forEach((slide, idx) => {
+                    slide.classList.remove("active");
+                  });
+                  if (slides[currentSlideIndex]) {
+                    slides[currentSlideIndex].classList.add("active");
+                  }
+                  document.getElementById("currentSlide").textContent =
+                    currentSlideIndex + 1;
+                }
+
+                document.addEventListener("DOMContentLoaded", function () {
+                  const prevBtn = document.getElementById("prevBtn");
+                  const nextBtn = document.getElementById("nextBtn");
+
+                  if (prevBtn) {
+                    prevBtn.addEventListener("click", () => {
+                      const totalSlides = Math.ceil(
+                        newsData.length / itemsPerSlide,
+                      );
+                      currentSlideIndex =
+                        (currentSlideIndex - 1 + totalSlides) % totalSlides;
+                      updateSlideDisplay();
+                    });
+                  }
+
+                  if (nextBtn) {
+                    nextBtn.addEventListener("click", () => {
+                      const totalSlides = Math.ceil(
+                        newsData.length / itemsPerSlide,
+                      );
+                      currentSlideIndex = (currentSlideIndex + 1) % totalSlides;
+                      updateSlideDisplay();
+                    });
+                  }
+                });
+              </script>
+
+              <!-- news -->
+
               <div class="row">
                 <div class="col-md-6 mb-4">
                   <div class="card">
