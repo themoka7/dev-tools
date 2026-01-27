@@ -19,11 +19,3 @@ jobs:
           exclude-paths: |
             assets/
             tools/template.html
-
-      - name: Commit sitemap.xml
-        run: |
-          git config user.name "themoka7"
-          git config user.email "jm3280@pusan.ac.kr"
-          git add sitemap.xml
-          git commit -m "Auto-generate sitemap.xml" || echo "No changes"
-          git push
