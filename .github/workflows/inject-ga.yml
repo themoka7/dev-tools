@@ -15,21 +15,21 @@ jobs:
 
       - name: Inject GA after title tag
         run: |
-          GA='<!-- Google Analytics -->
+          cat <<'EOF' > /tmp/ga.html
+<!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-QETV2ZT0NN"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'G-QETV2ZT0NN');
-</script>'
+</script>
+EOF
 
           find . -name "*.html" -type f | while read file; do
             if grep -q "<title>Online Tools Cafe - Free Developer Tools</title>" "$file"; then
               if ! grep -q "G-QETV2ZT0NN" "$file"; then
-                sed -i "/<title>Online Tools Cafe - Free Developer Tools<\/title>/a\\
-$GA
-" "$file"
+                sed -i "/<title>Online Tools Cafe - Free Developer Tools<\/title>/r /tmp/ga.html" "$file"
               fi
             fi
           done
@@ -42,4 +42,4 @@ $GA
           git commit -m "chore: inject Google Analytics into HTML" || echo "No changes to commit"
 
       - name: Push changes
-        run
+        run: git push
