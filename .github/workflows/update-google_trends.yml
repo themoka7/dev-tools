@@ -28,7 +28,7 @@ jobs:
 
       # 4. Google Trends 수집 실행
       - name: Fetch Google Trends
-        run: python python_job/fetch_trends.py
+        run: python python_job/google_trends.py
 
       # 5. 변경사항 커밋 & 푸시
       - name: Commit updated trends data
