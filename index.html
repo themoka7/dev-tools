@@ -29,6 +29,7 @@
       gtag("config", "G-QETV2ZT0NN");
     </script>
     <script src="/dev-tools/assets/dist/js/jquery-3.7.1.min.js"></script>
+
     <link
       href="/dev-tools/assets/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -93,7 +94,7 @@
               </div>
 
               <!-- news -->
-
+              <script src="/dev-tools/assets/dist/js/news.js"></script>
               <style>
                 .news-carousel {
                   position: relative;
@@ -193,6 +194,15 @@
 
               <div class="row" id="newsSection" style="display: none">
                 <div class="col-md-12 mb-4">
+                  <!-- News Header -->
+                  <div class="d-flex align-items-center mb-3">
+                    <h5 class="mb-0 fw-bold">Trending on Hacker News</h5>
+                    <span class="ms-2 text-muted" style="font-size: 0.9rem">
+                      (hnrss.org)
+                    </span>
+                  </div>
+                  <!-- News Header -->
+
                   <div class="news-carousel">
                     <div id="newsSlides"></div>
                     <div class="carousel-controls">
@@ -207,120 +217,438 @@
                 </div>
               </div>
 
-              <script>
-                let newsData = [];
-                let currentSlideIndex = 0;
-                const itemsPerSlide = 3;
+              <!-- news -->
 
-                // hn.json에서 데이터 로드
-                fetch("/dev-tools/python_job/data/hn.json")
-                  .then((response) => response.json())
-                  .then((data) => {
-                    newsData = data;
-                    if (newsData && newsData.length > 0) {
-                      renderNewsSlides();
-                      updateSlideDisplay();
-                      document.getElementById("newsSection").style.display =
-                        "block";
-                    }
-                  })
-                  .catch((error) => console.log("News data not available"));
+              <!-- trends -->
 
-                function timestampToLocalDateTime(timestamp) {
-                  const date = new Date(timestamp * 1000);
-                  const year = date.getFullYear();
-                  const month = String(date.getMonth() + 1).padStart(2, "0");
-                  const day = String(date.getDate()).padStart(2, "0");
-                  const hours = String(date.getHours()).padStart(2, "0");
-                  const minutes = String(date.getMinutes()).padStart(2, "0");
-                  return `${year}-${month}-${day}T${hours}:${minutes}`;
+              <script src="https://d3js.org/d3.v6.min.js"></script>
+              <style>
+                .trend-title-main {
+                  font-size: 1.25rem;
+                  font-weight: 500;
+                  margin: 0;
+                  white-space: nowrap;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
                 }
+                .trend-timestamp {
+                  font-size: 0.7rem;
+                  color: #666;
+                  font-weight: 400;
+                }
+                @media (max-width: 768px) {
+                  .trend-title-main {
+                    font-size: 0.95rem;
+                  }
+                  .trend-timestamp {
+                    font-size: 0.6rem;
+                  }
+                  .card-header {
+                    flex-direction: column !important;
+                    align-items: flex-start !important;
+                    gap: 10px;
+                  }
+                  .btn-group {
+                    width: 100%;
+                  }
+                }
+                /* set the CSS */
+                .bubble {
+                  stroke: white;
+                  stroke-width: 2px;
+                  cursor: pointer;
+                  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.15));
+                  transition: all 0.3s ease;
+                }
+                .bubble:hover {
+                  opacity: 0.9;
+                  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.25));
+                }
+                .label {
+                  font-size: 14px;
+                  text-anchor: middle;
+                  pointer-events: none;
+                  font-weight: 500;
+                  font-family:
+                    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                    "Noto Sans CJK KR", sans-serif;
+                  fill: #333;
+                  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.5);
+                }
+                #trendsChart {
+                  display: flex;
+                  justify-content: center;
+                  width: 100%;
+                  overflow-x: auto;
+                }
+                #trendsChart svg {
+                  max-width: 100%;
+                  height: auto;
+                }
+                @media (max-width: 768px) {
+                  .label {
+                    font-size: 11px;
+                  }
+                  .bubble {
+                    stroke-width: 1px;
+                  }
+                }
+              </style>
+              <div class="card mt-4 mb-5 shadow-sm">
+                <div
+                  class="card-header d-flex justify-content-between align-items-center"
+                  style="
+                    background-color: #f8f9fa;
+                    border-bottom: 1px solid #dee2e6;
+                  "
+                >
+                  <h5 class="trend-title-main mb-0">
+                    🔥 Google Trends
+                    <span id="trendTimestamp" class="trend-timestamp"
+                      >(Last updated: ---)</span
+                    >
+                    <span id="trendCountry">- Korea</span>
+                  </h5>
+                  <div
+                    class="btn-group flex-wrap"
+                    role="group"
+                    style="gap: 5px"
+                  >
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary country-btn"
+                      data-country="KR"
+                    >
+                      Korea
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary country-btn"
+                      data-country="US"
+                    >
+                      USA
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary country-btn"
+                      data-country="JP"
+                    >
+                      Japan
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary country-btn"
+                      data-country="GB"
+                    >
+                      UK
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary country-btn"
+                      data-country="DE"
+                    >
+                      Germany
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary country-btn"
+                      data-country="FR"
+                    >
+                      France
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary country-btn"
+                      data-country="IN"
+                    >
+                      India
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary country-btn"
+                      data-country="BR"
+                    >
+                      Brazil
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary country-btn"
+                      data-country="CA"
+                    >
+                      Canada
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary country-btn"
+                      data-country="AU"
+                    >
+                      Australia
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary country-btn"
+                      data-country="IT"
+                    >
+                      Italy
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary country-btn"
+                      data-country="ES"
+                    >
+                      Spain
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary country-btn"
+                      data-country="MX"
+                    >
+                      Mexico
+                    </button>
+                  </div>
+                </div>
+                <div class="card-body pt-4">
+                  <div id="trendsChart"></div>
+                </div>
+              </div>
 
-                function renderNewsSlides() {
-                  const container = document.getElementById("newsSlides");
-                  const totalSlides = Math.ceil(
-                    newsData.length / itemsPerSlide,
-                  );
+              <script src="https://d3js.org/d3.v6.min.js"></script>
+              <script>
+                let currentCountry = "KR";
 
-                  container.innerHTML = "";
+                function renderChart(trendsData, country) {
+                  // 기존 차트 제거
+                  d3.select("#trendsChart").selectAll("svg").remove();
+                  document.getElementById("trendsChart").innerHTML = "";
 
-                  for (let i = 0; i < totalSlides; i++) {
-                    const slide = document.createElement("div");
-                    slide.className = "news-slide" + (i === 0 ? " active" : "");
+                  // 데이터 확인
+                  if (
+                    !trendsData[country] ||
+                    trendsData[country].length === 0
+                  ) {
+                    document.getElementById("trendsChart").innerHTML = `
+                      <div style="text-align: center; padding: 40px; color: #999;">
+                        <p style="font-size: 18px; margin-bottom: 10px;">📊 No Data Available</p>
+                        <p style="font-size: 14px;">Trend data for this country is not available yet.</p>
+                      </div>
+                    `;
+                    return;
+                  }
 
-                    const startIdx = i * itemsPerSlide;
-                    const endIdx = Math.min(
-                      startIdx + itemsPerSlide,
-                      newsData.length,
+                  const data = trendsData[country].map((d) => ({
+                    name: d.trend,
+                    value: d.search_volume,
+                  }));
+
+                  const container = document.getElementById("trendsChart");
+                  const width = container.offsetWidth || 800;
+                  const isMobile = window.innerWidth < 768;
+
+                  const height = isMobile ? 350 : 450;
+                  const margin = isMobile ? 20 : 40;
+                  const padding = isMobile ? 6 : 10;
+                  const fontSize = isMobile ? "11px" : "14px";
+
+                  const svg = d3
+                    .select("#trendsChart")
+                    .append("svg")
+                    .attr("width", width)
+                    .attr("height", height);
+
+                  const chart = svg
+                    .append("g")
+                    .attr("transform", `translate(${margin}, ${margin})`);
+
+                  const chartWidth = width - margin * 2;
+                  const chartHeight = height - margin * 2;
+
+                  const colors = [
+                    "#FFB3B3",
+                    "#B3E5FC",
+                    "#C8E6C9",
+                    "#FFF9C4",
+                    "#F8BBD0",
+                    "#B2DFDB",
+                    "#FFE0B2",
+                    "#E1BEE7",
+                    "#FFCCBC",
+                    "#D1C4E9",
+                    "#F0F4C3",
+                    "#B2EBF2",
+                    "#DCEDC8",
+                    "#FFE082",
+                    "#BBDEFB",
+                    "#C5E1A5",
+                    "#F5B7B1",
+                    "#E0BBE4",
+                    "#FCE38A",
+                    "#D4E8F7",
+                  ];
+
+                  const color = d3
+                    .scaleOrdinal()
+                    .domain(data.map((d) => d.name))
+                    .range(colors);
+
+                  // 한국 기준 1위 크기: Math.sqrt(5000) * 1.5 ≈ 106
+                  // 순위 기반으로 1위는 크게, 25위는 작게
+                  const baseFactor = isMobile ? 0.8 : 1.5;
+                  const maxRadiusBase = Math.sqrt(5000) * baseFactor; // 1위 기준 크기
+                  const minRadiusBase = maxRadiusBase * 0.3; // 25위 크기 (1위의 30%)
+
+                  const nodes = data.map((d, index) => {
+                    // rank: 0부터 시작하므로 1~25로 변환
+                    const rank = index + 1;
+                    // 순위에 따라 선형 보간
+                    const r =
+                      maxRadiusBase -
+                      ((rank - 1) / 24) * (maxRadiusBase - minRadiusBase);
+
+                    return {
+                      ...d,
+                      r: r,
+                    };
+                  });
+
+                  const bubbles = chart
+                    .selectAll("circle")
+                    .data(nodes)
+                    .enter()
+                    .append("circle")
+                    .attr("r", (d) => d.r)
+                    .attr("fill", (d) => color(d.name))
+                    .attr("opacity", 0.95);
+
+                  const labels = chart
+                    .selectAll("text")
+                    .data(nodes)
+                    .enter()
+                    .append("text")
+                    .attr("text-anchor", "middle")
+                    .attr("dy", "0.35em")
+                    .style("font-size", fontSize)
+                    .style("pointer-events", "none")
+                    .text((d) => {
+                      const maxLen = isMobile ? 10 : 18;
+                      return d.name.length > maxLen
+                        ? d.name.slice(0, maxLen - 2) + "…"
+                        : d.name;
+                    });
+
+                  bubbles
+                    .append("title")
+                    .text(
+                      (d) =>
+                        `${d.name}\nSearch Volume: ${d.value.toLocaleString()}`,
                     );
 
-                    for (let j = startIdx; j < endIdx; j++) {
-                      const item = newsData[j];
-                      const newsCard = document.createElement("div");
-                      newsCard.className = "news-card";
+                  const simulation = d3
+                    .forceSimulation(nodes)
+                    .force(
+                      "x",
+                      d3
+                        .forceX(() => Math.random() * chartWidth)
+                        .strength(0.25),
+                    )
+                    .force(
+                      "y",
+                      d3
+                        .forceY(() => Math.random() * chartHeight)
+                        .strength(0.25),
+                    )
+                    .force(
+                      "collide",
+                      d3.forceCollide((d) => d.r + padding),
+                    )
+                    .force("charge", d3.forceManyBody().strength(2))
+                    .alphaDecay(0.03)
+                    .on("tick", ticked);
 
-                      const date = new Date(item.date);
-                      const formattedDate = date.toLocaleDateString("en-US", {
-                        month: "short",
-                        day: "numeric",
+                  function ticked() {
+                    nodes.forEach((d) => {
+                      d.x = Math.max(d.r, Math.min(chartWidth - d.r, d.x));
+                      d.y = Math.max(d.r, Math.min(chartHeight - d.r, d.y));
+                    });
+
+                    bubbles.attr("cx", (d) => d.x).attr("cy", (d) => d.y);
+                    labels.attr("x", (d) => d.x).attr("y", (d) => d.y);
+                  }
+                }
+
+                // 페이지 로드 시 데이터 가져오기
+                fetch("/dev-tools/python_job/data/trends.json")
+                  .then((response) => response.json())
+                  .then((jsonData) => {
+                    if (!jsonData || !jsonData.data) return;
+
+                    const trendsData = jsonData.data;
+                    const timestamp = jsonData.timestamp;
+
+                    // 타임스탐프 업데이트
+                    document.getElementById("trendTimestamp").textContent =
+                      `(Last updated: ${timestamp})`;
+
+                    // 초기 나라명 업데이트
+                    document.getElementById("trendCountry").textContent =
+                      "- Korea";
+
+                    // 초기 차트 렌더링
+                    renderChart(trendsData, "KR");
+
+                    // 나라 버튼 클릭 이벤트
+                    document.querySelectorAll(".country-btn").forEach((btn) => {
+                      btn.addEventListener("click", function () {
+                        const country = this.getAttribute("data-country");
+                        currentCountry = country;
+
+                        // 제목 업데이트
+                        const countryNames = {
+                          KR: "Korea",
+                          US: "USA",
+                          JP: "Japan",
+                          GB: "UK",
+                          DE: "Germany",
+                          FR: "France",
+                          IN: "India",
+                          BR: "Brazil",
+                          CA: "Canada",
+                          AU: "Australia",
+                          IT: "Italy",
+                          ES: "Spain",
+                          MX: "Mexico",
+                        };
+                        document.getElementById("trendCountry").textContent =
+                          `- ${countryNames[country]}`;
+
+                        // 버튼 활성화 상태 업데이트
+                        document
+                          .querySelectorAll(".country-btn")
+                          .forEach((b) => {
+                            b.classList.remove("btn-secondary");
+                            b.classList.add("btn-outline-secondary");
+                          });
+                        this.classList.remove("btn-outline-secondary");
+                        this.classList.add("btn-secondary");
+
+                        // 차트 렌더링
+                        renderChart(trendsData, country);
                       });
+                    });
 
-                      newsCard.innerHTML = `
-        <span class="badge bg-info text-white">${formattedDate}</span>
-        <h5>${item.title}</h5>
-        <a href="${item.link}" target="_blank" class="btn btn-sm btn-outline-primary">Read →</a>
-      `;
-
-                      slide.appendChild(newsCard);
-                    }
-
-                    container.appendChild(slide);
-                  }
-
-                  document.getElementById("totalSlides").textContent =
-                    totalSlides;
-                }
-
-                function updateSlideDisplay() {
-                  const slides = document.querySelectorAll(".news-slide");
-                  slides.forEach((slide, idx) => {
-                    slide.classList.remove("active");
+                    // 초기 Korea 버튼 활성화 상태 설정
+                    document
+                      .querySelector('[data-country="KR"]')
+                      .classList.remove("btn-outline-secondary");
+                    document
+                      .querySelector('[data-country="KR"]')
+                      .classList.add("btn-secondary");
+                  })
+                  .catch((error) => {
+                    console.error("Error loading trends data:", error);
                   });
-                  if (slides[currentSlideIndex]) {
-                    slides[currentSlideIndex].classList.add("active");
-                  }
-                  document.getElementById("currentSlide").textContent =
-                    currentSlideIndex + 1;
-                }
-
-                document.addEventListener("DOMContentLoaded", function () {
-                  const prevBtn = document.getElementById("prevBtn");
-                  const nextBtn = document.getElementById("nextBtn");
-
-                  if (prevBtn) {
-                    prevBtn.addEventListener("click", () => {
-                      const totalSlides = Math.ceil(
-                        newsData.length / itemsPerSlide,
-                      );
-                      currentSlideIndex =
-                        (currentSlideIndex - 1 + totalSlides) % totalSlides;
-                      updateSlideDisplay();
-                    });
-                  }
-
-                  if (nextBtn) {
-                    nextBtn.addEventListener("click", () => {
-                      const totalSlides = Math.ceil(
-                        newsData.length / itemsPerSlide,
-                      );
-                      currentSlideIndex = (currentSlideIndex + 1) % totalSlides;
-                      updateSlideDisplay();
-                    });
-                  }
-                });
               </script>
 
-              <!-- news -->
+              <!-- trends -->
 
               <div class="row">
                 <div class="col-md-6 mb-4">
