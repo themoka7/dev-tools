@@ -1,0 +1,40 @@
+name: Update Google Trends
+
+on:
+  schedule:
+    - cron: "0 */12 * * *"   # 12시간마다 (하루 2번)
+  workflow_dispatch:
+
+jobs:
+  update-google-trends:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. 레포 체크아웃
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # 2. Python 설치
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      # 3. 의존성 설치 (Playwright 필수)
+      - name: Install dependencies
+        run: |
+          pip install playwright beautifulsoup4
+          playwright install chromium
+
+      # 4. Google Trends 수집 실행
+      - name: Fetch Google Trends
+        run: python python_job/fetch_trends.py
+
+      # 5. 변경사항 커밋 & 푸시
+      - name: Commit updated trends data
+        run: |
+          git config user.name "trend-bot"
+          git config user.email "trend-bot@users.noreply.github.com"
+          git add python_job/data/trends.json
+          git commit -m "chore: update Google Trends data" || echo "No changes"
+          git push
