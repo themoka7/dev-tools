@@ -294,7 +294,11 @@
                   }
                 }
               </style>
-              <div class="card mt-4 mb-5 shadow-sm">
+              <div
+                class="card mt-4 mb-5 shadow-sm"
+                id="trendsCard"
+                style="display: none"
+              >
                 <div
                   class="card-header d-flex justify-content-between align-items-center"
                   style="
@@ -579,7 +583,20 @@
                 fetch("/dev-tools/python_job/data/trends.json")
                   .then((response) => response.json())
                   .then((jsonData) => {
-                    if (!jsonData || !jsonData.data) return;
+                    if (
+                      !jsonData ||
+                      !jsonData.data ||
+                      Object.keys(jsonData.data).length === 0
+                    ) {
+                      // 데이터가 없으면 카드 숨김
+                      document.getElementById("trendsCard").style.display =
+                        "none";
+                      return;
+                    }
+
+                    // 데이터가 있으면 카드 표시
+                    document.getElementById("trendsCard").style.display =
+                      "block";
 
                     const trendsData = jsonData.data;
                     const timestamp = jsonData.timestamp;
