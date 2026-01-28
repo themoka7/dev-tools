@@ -1,8 +1,4 @@
-from playwright.sync_api import sync_playwright
-from bs4 import BeautifulSoup
-import json
 import os
-import re
 from datetime import datetime
 import requests
 from dotenv import load_dotenv
@@ -46,14 +42,16 @@ def send_telegram_message(message):
 
 
 
-# 텔레그램 메시지 작성
-telegram_message = "🔥 <b>Google Trends Update</b>\n"
-telegram_message += f"⏰ {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n\n"
+# 텔레그램 메시지 작성 (테스트)
+def test_telegram():
+    telegram_message = "🔥 <b>Google Trends Update</b>\n"
+    telegram_message += f"⏰ {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n\n"
+    telegram_message += f"✅ 텔레그램 연결 테스트\n"
+    
+    return send_telegram_message(telegram_message)
 
 
-telegram_message += f"\n✅ 총 개 트렌드 수집"
-
-# 텔레그램으로 전송
-send_telegram_message(telegram_message)
-
+if __name__ == "__main__":
+    # 테스트 실행
+    test_telegram()
 
