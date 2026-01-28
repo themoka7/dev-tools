@@ -311,7 +311,6 @@
                     <span id="trendTimestamp" class="trend-timestamp"
                       >(Last updated: ---)</span
                     >
-                    <span id="trendCountry">- Korea</span>
                   </h5>
                   <div
                     class="btn-group flex-wrap"
@@ -605,10 +604,6 @@
                     document.getElementById("trendTimestamp").textContent =
                       `(Last updated: ${timestamp})`;
 
-                    // 초기 나라명 업데이트
-                    document.getElementById("trendCountry").textContent =
-                      "- Korea";
-
                     // 초기 차트 렌더링
                     renderChart(trendsData, "KR");
 
@@ -634,8 +629,6 @@
                           ES: "Spain",
                           MX: "Mexico",
                         };
-                        document.getElementById("trendCountry").textContent =
-                          `- ${countryNames[country]}`;
 
                         // 버튼 활성화 상태 업데이트
                         document
