@@ -30,11 +30,10 @@ jobs:
       - name: Fetch Google Trends
         run: python python_job/google_trends.py
 
-      # 5. 변경사항 커밋 & 푸시
-      - name: Commit updated trends data
-        run: |
-          git config user.name "trend-bot"
-          git config user.email "trend-bot@users.noreply.github.com"
-          git add python_job/data/trends.json
-          git commit -m "chore: update Google Trends data" || echo "No changes"
-          git push
+      # 5. 결과 업로드 (Artifact)
+      - name: Upload trends artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: trends-data
+          path: python_job/data/trends.json
+
