@@ -2,7 +2,7 @@ from pathlib import Path
 from datetime import datetime
 
 # ===== 설정 =====
-BASE_URL = "https://themoka7.github.io/dev-tools/"   # ← 본인 도메인으로 바꾸세요 (예: https://example.com)
+BASE_URL = "https://themoka7.github.io/dev-tools"   # ← 본인 도메인으로 바꾸세요 (예: https://example.com)
 OUTPUT_FILE = "sitemap.xml"
 
 # 프로젝트 루트(이 파일을 실행하는 위치)
