@@ -28,11 +28,10 @@ jobs:
       - name: Fetch Hacker News feed
         run: python python_job/fetch_hn.py
 
-      # 5. 변경사항 커밋
-      - name: Commit updated feed
-        run: |
-          git config user.name "hn-bot"
-          git config user.email "hn-bot@users.noreply.github.com"
-          git add python_job/data/hn.json
-          git commit -m "chore: update HN feed" || echo "No changes"
-          git push
+      # 5. 결과 파일 업로드 (Artifact)
+      - name: Upload HN feed artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: hn-feed
+          path: python_job/data/hn.json
+
