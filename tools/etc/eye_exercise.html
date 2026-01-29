@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+  <head>
+    <!-- ====== Online Tools Cafe 공통 head 시작 ====== -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta
+      name="description"
+      content="Eye Exercise - Free online eye workout tool for developers. Follow simple guided eye movements to reduce eye strain and refresh your focus."
+    />
+    <meta name="author" content="Online Tools Cafe" />
+    <meta
+      name="keywords"
+      content="eye exercise, eye workout, eye strain relief, 20-20-20 rule, developer health, screen fatigue, eye break, productivity tool, online tools"
+    />
+
+    <title>Eye Exercise - Free Online Eye Workout Tool (For Developers)</title>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-QETV2ZT0NN"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-QETV2ZT0NN");
+    </script>
+    <!-- Google tag (gtag.js) -->
+    <script src="/dev-tools/assets/dist/js/jquery-3.7.1.min.js"></script>
+    <link
+      href="/dev-tools/assets/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="/dev-tools/dashboard.css" rel="stylesheet" />
+    <meta name="theme-color" content="#712cf9" />
+    <!-- ====== Online Tools Cafe 공통 head 끝 (각 도구 페이지에도 복사) ====== -->
+  </head>
+  <body>
+    <div id="symbols"></div>
+    <div id="mode"></div>
+    <div id="header"></div>
+    <div class="container-fluid">
+      <div class="row">
+        <div
+          class="sidebar border border-right col-md-3 col-lg-2 p-0 bg-body-tertiary"
+        >
+          <div
+            class="offcanvas-md offcanvas-end bg-body-tertiary"
+            tabindex="-1"
+            id="sidebarMenu"
+            aria-labelledby="sidebarMenuLabel"
+          >
+            <div class="offcanvas-header">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                data-bs-target="#sidebarMenu"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div
+              class="offcanvas-body d-md-flex flex-column p-0 pt-lg-3 overflow-y-auto"
+              id="sidebar"
+            ></div>
+          </div>
+        </div>
+        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+          <!-- html Tool Start -->
+          <!-- JSON Formatter Tool Start -->
+
+          <div
+            class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom"
+          >
+            <h1 class="h2">Eye Exercise</h1>
+            <small class="text-muted"
+              >Verified and tested on: January 28, 2026</small
+            >
+          </div>
+
+          <section class="mb-4">
+            <p class="text-muted">
+              Roll your eyes for a few seconds — it’s the only bugfix that
+              matters. 👀<br />
+              Screen fatigue is real. Follow the dot, blink like you mean it,
+              and let your eyeballs do a tiny refactor.
+            </p>
+
+            <p class="small text-muted">
+              <strong>How it works:</strong> Short guided eye movements
+              (left/right/up/down) + quick focus reset. No login, no tracking,
+              no drama — just eyeball maintenance.
+            </p>
+          </section>
+
+          <!-- Eye Exercise -->
+
+          <div class="card mt-4 mb-5 shadow-sm" id="trendsCard">
+            <div
+              class="card-header d-flex justify-content-between align-items-center"
+              style="
+                background-color: #f8f9fa;
+                border-bottom: 1px solid #dee2e6;
+              "
+            >
+              <h5 class="trend-title-main mb-0" style="margin-right: 0">
+                👀 Eye Gym
+              </h5>
+              <div
+                style="
+                  flex: 1;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  gap: 10px;
+                "
+              >
+                <div
+                  style="
+                    font-size: 18px;
+                    font-weight: bold;
+                    color: #667eea;
+                    min-width: 40px;
+                    text-align: center;
+                  "
+                >
+                  <span id="countdownDisplay">30 seconds</span>
+                </div>
+                <span
+                  id="instruction"
+                  style="font-size: 16px; color: #666; text-align: center"
+                >
+                  Click the right button to apply the bug fix.
+                </span>
+              </div>
+              <button
+                id="startBtn"
+                type="button"
+                class="btn btn-sm country-btn btn-secondary"
+                style="white-space: nowrap"
+              >
+                Start Exercise
+              </button>
+            </div>
+            <div class="card-body pt-4">
+              <div
+                class="d-flex justify-content-center align-items-center"
+                style="min-height: 450px"
+              >
+                <style>
+                  .emoji-face {
+                    position: relative;
+                    width: 300px;
+                    height: 300px;
+                    background: rgba(255, 255, 0, 0.683);
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    transition: 0.5s;
+                  }
+
+                  .emoji-face::before {
+                    content: "";
+                    top: 180px;
+                    position: absolute;
+                    width: 150px;
+                    height: 70px;
+                    background: crimson;
+                    border-bottom-left-radius: 70px;
+                    border-bottom-right-radius: 70px;
+                    transition: 0.5s;
+                  }
+
+                  .eyes {
+                    position: relative;
+                    top: -40px;
+                    display: flex;
+                  }
+
+                  .eyes .eye {
+                    position: relative;
+                    width: 80px;
+                    height: 80px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background: white;
+                    border-radius: 50%;
+                    margin: 0 15px;
+                  }
+
+                  .eyes .eye .pupil {
+                    position: absolute;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    background: black;
+                    transition: transform 0.05s ease-out;
+                  }
+                </style>
+                <div class="emoji-face">
+                  <div class="eyes">
+                    <div class="eye"><div class="pupil"></div></div>
+                    <div class="eye"><div class="pupil"></div></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Eye Exercise End -->
+        </main>
+      </div>
+    </div>
+    <script src="/dev-tools/assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/dev-tools/dashboard.js"></script>
+    <script>
+      // sidebar, mode, symbols, header 동적 로드
+      $(function () {
+        loadFragment("#sidebar", "/dev-tools/assets/sidebar.html");
+        loadFragment("#mode", "/dev-tools/assets/mode.html", initializeTheme);
+        loadFragment("#symbols", "/dev-tools/assets/symbols.html");
+        loadFragment("#header", "/dev-tools/assets/header.html");
+      });
+    </script>
+
+    <!-- script Tool Start -->
+
+    <!-- script Tool Start -->
+    <script>
+      // emoji-face 눈동자 마우스 추적 및 눈 운동
+      const emojiFace = document.querySelector(".emoji-face");
+      const pupils = document.querySelectorAll(".eyes .eye .pupil");
+      const startBtn = document.getElementById("startBtn");
+      const countdownDisplay = document.getElementById("countdownDisplay");
+      const instruction = document.getElementById("instruction");
+
+      let isExercising = false;
+
+      // 눈동자 이동 함수
+      function movePupils(x, y) {
+        pupils.forEach((pupil) => {
+          pupil.style.transform = `translate(${x}px, ${y}px)`;
+        });
+      }
+
+      // 눈을 감는 함수 (깜빡이기)
+      function blinkEyes() {
+        const eyes = document.querySelectorAll(".eyes .eye");
+        eyes.forEach((eye) => {
+          eye.style.transition = "transform 0.15s ease-in-out";
+          eye.style.transform = "scaleY(0.1)";
+        });
+
+        // 0.3초 후 눈 다시 뜨기
+        setTimeout(() => {
+          eyes.forEach((eye) => {
+            eye.style.transform = "scaleY(1)";
+          });
+        }, 300);
+      }
+
+      // 여러 번 깜빡이기 함수
+      function multipleBlinking(count = 3, interval = 600) {
+        let blinkCount = 0;
+        const blinkInterval = setInterval(() => {
+          blinkEyes();
+          blinkCount++;
+          if (blinkCount >= count) {
+            clearInterval(blinkInterval);
+          }
+        }, interval);
+      }
+
+      // 마우스 추적 (운동 중일 때는 비활성화)
+      document.addEventListener("mousemove", (e) => {
+        if (isExercising) return; // 운동 중일 때는 마우스 추적 비활성화
+
+        const faceRect = emojiFace.getBoundingClientRect();
+        const faceCenterX = faceRect.left + faceRect.width / 2;
+        const faceCenterY = faceRect.top + faceRect.height / 2;
+
+        const angle = Math.atan2(
+          e.clientY - faceCenterY,
+          e.clientX - faceCenterX,
+        );
+        const distance = 18;
+
+        const x = Math.cos(angle) * distance;
+        const y = Math.sin(angle) * distance;
+
+        movePupils(x, y);
+      });
+
+      // 버튼 클릭 이벤트
+      startBtn.addEventListener("click", function () {
+        if (isExercising) return;
+        isExercising = true;
+        startBtn.disabled = true;
+
+        // 눈동자를 정면으로 초기화
+        movePupils(0, 0);
+
+        const totalDuration = 30000; // 30초
+        const startTime = Date.now();
+
+        const stages = [
+          { instruction: "👈 Let's look left", x: -25, y: 0, duration: 5000 },
+          { instruction: "👉 Let's look right", x: 25, y: 0, duration: 5000 },
+          { instruction: "⬆️ Let's look up", x: 0, y: -25, duration: 5000 },
+          { instruction: "⬇️ Let's look down", x: 0, y: 25, duration: 5000 },
+          {
+            instruction: "😴 Let's blink slowly",
+            x: 0,
+            y: 0,
+            duration: 10000,
+            blink: true,
+          },
+        ];
+
+        // 첫 번째 단계를 바로 실행
+        const firstStage = stages[0];
+        instruction.textContent = `${firstStage.instruction} (5 seconds)`;
+        movePupils(firstStage.x, firstStage.y);
+
+        let currentStageIndex = 0;
+
+        const timer = setInterval(() => {
+          const elapsed = Date.now() - startTime;
+          const remaining = Math.max(
+            0,
+            Math.ceil((totalDuration - elapsed) / 1000),
+          );
+
+          // 카운트다운 업데이트
+          countdownDisplay.textContent = remaining + " seconds";
+
+          // 현재 단계 결정
+          let currentTime = 0;
+          for (let i = 0; i < stages.length; i++) {
+            if (
+              elapsed >= currentTime &&
+              elapsed < currentTime + stages[i].duration
+            ) {
+              const stage = stages[i];
+              const remainingInStage = Math.ceil(
+                (stage.duration - (elapsed - currentTime)) / 1000,
+              );
+
+              // 매 루프마다 지시문 업데이트 (초가 줄어드는 표시)
+              instruction.textContent = `${stage.instruction} (${Math.max(1, remainingInStage)} seconds)`;
+
+              if (i !== currentStageIndex) {
+                currentStageIndex = i;
+
+                if (stage.blink) {
+                  // 깜빡이기 애니메이션 - 10초 동안 계속 깜빡이기
+                  movePupils(0, 0);
+                  multipleBlinking(5, 1500); // 5번 깜빡이기, 1.5초 간격
+                } else {
+                  movePupils(stage.x, stage.y);
+                }
+              }
+              break;
+            }
+            currentTime += stages[i].duration;
+          }
+
+          // 시간 종료
+          if (elapsed >= totalDuration) {
+            clearInterval(timer);
+            instruction.textContent = "✅ Bug fixed. Vision refreshed. 👀";
+            countdownDisplay.textContent = "FIXED";
+
+            // 웃는 표정으로 변형
+            movePupils(-8, -10); // 눈을 위로 올리고 안쪽으로
+
+            startBtn.disabled = false;
+            isExercising = false;
+          }
+        }, 100);
+      });
+    </script>
+
+    <!-- script Tool End -->
+  </body>
+</html>
