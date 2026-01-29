@@ -28,10 +28,18 @@ jobs:
       - name: Fetch Hacker News feed
         run: python python_job/fetch_hn.py
 
-      # 5. 결과 파일 업로드 (Artifact)
-      - name: Upload HN feed artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: hn-feed
-          path: python_job/data/hn.json
+      # 5. 결과 파일 커밋 & 푸시 (.gitignore 무시)
+      - name: Commit HN feed json
+        run: |
+          git config user.name "hn-bot"
+          git config user.email "hn-bot@users.noreply.github.com"
+      
+          # .gitignore 무시하고 강제 추가
+          git add -f python_job/data/hn.json
+      
+          # 변경 없으면 종료
+          git diff --cached --quiet && echo "No changes" && exit 0
+      
+          git commit -m "chore: update hn.json"
+          git push
 
