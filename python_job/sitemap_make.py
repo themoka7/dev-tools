@@ -12,7 +12,7 @@ root = Path(".")
 targets = []
 
 # 1) index.html
-index_file = root / "index.html"
+index_file = root / ""
 if index_file.exists():
     targets.append(index_file)
 
