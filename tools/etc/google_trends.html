@@ -2,20 +2,38 @@
 <html lang="en" data-bs-theme="auto">
   <head>
     <!-- ====== Online Tools Cafe 공통 head 시작 ====== -->
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="description" content="Google Trends Visualizer - Free online tool to visualize and analyze Google Trends data. See trending searches, keywords popularity, and search trends over time." />
-<meta name="author" content="Online Tools Cafe" />
-<meta name="keywords" content="google trends, trends analyzer, search trends, trending keywords, trends visualization, online tools" />
-<meta property="og:site_name" content="Online Tools Cafe" />
-<meta property="og:title" content="Google Trends Visualizer Trends Analysis Tool - Online Tools Cafe" />
-<meta property="og:description" content="Google Trends Visualizer - Free online tool to visualize and analyze Google Trends data. See trending searches, keywords popularity, and search trends over t..." />
-<meta property="og:url" content="https://themoka7.github.io/dev-tools/tools/etc/google_trends.html" />
-<meta property="og:type" content="website" />
-<meta name="theme-color" content="#712cf9" />
-<title>Google Trends Visualizer - Free Online Trends Analysis Tool</title>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-QETV2ZT0NN"></script>
-<script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Google Trends Visualizer - Free online tool to visualize and analyze Google Trends data. See trending searches, keywords popularity, and search trends over time."
+    />
+    <meta name="author" content="Online Tools Cafe" />
+    <meta
+      name="keywords"
+      content="google trends, trends analyzer, search trends, trending keywords, trends visualization, online tools"
+    />
+    <meta property="og:site_name" content="Online Tools Cafe" />
+    <meta
+      property="og:title"
+      content="Google Trends Visualizer Trends Analysis Tool - Online Tools Cafe"
+    />
+    <meta
+      property="og:description"
+      content="Google Trends Visualizer - Free online tool to visualize and analyze Google Trends data. See trending searches, keywords popularity, and search trends over t..."
+    />
+    <meta
+      property="og:url"
+      content="https://themoka7.github.io/dev-tools/tools/etc/google_trends.html"
+    />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#712cf9" />
+    <title>Google Trends Visualizer - Free Online Trends Analysis Tool</title>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-QETV2ZT0NN"
+    ></script>
+    <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
         dataLayer.push(arguments);
@@ -23,11 +41,18 @@
       gtag("js", new Date());
       gtag("config", "G-QETV2ZT0NN");
     </script>
-<script src="/dev-tools/assets/dist/js/jquery-3.7.1.min.js"></script>
-<link href="/dev-tools/assets/dist/css/bootstrap.min.css" rel="stylesheet" />
-<link href="/dev-tools/dashboard.css" rel="stylesheet" />
-<link rel="canonical" href="https://themoka7.github.io/dev-tools/tools/etc/google_trends.html" />
-    <!-- ====== Online Tools Cafe 공통 head 끝 (각 도구 페이지에도 복사) ====== --></head>
+    <script src="/dev-tools/assets/dist/js/jquery-3.7.1.min.js"></script>
+    <link
+      href="/dev-tools/assets/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="/dev-tools/dashboard.css" rel="stylesheet" />
+    <link
+      rel="canonical"
+      href="https://themoka7.github.io/dev-tools/tools/etc/google_trends.html"
+    />
+    <!-- ====== Online Tools Cafe 공통 head 끝 (각 도구 페이지에도 복사) ====== -->
+  </head>
   <body>
     <div id="symbols"></div>
     <div id="mode"></div>
@@ -186,16 +211,16 @@
                 <button
                   type="button"
                   class="btn btn-sm btn-outline-secondary country-btn"
-                  data-country="KR"
+                  data-country="US"
                 >
-                  Korea
+                  USA
                 </button>
                 <button
                   type="button"
                   class="btn btn-sm btn-outline-secondary country-btn"
-                  data-country="US"
+                  data-country="KR"
                 >
-                  USA
+                  Korea
                 </button>
                 <button
                   type="button"
@@ -484,7 +509,7 @@
             `(Last updated: ${timestamp})`;
 
           // 초기 차트 렌더링
-          renderChart(trendsData, "KR");
+          renderChart(trendsData, "US");
 
           // 나라 버튼 클릭 이벤트
           document.querySelectorAll(".country-btn").forEach((btn) => {
@@ -494,8 +519,8 @@
 
               // 제목 업데이트
               const countryNames = {
-                KR: "Korea",
                 US: "USA",
+                KR: "Korea",
                 JP: "Japan",
                 GB: "UK",
                 DE: "Germany",
@@ -522,12 +547,12 @@
             });
           });
 
-          // 초기 Korea 버튼 활성화 상태 설정
+          // 초기 USA 버튼 활성화 상태 설정
           document
-            .querySelector('[data-country="KR"]')
+            .querySelector('[data-country="US"]')
             .classList.remove("btn-outline-secondary");
           document
-            .querySelector('[data-country="KR"]')
+            .querySelector('[data-country="US"]')
             .classList.add("btn-secondary");
         })
         .catch((error) => {

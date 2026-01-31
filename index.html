@@ -323,16 +323,16 @@
                     <button
                       type="button"
                       class="btn btn-sm btn-outline-secondary country-btn"
-                      data-country="KR"
+                      data-country="US"
                     >
-                      Korea
+                      USA
                     </button>
                     <button
                       type="button"
                       class="btn btn-sm btn-outline-secondary country-btn"
-                      data-country="US"
+                      data-country="KR"
                     >
-                      USA
+                      Korea
                     </button>
                     <button
                       type="button"
@@ -615,7 +615,7 @@
                       `(Last updated: ${timestamp})`;
 
                     // 초기 차트 렌더링
-                    renderChart(trendsData, "KR");
+                    renderChart(trendsData, "US");
 
                     // 나라 버튼 클릭 이벤트
                     document.querySelectorAll(".country-btn").forEach((btn) => {
@@ -625,8 +625,8 @@
 
                         // 제목 업데이트
                         const countryNames = {
-                          KR: "Korea",
                           US: "USA",
+                          KR: "Korea",
                           JP: "Japan",
                           GB: "UK",
                           DE: "Germany",
@@ -657,10 +657,10 @@
 
                     // 초기 Korea 버튼 활성화 상태 설정
                     document
-                      .querySelector('[data-country="KR"]')
+                      .querySelector('[data-country="US"]')
                       .classList.remove("btn-outline-secondary");
                     document
-                      .querySelector('[data-country="KR"]')
+                      .querySelector('[data-country="US"]')
                       .classList.add("btn-secondary");
                   })
                   .catch((error) => {
