@@ -100,9 +100,7 @@ const loadFragment = (selector, url, callback) => {
     dataType: 'html',
     success: function(data) {
       try {
-        console.log(`Raw data from ${url}:`, data.substring(0, 200));
         const cleanedData = stripLiveReload(data);
-        console.log(`Cleaned data from ${url}:`, cleanedData.substring(0, 200));
         if (cleanedData && cleanedData.length > 0) {
           let processedData = cleanedData;
           
@@ -118,18 +116,18 @@ const loadFragment = (selector, url, callback) => {
           }
           
           $(selector).html(processedData);
-          console.log(`✓ Loaded: ${url}`);
+         
           if (callback) callback();
         } else {
-          console.warn(`⚠ Empty content after cleanup: ${url}`);
+          //console.warn(`⚠ Empty content after cleanup: ${url}`);
         }
       } catch(e) {
-        console.error(`✗ Error processing ${url}:`, e);
-        console.error(`Raw data was:`, data);
+        //console.error(`✗ Error processing ${url}:`, e);
+        //console.error(`Raw data was:`, data);
       }
     },
     error: function(jqXHR, textStatus, errorThrown) {
-      console.error(`✗ Failed to load ${url}:`, textStatus, errorThrown);
+      //console.error(`✗ Failed to load ${url}:`, textStatus, errorThrown);
     }
   });
 };
