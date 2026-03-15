@@ -1,11 +1,11 @@
 {
-  "timestamp": "2026-03-15 14:29:03",
+  "timestamp": "2026-03-15 16:30:20",
   "data": {
     "KR": [
       {
         "trend": "엘에이 fc 대 세인트루이스 시티 sc",
         "search_volume": 20000000,
-        "start_date": "~12",
+        "start_date": "~14",
         "analysis": "trending_up"
       },
       {
@@ -17,19 +17,19 @@
       {
         "trend": "맨유 대 애스턴 빌라",
         "search_volume": 2000000,
-        "start_date": "~1",
+        "start_date": "~3",
         "analysis": "trending_up"
       },
       {
         "trend": "웨스트 햄 대 맨 시티",
         "search_volume": 2000000,
-        "start_date": "~16",
+        "start_date": "~20",
         "analysis": "timelapse"
       },
       {
         "trend": "아스널 대 에버턴",
         "search_volume": 1000000,
-        "start_date": "~20",
+        "start_date": "~22",
         "analysis": "timelapse"
       },
       {
@@ -37,6 +37,12 @@
         "search_volume": 1000000,
         "start_date": "~19",
         "analysis": "timelapse"
+      },
+      {
+        "trend": "바르셀로나 대 세비야",
+        "search_volume": 5000,
+        "start_date": "~2",
+        "analysis": "trending_up"
       },
       {
         "trend": "제주 대 fc 서울",
@@ -65,31 +71,19 @@
       {
         "trend": "네타냐후",
         "search_volume": 2000,
-        "start_date": "~6",
+        "start_date": "~8",
         "analysis": "trending_up"
       },
       {
         "trend": "bangladesh vs pakistan",
         "search_volume": 2000,
-        "start_date": "~6",
+        "start_date": "~8",
         "analysis": "trending_up"
       },
       {
         "trend": "헤이수스",
         "search_volume": 2000,
-        "start_date": "~11",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "로또",
-        "search_volume": 1215,
-        "start_date": "~5",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "신봉선",
-        "search_volume": 2000,
-        "start_date": "~1",
+        "start_date": "~13",
         "analysis": "timelapse"
       },
       {
@@ -99,13 +93,37 @@
         "analysis": "timelapse"
       },
       {
+        "trend": "신봉선",
+        "search_volume": 2000,
+        "start_date": "~1",
+        "analysis": "timelapse"
+      },
+      {
+        "trend": "로또",
+        "search_volume": 1215,
+        "start_date": "~7",
+        "analysis": "timelapse"
+      },
+      {
         "trend": "new zealand vs south africa",
         "search_volume": 2000,
         "start_date": "~6",
         "analysis": "timelapse"
       },
       {
-        "trend": "이제훈",
+        "trend": "울산 현대모비스 대 부산 kcc",
+        "search_volume": 2000,
+        "start_date": "~3",
+        "analysis": "timelapse"
+      },
+      {
+        "trend": "man united vs aston villa",
+        "search_volume": 1000,
+        "start_date": "~3",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "barcelona vs sevilla",
         "search_volume": 1000,
         "start_date": "~1",
         "analysis": "trending_up"
@@ -113,38 +131,20 @@
       {
         "trend": "김길리",
         "search_volume": 1000,
-        "start_date": "~2",
+        "start_date": "~4",
         "analysis": "trending_up"
       },
       {
-        "trend": "하지원",
+        "trend": "제베원",
         "search_volume": 1000,
-        "start_date": "~2",
+        "start_date": "~4",
         "analysis": "trending_up"
       },
       {
-        "trend": "울산 현대모비스 대 부산 kcc",
+        "trend": "알리",
         "search_volume": 1000,
-        "start_date": "~3",
-        "analysis": "timelapse"
-      },
-      {
-        "trend": "키미 안토넬리",
-        "search_volume": 1000,
-        "start_date": "~3",
-        "analysis": "timelapse"
-      },
-      {
-        "trend": "3.",
-        "search_volume": 3,
-        "start_date": "~9",
-        "analysis": "timelapse"
-      },
-      {
-        "trend": "원주 db 대 창원 lg",
-        "search_volume": 1000,
-        "start_date": "~3",
-        "analysis": "timelapse"
+        "start_date": "~1",
+        "analysis": "trending_up"
       }
     ],
     "US": [
@@ -152,18 +152,24 @@
         "trend": "weather",
         "search_volume": 1000000,
         "start_date": "~2",
+        "analysis": "timelapse"
+      },
+      {
+        "trend": "barcelona - sevilla",
+        "search_volume": 200000,
+        "start_date": "~2",
         "analysis": "trending_up"
       },
       {
         "trend": "nuggets vs lakers",
         "search_volume": 200000,
-        "start_date": "~14",
+        "start_date": "~16",
         "analysis": "trending_up"
       },
       {
         "trend": "japan vs venezuela wbc",
         "search_volume": 200000,
-        "start_date": "~15",
+        "start_date": "~17",
         "analysis": "trending_up"
       },
       {
@@ -173,45 +179,63 @@
         "analysis": "timelapse"
       },
       {
-        "trend": "real madrid vs elche",
+        "trend": "man united vs aston villa",
         "search_volume": 100000,
-        "start_date": "~19",
+        "start_date": "~3",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "selection sunday",
+        "search_volume": 100000,
+        "start_date": "~23",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "harry styles",
+        "search_volume": 100000,
+        "start_date": "~12",
         "analysis": "trending_up"
       },
       {
         "trend": "the madison cast",
         "search_volume": 100000,
-        "start_date": "~21",
+        "start_date": "~23",
         "analysis": "trending_up"
       },
       {
         "trend": "max dowman",
         "search_volume": 100000,
-        "start_date": "~19",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "duke vs virginia",
-        "search_volume": 100000,
-        "start_date": "~13",
+        "start_date": "~21",
         "analysis": "trending_up"
       },
       {
         "trend": "puerto rico vs italy",
         "search_volume": 100000,
-        "start_date": "~21",
+        "start_date": "~23",
         "analysis": "trending_up"
       },
       {
-        "trend": "luka doncic",
+        "trend": "duke vs virginia",
         "search_volume": 100000,
-        "start_date": "~11",
+        "start_date": "~15",
         "analysis": "trending_up"
+      },
+      {
+        "trend": "real madrid vs elche",
+        "search_volume": 100000,
+        "start_date": "~19",
+        "analysis": "timelapse"
       },
       {
         "trend": "west ham vs man city",
         "search_volume": 100000,
         "start_date": "~17",
+        "analysis": "timelapse"
+      },
+      {
+        "trend": "luka doncic",
+        "search_volume": 100000,
+        "start_date": "~11",
         "analysis": "timelapse"
       },
       {
@@ -227,69 +251,45 @@
         "analysis": "timelapse"
       },
       {
-        "trend": "pumas - cruz azul",
-        "search_volume": 50000,
-        "start_date": "~12",
+        "trend": "oscars",
+        "search_volume": 202650000,
+        "start_date": "~4",
         "analysis": "trending_up"
       },
       {
-        "trend": "selection sunday",
+        "trend": "pumas - cruz azul",
         "search_volume": 50000,
-        "start_date": "~21",
+        "start_date": "~14",
         "analysis": "trending_up"
       },
       {
         "trend": "wizards vs celtics",
         "search_volume": 50000,
-        "start_date": "~17",
+        "start_date": "~19",
         "analysis": "trending_up"
       },
       {
-        "trend": "harry styles",
+        "trend": "kings vs clippers",
         "search_volume": 50000,
-        "start_date": "~10",
+        "start_date": "~14",
         "analysis": "trending_up"
       },
       {
-        "trend": "magic vs heat",
+        "trend": "dr vs usa",
         "search_volume": 50000,
-        "start_date": "~15",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "oscars",
-        "search_volume": 202650000,
-        "start_date": "~2",
+        "start_date": "~3",
         "analysis": "trending_up"
       },
       {
         "trend": "rick pitino",
         "search_volume": 50000,
-        "start_date": "~16",
+        "start_date": "~18",
         "analysis": "trending_up"
       },
       {
-        "trend": "toluca - atlas",
+        "trend": "magic vs heat",
         "search_volume": 50000,
-        "start_date": "~13",
-        "analysis": "timelapse"
-      },
-      {
-        "trend": "hornets vs spurs",
-        "search_volume": 50000,
-        "start_date": "~18",
-        "analysis": "timelapse"
-      },
-      {
-        "trend": "chelsea vs newcastle",
-        "search_volume": 50000,
-        "start_date": "~19",
-        "analysis": "timelapse"
-      },
-      {
-        "trend": "inter miami - charlotte fc",
-        "search_volume": 50000,
-        "start_date": "~13",
+        "start_date": "~16",
         "analysis": "timelapse"
       }
     ],
@@ -297,43 +297,49 @@
       {
         "trend": "伊藤大海",
         "search_volume": 1000000,
-        "start_date": "~11",
+        "start_date": "~13",
         "analysis": "trending_up"
       },
       {
         "trend": "地震速報",
         "search_volume": 100000,
-        "start_date": "~9",
-        "analysis": "trending_up"
+        "start_date": "~10",
+        "analysis": "timelapse"
       },
       {
-        "trend": "鈴木誠也 怪我",
-        "search_volume": 50000,
-        "start_date": "~12",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "足利義昭",
+        "trend": "若島津",
         "search_volume": 50000,
         "start_date": "~5",
         "analysis": "trending_up"
       },
       {
-        "trend": "wbc 次回",
+        "trend": "鈴木誠也 怪我",
         "search_volume": 50000,
-        "start_date": "~10",
+        "start_date": "~14",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "足利義昭",
+        "search_volume": 50000,
+        "start_date": "~7",
         "analysis": "trending_up"
       },
       {
         "trend": "森下翔太",
         "search_volume": 50000,
-        "start_date": "~12",
+        "start_date": "~14",
         "analysis": "timelapse"
       },
       {
-        "trend": "井端監督 なぜ",
+        "trend": "山本由伸",
         "search_volume": 50000,
-        "start_date": "~9",
+        "start_date": "~2",
+        "analysis": "timelapse"
+      },
+      {
+        "trend": "wbc 次回",
+        "search_volume": 50000,
+        "start_date": "~12",
         "analysis": "timelapse"
       },
       {
@@ -345,32 +351,32 @@
       {
         "trend": "地震速報 神奈川",
         "search_volume": 20000,
-        "start_date": "~4",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "若島津",
-        "search_volume": 20000,
-        "start_date": "~3",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "モンスト コラボ",
-        "search_volume": 20000,
-        "start_date": "~11",
+        "start_date": "~6",
         "analysis": "trending_up"
       },
       {
         "trend": "ロビン・ガニンガム",
         "search_volume": 20000,
-        "start_date": "~20",
+        "start_date": "~22",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "モンスト コラボ",
+        "search_volume": 20000,
+        "start_date": "~13",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "井端",
+        "search_volume": 20000,
+        "start_date": "~14",
         "analysis": "trending_up"
       },
       {
         "trend": "日本 対 フィリピン",
         "search_volume": 20000,
-        "start_date": "~10",
-        "analysis": "trending_up"
+        "start_date": "~11",
+        "analysis": "timelapse"
       },
       {
         "trend": "長崎 対 福岡",
@@ -382,6 +388,12 @@
         "trend": "イタリア プエルトリコ",
         "search_volume": 20000,
         "start_date": "~9",
+        "analysis": "timelapse"
+      },
+      {
+        "trend": "野球",
+        "search_volume": 20000,
+        "start_date": "~4",
         "analysis": "timelapse"
       },
       {
@@ -397,101 +409,83 @@
         "analysis": "timelapse"
       },
       {
-        "trend": "西野亮廣",
+        "trend": "netflix",
+        "search_volume": 20000,
+        "start_date": "~2",
+        "analysis": "timelapse"
+      },
+      {
+        "trend": "就職率",
         "search_volume": 10000,
-        "start_date": "~1",
+        "start_date": "~8",
         "analysis": "trending_up"
       },
       {
         "trend": "google chrome ゼロデイ",
         "search_volume": 10000,
-        "start_date": "~20",
+        "start_date": "~22",
         "analysis": "trending_up"
       },
       {
-        "trend": "ボクシング",
+        "trend": "増田陸",
         "search_volume": 10000,
-        "start_date": "~10",
+        "start_date": "~9",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "西野亮廣",
+        "search_volume": 10000,
+        "start_date": "~3",
         "analysis": "trending_up"
       },
       {
         "trend": "アウダーシア",
         "search_volume": 10000,
-        "start_date": "~7",
+        "start_date": "~9",
         "analysis": "trending_up"
-      },
-      {
-        "trend": "池内博之",
-        "search_volume": 10000,
-        "start_date": "~10",
-        "analysis": "timelapse"
-      },
-      {
-        "trend": "レイカーズ 対 ナゲッツ",
-        "search_volume": 10000,
-        "start_date": "~10",
-        "analysis": "timelapse"
-      },
-      {
-        "trend": "恵俊彰",
-        "search_volume": 10000,
-        "start_date": "~1",
-        "analysis": "timelapse"
-      },
-      {
-        "trend": "国分寺駅 人身事故",
-        "search_volume": 10000,
-        "start_date": "~5",
-        "analysis": "timelapse"
       }
     ],
     "GB": [
       {
         "trend": "mother's day",
         "search_volume": 500000,
-        "start_date": "~14",
+        "start_date": "~16",
         "analysis": "trending_up"
       },
       {
-        "trend": "arsenal vs everton",
+        "trend": "man united vs aston villa",
         "search_volume": 200000,
-        "start_date": "~23",
+        "start_date": "~3",
         "analysis": "trending_up"
       },
       {
         "trend": "west ham vs man city",
         "search_volume": 200000,
-        "start_date": "~19",
+        "start_date": "~21",
         "analysis": "trending_up"
       },
       {
-        "trend": "chelsea vs newcastle",
+        "trend": "max dowman",
         "search_volume": 200000,
-        "start_date": "~22",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "france vs england",
-        "search_volume": 200000,
-        "start_date": "~22",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "man united vs aston villa",
-        "search_volume": 100000,
-        "start_date": "~1",
+        "start_date": "~21",
         "analysis": "trending_up"
       },
       {
         "trend": "john alford",
         "search_volume": 100000,
-        "start_date": "~17",
+        "start_date": "~19",
         "analysis": "trending_up"
       },
       {
-        "trend": "kimi antonelli",
+        "trend": "youngest f",
+        "search_volume": 1,
+        "start_date": "~8",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "england rugby steve borthwick",
         "search_volume": 100000,
-        "start_date": "~7",
+        "start_date": "",
         "analysis": "trending_up"
       },
       {
@@ -501,9 +495,27 @@
         "analysis": "timelapse"
       },
       {
+        "trend": "liverpool vs tottenham",
+        "search_volume": 50000,
+        "start_date": "~4",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "crystal palace vs leeds united",
+        "search_volume": 50000,
+        "start_date": "~3",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "st. mirren vs rangers",
+        "search_volume": 50000,
+        "start_date": "~5",
+        "analysis": "trending_up"
+      },
+      {
         "trend": "real madrid vs elche",
         "search_volume": 50000,
-        "start_date": "~19",
+        "start_date": "~21",
         "analysis": "trending_up"
       },
       {
@@ -513,45 +525,39 @@
         "analysis": "timelapse"
       },
       {
-        "trend": "wales rugby",
-        "search_volume": 50000,
-        "start_date": "~4",
-        "analysis": "timelapse"
-      },
-      {
         "trend": "premier league table",
         "search_volume": 50000,
         "start_date": "~3",
         "analysis": "timelapse"
       },
       {
-        "trend": "st. mirren vs rangers",
+        "trend": "nottm forest vs fulham",
         "search_volume": 20000,
         "start_date": "~3",
         "analysis": "trending_up"
       },
       {
-        "trend": "crystal palace vs leeds united",
+        "trend": "barcelona vs sevilla",
         "search_volume": 20000,
-        "start_date": "~1",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "nottm forest vs fulham",
-        "search_volume": 20000,
-        "start_date": "~1",
+        "start_date": "~2",
         "analysis": "trending_up"
       },
       {
         "trend": "bangladesh vs pakistan",
         "search_volume": 20000,
-        "start_date": "~6",
+        "start_date": "~8",
         "analysis": "trending_up"
       },
       {
         "trend": "new zealand vs south africa",
         "search_volume": 20000,
-        "start_date": "~8",
+        "start_date": "~10",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "oscars",
+        "search_volume": 202620000,
+        "start_date": "~17",
         "analysis": "trending_up"
       },
       {
@@ -567,37 +573,31 @@
         "analysis": "timelapse"
       },
       {
-        "trend": "who won the six nations",
+        "trend": "chelsea",
         "search_volume": 20000,
-        "start_date": "~13",
+        "start_date": "~1",
         "analysis": "timelapse"
       },
       {
-        "trend": "celtic",
+        "trend": "wales v italy score",
         "search_volume": 20000,
+        "start_date": "~4",
+        "analysis": "timelapse"
+      },
+      {
+        "trend": "dundee vs dundee united",
+        "search_volume": 10000,
         "start_date": "~2",
-        "analysis": "timelapse"
-      },
-      {
-        "trend": "london vs arsenal",
-        "search_volume": 10000,
-        "start_date": "~3",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "oscars",
-        "search_volume": 202610000,
-        "start_date": "~15",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "snow uk weather forecast",
-        "search_volume": 10000,
-        "start_date": "~5",
         "analysis": "trending_up"
       }
     ],
     "DE": [
+      {
+        "trend": "schalke – hannover",
+        "search_volume": 96200000,
+        "start_date": "~4",
+        "analysis": "trending_up"
+      },
       {
         "trend": "hsv – köln",
         "search_volume": 200000,
@@ -605,28 +605,28 @@
         "analysis": "timelapse"
       },
       {
-        "trend": "schalke – hannover",
-        "search_volume": 96100000,
+        "trend": "werder bremen – mainz",
+        "search_volume": 100000,
         "start_date": "~2",
         "analysis": "trending_up"
       },
       {
-        "trend": "leverkusen vs. bayern",
-        "search_volume": 100000,
-        "start_date": "~19",
-        "analysis": "timelapse"
-      },
-      {
         "trend": "dynamo – preußen münster",
         "search_volume": 50000,
-        "start_date": "~2",
+        "start_date": "~4",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "tiefkühlgemüse rewe rückruf",
+        "search_volume": 50000,
+        "start_date": "~17",
         "analysis": "trending_up"
       },
       {
         "trend": "real madrid – elche",
         "search_volume": 50000,
-        "start_date": "~19",
-        "analysis": "trending_up"
+        "start_date": "~20",
+        "analysis": "timelapse"
       },
       {
         "trend": "hertha – bochum",
@@ -635,28 +635,46 @@
         "analysis": "timelapse"
       },
       {
-        "trend": "dunkle vermächtnis film",
+        "trend": "nebra",
         "search_volume": 50000,
-        "start_date": "~11",
+        "start_date": "~7",
         "analysis": "timelapse"
       },
       {
-        "trend": "tiefkühlgemüse rewe rückruf",
+        "trend": "barcelona – sevilla",
         "search_volume": 20000,
-        "start_date": "~15",
+        "start_date": "~2",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "manunited – aston villa",
+        "search_volume": 20000,
+        "start_date": "~3",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "banksy identität",
+        "search_volume": 20000,
+        "start_date": "~1",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "kommunalwahl hessen",
+        "search_volume": 202620000,
+        "start_date": "~10",
         "analysis": "trending_up"
       },
       {
         "trend": "motörhead gitarrist phil campbell",
         "search_volume": 20000,
-        "start_date": "~18",
+        "start_date": "~20",
         "analysis": "trending_up"
       },
       {
         "trend": "kimi antonelli",
         "search_volume": 20000,
-        "start_date": "~7",
-        "analysis": "trending_up"
+        "start_date": "~9",
+        "analysis": "timelapse"
       },
       {
         "trend": "west ham – man city",
@@ -671,12 +689,6 @@
         "analysis": "timelapse"
       },
       {
-        "trend": "formel",
-        "search_volume": 1,
-        "start_date": "~1",
-        "analysis": "timelapse"
-      },
-      {
         "trend": "nordkorea ballistische raketen",
         "search_volume": 20000,
         "start_date": "~18",
@@ -686,6 +698,12 @@
         "trend": "arsenal – everton",
         "search_volume": 20000,
         "start_date": "~17",
+        "analysis": "timelapse"
+      },
+      {
+        "trend": "formel",
+        "search_volume": 1,
+        "start_date": "~1",
         "analysis": "timelapse"
       },
       {
@@ -719,66 +737,54 @@
         "analysis": "timelapse"
       },
       {
-        "trend": "werder bremen – mainz",
+        "trend": "freiburg – union berlin",
         "search_volume": 10000,
         "start_date": "",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "banksy",
-        "search_volume": 10000,
-        "start_date": "~3",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "nick woltemade",
-        "search_volume": 10000,
-        "start_date": "~4",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "kommunalwahl hessen",
-        "search_volume": 202610000,
-        "start_date": "~8",
         "analysis": "trending_up"
       }
     ],
     "FR": [
       {
         "trend": "bruno salomone",
-        "search_volume": 500000,
-        "start_date": "~2",
+        "search_volume": 1000000,
+        "start_date": "~4",
         "analysis": "trending_up"
       },
       {
         "trend": "france – angleterre",
         "search_volume": 500000,
-        "start_date": "~18",
+        "start_date": "~20",
         "analysis": "trending_up"
       },
       {
         "trend": "elections municipales",
-        "search_volume": 100000,
-        "start_date": "~21",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "real madrid – elche",
-        "search_volume": 100000,
-        "start_date": "~19",
+        "search_volume": 200000,
+        "start_date": "~23",
         "analysis": "trending_up"
       },
       {
         "trend": "fermeture bureau de vote",
         "search_volume": 100000,
-        "start_date": "~7",
+        "start_date": "~9",
         "analysis": "trending_up"
       },
       {
-        "trend": "lorient – lens",
+        "trend": "real madrid – elche",
         "search_volume": 100000,
-        "start_date": "~23",
-        "analysis": "timelapse"
+        "start_date": "~21",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "barcelone – séville",
+        "search_volume": 50000,
+        "start_date": "~2",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "strasbourg – paris fc",
+        "search_volume": 50000,
+        "start_date": "~3",
+        "analysis": "trending_up"
       },
       {
         "trend": "monaco – brest",
@@ -787,52 +793,58 @@
         "analysis": "timelapse"
       },
       {
-        "trend": "strasbourg – paris fc",
+        "trend": "le havre – lyon",
         "search_volume": 20000,
         "start_date": "~1",
         "analysis": "trending_up"
       },
       {
-        "trend": "chelsea – newcastle",
+        "trend": "manchester united – aston villa",
         "search_volume": 20000,
-        "start_date": "~21",
+        "start_date": "~3",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "accident jaguar",
+        "search_volume": 20000,
+        "start_date": "~5",
         "analysis": "trending_up"
       },
       {
         "trend": "west ham – manchester city",
         "search_volume": 20000,
-        "start_date": "~19",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "pollock rugby",
-        "search_volume": 20000,
-        "start_date": "~18",
+        "start_date": "~21",
         "analysis": "trending_up"
       },
       {
         "trend": "catherine ceylac",
         "search_volume": 20000,
-        "start_date": "~19",
+        "start_date": "~21",
         "analysis": "trending_up"
       },
       {
-        "trend": "kimi antonelli",
-        "search_volume": 20000,
+        "trend": "classement f",
+        "search_volume": 120000,
         "start_date": "~7",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "max dowman",
-        "search_volume": 20000,
-        "start_date": "~19",
         "analysis": "trending_up"
       },
       {
         "trend": "delphine ernotte",
         "search_volume": 20000,
-        "start_date": "~5",
+        "start_date": "~7",
         "analysis": "trending_up"
+      },
+      {
+        "trend": "chelsea – newcastle",
+        "search_volume": 20000,
+        "start_date": "~23",
+        "analysis": "timelapse"
+      },
+      {
+        "trend": "arsenal – everton",
+        "search_volume": 20000,
+        "start_date": "~21",
+        "analysis": "timelapse"
       },
       {
         "trend": "grenoble – saint-étienne",
@@ -853,39 +865,27 @@
         "analysis": "timelapse"
       },
       {
-        "trend": "atlético madrid – getafe",
-        "search_volume": 20000,
-        "start_date": "~19",
-        "analysis": "timelapse"
-      },
-      {
-        "trend": "pays de galles – italie",
-        "search_volume": 20000,
-        "start_date": "~7",
-        "analysis": "timelapse"
-      },
-      {
-        "trend": "accident jaguar",
-        "search_volume": 10000,
-        "start_date": "~3",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "manchester united – aston villa",
+        "trend": "metz – toulouse",
         "search_volume": 10000,
         "start_date": "~1",
         "analysis": "trending_up"
       },
       {
-        "trend": "bureau de vote",
+        "trend": "kelly massol",
         "search_volume": 10000,
-        "start_date": "~20",
+        "start_date": "~1",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "schumacher",
+        "search_volume": 10000,
+        "start_date": "~10",
         "analysis": "trending_up"
       },
       {
         "trend": "oscars",
         "search_volume": 202610000,
-        "start_date": "~15",
+        "start_date": "~17",
         "analysis": "trending_up"
       }
     ],
@@ -893,14 +893,14 @@
       {
         "trend": "new zealand vs south africa",
         "search_volume": 2000000,
-        "start_date": "~8",
+        "start_date": "~10",
         "analysis": "trending_up"
       },
       {
-        "trend": "मौसम",
-        "search_volume": 2000000,
-        "start_date": "~6",
-        "analysis": "timelapse"
+        "trend": "कल का मौसम",
+        "search_volume": 1000000,
+        "start_date": "~1",
+        "analysis": "trending_up"
       },
       {
         "trend": "weather",
@@ -910,172 +910,178 @@
       },
       {
         "trend": "weather tomorrow",
-        "search_volume": 1000000,
-        "start_date": "~2",
-        "analysis": "timelapse"
+        "search_volume": 500000,
+        "start_date": "~1",
+        "analysis": "trending_up"
       },
       {
         "trend": "real madrid vs elche",
         "search_volume": 200000,
-        "start_date": "~20",
+        "start_date": "~22",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "saad masood",
+        "search_volume": 200000,
+        "start_date": "~8",
         "analysis": "trending_up"
       },
       {
         "trend": "bangladesh national cricket team vs pakistan national cricket team match scorecard",
         "search_volume": 200000,
-        "start_date": "~6",
+        "start_date": "~8",
         "analysis": "trending_up"
       },
       {
         "trend": "weather today",
         "search_volume": 200000,
-        "start_date": "~15",
+        "start_date": "~17",
         "analysis": "trending_up"
       },
       {
-        "trend": "election date",
-        "search_volume": 2026100000,
-        "start_date": "~9",
+        "trend": "barcelona vs sevilla",
+        "search_volume": 100000,
+        "start_date": "~3",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "man united vs aston villa",
+        "search_volume": 100000,
+        "start_date": "~3",
         "analysis": "trending_up"
       },
       {
         "trend": "al-khaleej vs al-nassr",
         "search_volume": 100000,
-        "start_date": "~20",
+        "start_date": "~22",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "election date",
+        "search_volume": 2026100000,
+        "start_date": "~11",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "arsenal vs everton",
+        "search_volume": 100000,
+        "start_date": "~23",
         "analysis": "trending_up"
       },
       {
         "trend": "tanzid hasan",
         "search_volume": 100000,
-        "start_date": "~5",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "man united vs aston villa",
-        "search_volume": 50000,
-        "start_date": "~1",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "saad masood",
-        "search_volume": 50000,
-        "start_date": "~6",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "arsenal vs everton",
-        "search_volume": 50000,
-        "start_date": "~21",
+        "start_date": "~7",
         "analysis": "trending_up"
       },
       {
         "trend": "west ham vs man city",
         "search_volume": 50000,
-        "start_date": "~19",
+        "start_date": "~21",
         "analysis": "trending_up"
       },
       {
-        "trend": "न्यूजीलैंड बनाम दक्षिण अफ्रीका",
+        "trend": "nqobani mokoena",
         "search_volume": 50000,
-        "start_date": "~8",
+        "start_date": "~12",
         "analysis": "trending_up"
       },
       {
         "trend": "chelsea vs newcastle",
         "search_volume": 50000,
-        "start_date": "~21",
+        "start_date": "~23",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "न्यूजीलैंड बनाम दक्षिण अफ्रीका",
+        "search_volume": 50000,
+        "start_date": "~10",
         "analysis": "trending_up"
       },
       {
         "trend": "बांगलादेश बनाम पाकिस्तान",
         "search_volume": 20000,
-        "start_date": "~6",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "nqobani mokoena",
-        "search_volume": 20000,
-        "start_date": "~10",
+        "start_date": "~8",
         "analysis": "trending_up"
       },
       {
         "trend": "northeast united vs jamshedpur",
         "search_volume": 20000,
-        "start_date": "~3",
+        "start_date": "~5",
         "analysis": "trending_up"
       },
       {
         "trend": "dian forrester",
         "search_volume": 20000,
-        "start_date": "~10",
+        "start_date": "~12",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "salman ali agha",
+        "search_volume": 20000,
+        "start_date": "~2",
         "analysis": "trending_up"
       },
       {
         "trend": "rohit shetty golmaal",
         "search_volume": 520000,
-        "start_date": "~19",
-        "analysis": "trending_up"
+        "start_date": "~20",
+        "analysis": "timelapse"
       },
       {
-        "trend": "papmochani ekadashi vrat katha",
+        "trend": "charlotte vs inter miami",
         "search_volume": 20000,
-        "start_date": "~13",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "netanyahu latest news",
-        "search_volume": 20000,
-        "start_date": "~22",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "আজকের আবহাওয়া",
-        "search_volume": 20000,
-        "start_date": "~3",
-        "analysis": "trending_up"
+        "start_date": "~12",
+        "analysis": "timelapse"
       }
     ],
     "BR": [
       {
         "trend": "ec vitória x atlético-mg",
         "search_volume": 500000,
-        "start_date": "~17",
+        "start_date": "~19",
         "analysis": "trending_up"
       },
       {
-        "trend": "flamengo x botafogo",
+        "trend": "flamengo-botafogo",
         "search_volume": 500000,
-        "start_date": "~23",
+        "start_date": "~22",
         "analysis": "trending_up"
       },
       {
-        "trend": "real madrid x elche",
+        "trend": "barcelona x sevilla",
         "search_volume": 200000,
-        "start_date": "~22",
+        "start_date": "~4",
         "analysis": "trending_up"
       },
       {
         "trend": "west ham x city",
         "search_volume": 100000,
-        "start_date": "~19",
+        "start_date": "~21",
         "analysis": "trending_up"
       },
       {
         "trend": "al khaleej x al-nassr",
         "search_volume": 100000,
-        "start_date": "~20",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "kimi antonelli",
-        "search_volume": 100000,
-        "start_date": "~6",
+        "start_date": "~22",
         "analysis": "trending_up"
       },
       {
         "trend": "santos e corinthians",
         "search_volume": 100000,
-        "start_date": "~2",
+        "start_date": "~4",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "kimi antonelli",
+        "search_volume": 100000,
+        "start_date": "~8",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "manchester united x aston villa",
+        "search_volume": 50000,
+        "start_date": "~3",
         "analysis": "trending_up"
       },
       {
@@ -1091,34 +1097,46 @@
         "analysis": "timelapse"
       },
       {
-        "trend": "manchester united x aston villa",
+        "trend": "le havre ac x lyon",
         "search_volume": 20000,
         "start_date": "~1",
         "analysis": "trending_up"
       },
       {
+        "trend": "liverpool x tottenham",
+        "search_volume": 20000,
+        "start_date": "~4",
+        "analysis": "trending_up"
+      },
+      {
         "trend": "arouca x benfica",
         "search_volume": 20000,
-        "start_date": "~18",
+        "start_date": "~20",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "manchester united",
+        "search_volume": 20000,
+        "start_date": "~2",
         "analysis": "trending_up"
       },
       {
         "trend": "lakers x nuggets",
         "search_volume": 20000,
-        "start_date": "~14",
+        "start_date": "~16",
         "analysis": "trending_up"
       },
       {
         "trend": "udinese x juventus",
         "search_volume": 20000,
-        "start_date": "~19",
+        "start_date": "~21",
         "analysis": "trending_up"
       },
       {
-        "trend": "napoli x lecce",
-        "search_volume": 20000,
-        "start_date": "~10",
-        "analysis": "timelapse"
+        "trend": "mega sena",
+        "search_volume": 298420000,
+        "start_date": "~16",
+        "analysis": "trending_up"
       },
       {
         "trend": "prime video",
@@ -1133,89 +1151,71 @@
         "analysis": "timelapse"
       },
       {
-        "trend": "bayern",
-        "search_volume": 20000,
-        "start_date": "~3",
-        "analysis": "timelapse"
-      },
-      {
         "trend": "chelsea",
         "search_volume": 20000,
         "start_date": "~2",
         "analysis": "timelapse"
       },
       {
-        "trend": "bayern de munique",
+        "trend": "real madrid x",
         "search_volume": 20000,
-        "start_date": "~3",
+        "start_date": "~2",
         "analysis": "timelapse"
       },
       {
-        "trend": "mega sena",
-        "search_volume": 298410000,
-        "start_date": "~14",
+        "trend": "crystal palace x leeds",
+        "search_volume": 10000,
+        "start_date": "~3",
         "analysis": "trending_up"
       },
       {
-        "trend": "charlotte fc x inter miami",
+        "trend": "nottingham forest x fulham",
         "search_volume": 10000,
-        "start_date": "~15",
+        "start_date": "~3",
         "analysis": "trending_up"
       },
       {
         "trend": "oscar",
         "search_volume": 2026,
-        "start_date": "~22",
+        "start_date": "~2026",
         "analysis": "trending_up"
       },
       {
-        "trend": "habermas",
+        "trend": "charlotte fc x inter miami",
         "search_volume": 10000,
-        "start_date": "~23",
+        "start_date": "~17",
         "analysis": "trending_up"
-      },
-      {
-        "trend": "genoa",
-        "search_volume": 10000,
-        "start_date": "~3",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "al fateh x al-hilal",
-        "search_volume": 10000,
-        "start_date": "~16",
-        "analysis": "timelapse"
       }
     ],
     "CA": [
       {
-        "trend": "weather tomorrow",
+        "trend": "heat dome canada",
         "search_volume": 100000,
-        "start_date": "~4",
-        "analysis": "timelapse"
-      },
-      {
-        "trend": "maple leafs vs sabres",
-        "search_volume": 20000,
-        "start_date": "~15",
+        "start_date": "~6",
         "analysis": "trending_up"
       },
       {
         "trend": "sharks – canadiens",
-        "search_volume": 20000,
-        "start_date": "~15",
+        "search_volume": 50000,
+        "start_date": "~17",
         "analysis": "trending_up"
       },
       {
-        "trend": "sharks vs canadiens",
+        "trend": "man united vs aston villa",
         "search_volume": 20000,
-        "start_date": "~15",
+        "start_date": "~3",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "maple leafs vs sabres",
+        "search_volume": 20000,
+        "start_date": "~17",
         "analysis": "trending_up"
       },
       {
         "trend": "max dowman",
         "search_volume": 20000,
-        "start_date": "~18",
+        "start_date": "~20",
         "analysis": "trending_up"
       },
       {
@@ -1231,46 +1231,52 @@
         "analysis": "timelapse"
       },
       {
+        "trend": "barcelona vs sevilla",
+        "search_volume": 10000,
+        "start_date": "~1",
+        "analysis": "trending_up"
+      },
+      {
         "trend": "bangladesh vs pakistan",
         "search_volume": 10000,
-        "start_date": "~6",
+        "start_date": "~8",
         "analysis": "trending_up"
       },
       {
         "trend": "new zealand vs south africa",
         "search_volume": 10000,
-        "start_date": "~8",
+        "start_date": "~10",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "oscars",
+        "search_volume": 202610000,
+        "start_date": "~4",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "igor chernyshov",
+        "search_volume": 10000,
+        "start_date": "~17",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "japan vs venezuela",
+        "search_volume": 10000,
+        "start_date": "~16",
         "analysis": "trending_up"
       },
       {
         "trend": "nuggets vs lakers",
         "search_volume": 10000,
         "start_date": "~14",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "japan vs venezuela",
-        "search_volume": 10000,
-        "start_date": "~14",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "hawaii flash flooding",
-        "search_volume": 10000,
-        "start_date": "~23",
-        "analysis": "trending_up"
+        "analysis": "timelapse"
       },
       {
         "trend": "daniel lavoie",
         "search_volume": 10000,
-        "start_date": "~15",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "oscars",
-        "search_volume": 202610000,
-        "start_date": "~2",
-        "analysis": "trending_up"
+        "start_date": "~16",
+        "analysis": "timelapse"
       },
       {
         "trend": "italian citizenship law",
@@ -1291,43 +1297,37 @@
         "analysis": "timelapse"
       },
       {
-        "trend": "man united vs aston villa",
+        "trend": "barcelone – séville",
         "search_volume": 5000,
         "start_date": "~1",
         "analysis": "trending_up"
       },
       {
-        "trend": "iran israel strikes",
+        "trend": "bruno salomone",
         "search_volume": 5000,
-        "start_date": "",
+        "start_date": "~3",
         "analysis": "trending_up"
       },
       {
         "trend": "is netanyahu alive latest update",
         "search_volume": 5000,
-        "start_date": "~20",
+        "start_date": "~22",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "iran israel war",
+        "search_volume": 5000,
+        "start_date": "~5",
         "analysis": "trending_up"
       },
       {
         "trend": "orange warning - winter storm",
         "search_volume": 5000,
-        "start_date": "~20",
+        "start_date": "~22",
         "analysis": "trending_up"
       },
       {
         "trend": "harry styles",
-        "search_volume": 5000,
-        "start_date": "~10",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "avalanche vs jets",
-        "search_volume": 5000,
-        "start_date": "~18",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "kraken vs canucks",
         "search_volume": 5000,
         "start_date": "~12",
         "analysis": "trending_up"
@@ -1337,19 +1337,19 @@
       {
         "trend": "max dowman",
         "search_volume": 50000,
-        "start_date": "~19",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "new zealand vs south africa",
-        "search_volume": 20000,
-        "start_date": "~8",
+        "start_date": "~21",
         "analysis": "trending_up"
       },
       {
         "trend": "chinese grand prix",
-        "search_volume": 20000,
+        "search_volume": 50000,
         "start_date": "~17",
+        "analysis": "timelapse"
+      },
+      {
+        "trend": "new zealand vs south africa",
+        "search_volume": 20000,
+        "start_date": "~10",
         "analysis": "trending_up"
       },
       {
@@ -1359,21 +1359,21 @@
         "analysis": "timelapse"
       },
       {
-        "trend": "gold coast vs west coast",
-        "search_volume": 10000,
-        "start_date": "~7",
-        "analysis": "trending_up"
-      },
-      {
         "trend": "oscars",
         "search_volume": 202610000,
-        "start_date": "~17",
+        "start_date": "~20",
         "analysis": "trending_up"
       },
       {
         "trend": "mothers day",
         "search_volume": 10000,
-        "start_date": "~15",
+        "start_date": "~18",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "gold coast vs west coast",
+        "search_volume": 10000,
+        "start_date": "~9",
         "analysis": "trending_up"
       },
       {
@@ -1413,27 +1413,27 @@
         "analysis": "timelapse"
       },
       {
-        "trend": "france vs england",
-        "search_volume": 10000,
-        "start_date": "~7",
-        "analysis": "timelapse"
-      },
-      {
-        "trend": "is netanyahu alive latest update",
+        "trend": "man united vs aston villa",
         "search_volume": 5000,
-        "start_date": "~14",
+        "start_date": "~3",
         "analysis": "trending_up"
       },
       {
         "trend": "bangladesh vs pakistan",
         "search_volume": 5000,
-        "start_date": "~6",
+        "start_date": "~8",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "is netanyahu alive latest update",
+        "search_volume": 5000,
+        "start_date": "~16",
         "analysis": "trending_up"
       },
       {
         "trend": "ban vs pak",
         "search_volume": 5000,
-        "start_date": "~6",
+        "start_date": "~9",
         "analysis": "trending_up"
       },
       {
@@ -1455,15 +1455,15 @@
         "analysis": "timelapse"
       },
       {
-        "trend": "australian fuel supply",
+        "trend": "france vs england",
         "search_volume": 5000,
-        "start_date": "~3",
+        "start_date": "~7",
         "analysis": "timelapse"
       },
       {
-        "trend": "kayo",
+        "trend": "australian fuel supply",
         "search_volume": 5000,
-        "start_date": "~7",
+        "start_date": "~3",
         "analysis": "timelapse"
       },
       {
@@ -1473,29 +1473,23 @@
         "analysis": "timelapse"
       },
       {
-        "trend": "man united vs aston villa",
-        "search_volume": 2000,
-        "start_date": "~1",
-        "analysis": "trending_up"
+        "trend": "kayo",
+        "search_volume": 5000,
+        "start_date": "~9",
+        "analysis": "timelapse"
       }
     ],
     "IT": [
       {
         "trend": "udinese - juventus",
-        "search_volume": 500000,
-        "start_date": "~19",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "napoli - lecce",
         "search_volume": 200000,
-        "start_date": "~22",
+        "start_date": "~21",
         "analysis": "trending_up"
       },
       {
         "trend": "alcaraz medvedev",
         "search_volume": 200000,
-        "start_date": "~16",
+        "start_date": "~18",
         "analysis": "trending_up"
       },
       {
@@ -1505,21 +1499,21 @@
         "analysis": "timelapse"
       },
       {
-        "trend": "verona - genoa",
+        "trend": "pisa - cagliari",
         "search_volume": 100000,
         "start_date": "~3",
         "analysis": "trending_up"
       },
       {
-        "trend": "classifica f",
-        "search_volume": 1100000,
+        "trend": "verona - genoa",
+        "search_volume": 100000,
         "start_date": "~5",
         "analysis": "trending_up"
       },
       {
-        "trend": "sinner-zverev",
-        "search_volume": 100000,
-        "start_date": "~22",
+        "trend": "classifica f",
+        "search_volume": 1100000,
+        "start_date": "~8",
         "analysis": "trending_up"
       },
       {
@@ -1529,57 +1523,57 @@
         "analysis": "timelapse"
       },
       {
-        "trend": "inter atalanta highlights",
+        "trend": "jannik sinner",
         "search_volume": 100000,
-        "start_date": "~19",
+        "start_date": "~2",
         "analysis": "timelapse"
+      },
+      {
+        "trend": "sassuolo - bologna",
+        "search_volume": 50000,
+        "start_date": "~3",
+        "analysis": "trending_up"
       },
       {
         "trend": "terremoto roma",
         "search_volume": 50000,
-        "start_date": "~16",
+        "start_date": "~18",
         "analysis": "trending_up"
       },
       {
-        "trend": "sassuolo - bologna",
-        "search_volume": 20000,
-        "start_date": "~1",
-        "analysis": "trending_up"
+        "trend": "napoli",
+        "search_volume": 50000,
+        "start_date": "~2",
+        "analysis": "timelapse"
       },
       {
-        "trend": "pisa - cagliari",
+        "trend": "cinzia oscar",
         "search_volume": 20000,
-        "start_date": "~1",
+        "start_date": "~3",
         "analysis": "trending_up"
       },
       {
         "trend": "real madrid - elche",
         "search_volume": 20000,
-        "start_date": "~19",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "the whale",
-        "search_volume": 20000,
-        "start_date": "~22",
-        "analysis": "trending_up"
+        "start_date": "~20",
+        "analysis": "timelapse"
       },
       {
         "trend": "netanyahu",
         "search_volume": 20000,
-        "start_date": "~16",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "banda lecce",
-        "search_volume": 20000,
-        "start_date": "~19",
-        "analysis": "trending_up"
+        "start_date": "~18",
+        "analysis": "timelapse"
       },
       {
         "trend": "west ham - manchester city",
         "search_volume": 20000,
         "start_date": "~18",
+        "analysis": "timelapse"
+      },
+      {
+        "trend": "banda lecce",
+        "search_volume": 20000,
+        "start_date": "~20",
         "analysis": "timelapse"
       },
       {
@@ -1589,15 +1583,9 @@
         "analysis": "timelapse"
       },
       {
-        "trend": "monza - palermo",
+        "trend": "highlights inter atalanta",
         "search_volume": 20000,
         "start_date": "~16",
-        "analysis": "timelapse"
-      },
-      {
-        "trend": "galles italia",
-        "search_volume": 20000,
-        "start_date": "~9",
         "analysis": "timelapse"
       },
       {
@@ -1607,21 +1595,33 @@
         "analysis": "timelapse"
       },
       {
-        "trend": "crotone - salernitana",
+        "trend": "barcellona - siviglia",
+        "search_volume": 10000,
+        "start_date": "~2",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "como - roma",
+        "search_volume": 10000,
+        "start_date": "",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "manchester united - aston villa",
         "search_volume": 10000,
         "start_date": "~3",
         "analysis": "trending_up"
       },
       {
-        "trend": "lazio milan",
+        "trend": "crotone - salernitana",
         "search_volume": 10000,
-        "start_date": "~22",
+        "start_date": "~5",
         "analysis": "trending_up"
       },
       {
-        "trend": "bangladesh vs pakistan",
+        "trend": "arezzo - perugia",
         "search_volume": 10000,
-        "start_date": "~6",
+        "start_date": "~3",
         "analysis": "trending_up"
       }
     ],
@@ -1629,31 +1629,31 @@
       {
         "trend": "real madrid - elche c. f.",
         "search_volume": 500000,
-        "start_date": "~19",
+        "start_date": "~21",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "barcelona - sevilla",
+        "search_volume": 200000,
+        "start_date": "~2",
         "analysis": "trending_up"
       },
       {
         "trend": "gemma cuervo",
         "search_volume": 200000,
-        "start_date": "~21",
+        "start_date": "~23",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "r.c.d. mallorca - rcd espanyol",
+        "search_volume": 100000,
+        "start_date": "~4",
         "analysis": "trending_up"
       },
       {
         "trend": "real oviedo - valencia c. f.",
         "search_volume": 100000,
-        "start_date": "~21",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "r.c.d. mallorca - rcd espanyol",
-        "search_volume": 50000,
-        "start_date": "~2",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "west ham - manchester city",
-        "search_volume": 50000,
-        "start_date": "~19",
+        "start_date": "~23",
         "analysis": "trending_up"
       },
       {
@@ -1675,27 +1675,45 @@
         "analysis": "timelapse"
       },
       {
+        "trend": "manchester united - aston villa",
+        "search_volume": 20000,
+        "start_date": "~3",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "elecciones castilla y leon",
+        "search_volume": 20000,
+        "start_date": "~10",
+        "analysis": "trending_up"
+      },
+      {
         "trend": "deportivo - barcelona",
         "search_volume": 20000,
-        "start_date": "~4",
+        "start_date": "~6",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "west ham - manchester city",
+        "search_volume": 20000,
+        "start_date": "~21",
         "analysis": "trending_up"
       },
       {
         "trend": "arouca - benfica",
         "search_volume": 20000,
-        "start_date": "~18",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "kimi antonelli",
-        "search_volume": 20000,
-        "start_date": "~7",
-        "analysis": "trending_up"
+        "start_date": "~19",
+        "analysis": "timelapse"
       },
       {
         "trend": "chelsea - newcastle",
         "search_volume": 20000,
         "start_date": "~18",
+        "analysis": "timelapse"
+      },
+      {
+        "trend": "arsenal - everton",
+        "search_volume": 20000,
+        "start_date": "~17",
         "analysis": "timelapse"
       },
       {
@@ -1713,11 +1731,11 @@
       {
         "trend": "córdoba - real sociedad b",
         "search_volume": 10000,
-        "start_date": "~2",
+        "start_date": "~4",
         "analysis": "trending_up"
       },
       {
-        "trend": "elecciones castilla y leon",
+        "trend": "elecciones barça",
         "search_volume": 10000,
         "start_date": "~7",
         "analysis": "trending_up"
@@ -1725,13 +1743,13 @@
       {
         "trend": "oscars",
         "search_volume": 202610000,
-        "start_date": "~18",
+        "start_date": "~20",
         "analysis": "trending_up"
       },
       {
-        "trend": "netanyahu",
+        "trend": "kimi antonelli",
         "search_volume": 10000,
-        "start_date": "~16",
+        "start_date": "~9",
         "analysis": "trending_up"
       },
       {
@@ -1741,15 +1759,9 @@
         "analysis": "timelapse"
       },
       {
-        "trend": "venezuela vs japon",
+        "trend": "netanyahu",
         "search_volume": 10000,
-        "start_date": "~14",
-        "analysis": "timelapse"
-      },
-      {
-        "trend": "arsenal - everton",
-        "search_volume": 10000,
-        "start_date": "~17",
+        "start_date": "~18",
         "analysis": "timelapse"
       },
       {
@@ -1757,97 +1769,109 @@
         "search_volume": 10000,
         "start_date": "~7",
         "analysis": "timelapse"
-      },
-      {
-        "trend": "jannik sinner",
-        "search_volume": 10000,
-        "start_date": "~2",
-        "analysis": "timelapse"
-      },
-      {
-        "trend": "manchester united - aston villa",
-        "search_volume": 5000,
-        "start_date": "~1",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "burgos - baskonia",
-        "search_volume": 5000,
-        "start_date": "~3",
-        "analysis": "trending_up"
       }
     ],
     "MX": [
       {
         "trend": "pumas - cruz azul",
         "search_volume": 500000,
-        "start_date": "~12",
+        "start_date": "~14",
         "analysis": "trending_up"
       },
       {
         "trend": "guadalajara - santos",
         "search_volume": 500000,
-        "start_date": "~16",
+        "start_date": "~18",
         "analysis": "trending_up"
       },
       {
         "trend": "toluca - atlas",
         "search_volume": 200000,
-        "start_date": "~14",
+        "start_date": "~16",
         "analysis": "trending_up"
       },
       {
         "trend": "real madrid - elche c. f.",
         "search_volume": 200000,
-        "start_date": "~19",
+        "start_date": "~21",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "barcelona - sevilla",
+        "search_volume": 100000,
+        "start_date": "~2",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "diego osuna miranda",
+        "search_volume": 100000,
+        "start_date": "~21",
         "analysis": "trending_up"
       },
       {
         "trend": "atl. san luis - pachuca",
         "search_volume": 100000,
-        "start_date": "~16",
+        "start_date": "~18",
         "analysis": "trending_up"
       },
       {
         "trend": "león - tijuana",
         "search_volume": 100000,
-        "start_date": "~14",
+        "start_date": "~16",
         "analysis": "trending_up"
       },
       {
-        "trend": "diego osuna miranda",
-        "search_volume": 50000,
-        "start_date": "~18",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "west ham - manchester city",
+        "trend": "marcela mistral",
         "search_volume": 50000,
         "start_date": "~19",
         "analysis": "trending_up"
       },
       {
-        "trend": "chelsea - newcastle",
+        "trend": "west ham - manchester city",
         "search_volume": 50000,
         "start_date": "~21",
         "analysis": "trending_up"
       },
       {
-        "trend": "marcela mistral",
+        "trend": "chelsea - newcastle",
+        "search_volume": 50000,
+        "start_date": "~23",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "manchester united - aston villa",
         "search_volume": 20000,
-        "start_date": "~16",
+        "start_date": "~3",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "nottingham forest - fulham",
+        "search_volume": 20000,
+        "start_date": "~3",
         "analysis": "trending_up"
       },
       {
         "trend": "japon vs venezuela beisbol",
         "search_volume": 20000,
-        "start_date": "~20",
+        "start_date": "~22",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "pelea adame vs trejo",
+        "search_volume": 20000,
+        "start_date": "~23",
         "analysis": "trending_up"
       },
       {
         "trend": "tabla de goleo liga mx",
         "search_volume": 20000,
-        "start_date": "~14",
+        "start_date": "~16",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "kimi antonelli",
+        "search_volume": 20000,
+        "start_date": "~8",
         "analysis": "trending_up"
       },
       {
@@ -1869,21 +1893,21 @@
         "analysis": "timelapse"
       },
       {
-        "trend": "adame vs trejo",
+        "trend": "deportivo - barcelona",
         "search_volume": 10000,
-        "start_date": "~15",
+        "start_date": "~5",
         "analysis": "trending_up"
       },
       {
         "trend": "karely ruiz",
         "search_volume": 10000,
-        "start_date": "~14",
+        "start_date": "~16",
         "analysis": "trending_up"
       },
       {
-        "trend": "vive latino",
-        "search_volume": 2026,
-        "start_date": "~2026",
+        "trend": "italia vs puerto rico",
+        "search_volume": 10000,
+        "start_date": "~21",
         "analysis": "timelapse"
       },
       {
@@ -1893,31 +1917,7 @@
         "analysis": "timelapse"
       },
       {
-        "trend": "italia vs puerto rico",
-        "search_volume": 10000,
-        "start_date": "~13",
-        "analysis": "timelapse"
-      },
-      {
         "trend": "udinese - juventus",
-        "search_volume": 10000,
-        "start_date": "~8",
-        "analysis": "timelapse"
-      },
-      {
-        "trend": "lakers - nuggets",
-        "search_volume": 10000,
-        "start_date": "~6",
-        "analysis": "timelapse"
-      },
-      {
-        "trend": "rey de reyes aaa",
-        "search_volume": 10000,
-        "start_date": "~13",
-        "analysis": "timelapse"
-      },
-      {
-        "trend": "napoli - lecce",
         "search_volume": 10000,
         "start_date": "~8",
         "analysis": "timelapse"
