@@ -1,47 +1,59 @@
 {
-  "timestamp": "2026-03-24 22:28:47",
+  "timestamp": "2026-03-25 02:00:01",
   "data": {
     "KR": [
       {
+        "trend": "날씨",
+        "search_volume": 10000000,
+        "start_date": "~1",
+        "analysis": "timelapse"
+      },
+      {
         "trend": "차량",
         "search_volume": 5,
-        "start_date": "~13",
+        "start_date": "~23",
         "analysis": "trending_up"
+      },
+      {
+        "trend": "등급컷",
+        "search_volume": 1000000,
+        "start_date": "~16",
+        "analysis": "timelapse"
       },
       {
         "trend": "노동절",
         "search_volume": 5000,
-        "start_date": "~14",
-        "analysis": "timelapse"
+        "start_date": "~23",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "박왕열",
+        "search_volume": 2000,
+        "start_date": "~3",
+        "analysis": "trending_up"
       },
       {
         "trend": "강원기",
         "search_volume": 2000,
-        "start_date": "~14",
+        "start_date": "~17",
         "analysis": "trending_up"
       },
       {
-        "trend": "쓰레기봉투",
+        "trend": "종량제 봉투 대란",
         "search_volume": 2000,
-        "start_date": "~12",
+        "start_date": "~20",
         "analysis": "trending_up"
       },
       {
-        "trend": "댈러스 대 골든 스테이트",
+        "trend": "weather",
         "search_volume": 2000,
-        "start_date": "~10",
+        "start_date": "~1",
         "analysis": "timelapse"
       },
       {
         "trend": "캐치",
         "search_volume": 2000,
         "start_date": "~9",
-        "analysis": "timelapse"
-      },
-      {
-        "trend": "디트로이트 대 la 레이커스",
-        "search_volume": 2000,
-        "start_date": "~5",
         "analysis": "timelapse"
       },
       {
@@ -53,13 +65,7 @@
       {
         "trend": "김동환",
         "search_volume": 1000,
-        "start_date": "~14",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "강소라 남편",
-        "search_volume": 1000,
-        "start_date": "~20",
+        "start_date": "~17",
         "analysis": "timelapse"
       },
       {
@@ -75,27 +81,51 @@
         "analysis": "timelapse"
       },
       {
+        "trend": "한패스",
+        "search_volume": 500,
+        "start_date": "~2",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "카카오게임즈",
+        "search_volume": 500,
+        "start_date": "~2",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "살라",
+        "search_volume": 500,
+        "start_date": "~3",
+        "analysis": "trending_up"
+      },
+      {
         "trend": "张雪峰",
         "search_volume": 500,
+        "start_date": "~12",
+        "analysis": "timelapse"
+      },
+      {
+        "trend": "부산날씨",
+        "search_volume": 500,
+        "start_date": "~4",
+        "analysis": "timelapse"
+      },
+      {
+        "trend": "불가항력",
+        "search_volume": 500,
         "start_date": "~9",
-        "analysis": "trending_up"
+        "analysis": "timelapse"
+      },
+      {
+        "trend": "금시세",
+        "search_volume": 500,
+        "start_date": "~1",
+        "analysis": "timelapse"
       },
       {
         "trend": "브루스 윌리스",
         "search_volume": 500,
         "start_date": "~3",
-        "analysis": "timelapse"
-      },
-      {
-        "trend": "독도",
-        "search_volume": 500,
-        "start_date": "~5",
-        "analysis": "timelapse"
-      },
-      {
-        "trend": "삼천당제약",
-        "search_volume": 500,
-        "start_date": "~12",
         "analysis": "timelapse"
       },
       {
@@ -111,117 +141,117 @@
         "analysis": "timelapse"
       },
       {
-        "trend": "적우",
-        "search_volume": 500,
-        "start_date": "~1",
-        "analysis": "timelapse"
-      },
-      {
-        "trend": "미세먼지",
-        "search_volume": 500,
-        "start_date": "~1",
-        "analysis": "timelapse"
-      },
-      {
-        "trend": "부산날씨",
-        "search_volume": 200,
-        "start_date": "~2",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "lng",
-        "search_volume": 200,
-        "start_date": "~7",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "불가항력",
-        "search_volume": 200,
-        "start_date": "~7",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "류중일 며느리",
+        "trend": "그리즈만",
         "search_volume": 200,
         "start_date": "~10",
+        "analysis": "timelapse"
+      },
+      {
+        "trend": "sora",
+        "search_volume": 200,
+        "start_date": "~1",
         "analysis": "timelapse"
       }
     ],
     "US": [
       {
-        "trend": "hannah montana",
+        "trend": "miley cyrus",
         "search_volume": 200000,
         "start_date": "~23",
         "analysis": "trending_up"
       },
       {
-        "trend": "warriors vs mavericks",
-        "search_volume": 200000,
-        "start_date": "~21",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "port arthur",
+        "trend": "moses moody",
         "search_volume": 100000,
         "start_date": "~22",
         "analysis": "trending_up"
       },
       {
-        "trend": "daniss jenkins",
-        "search_volume": 100000,
-        "start_date": "~17",
-        "analysis": "timelapse"
-      },
-      {
         "trend": "daredevil born again season",
-        "search_volume": 250000,
-        "start_date": "~15",
+        "search_volume": 2100000,
+        "start_date": "~19",
         "analysis": "trending_up"
       },
       {
-        "trend": "quadriplegic shooting",
+        "trend": "pelicans vs knicks",
         "search_volume": 50000,
-        "start_date": "~11",
+        "start_date": "~3",
         "analysis": "trending_up"
       },
       {
-        "trend": "rockets vs bulls",
+        "trend": "kings vs hornets",
         "search_volume": 50000,
-        "start_date": "~17",
-        "analysis": "timelapse"
+        "start_date": "~3",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "rocky carroll",
+        "search_volume": 50000,
+        "start_date": "~1",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "sora",
+        "search_volume": 50000,
+        "start_date": "~5",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "chainsaw man ending",
+        "search_volume": 50000,
+        "start_date": "~10",
+        "analysis": "trending_up"
       },
       {
         "trend": "alex cooper",
         "search_volume": 20000,
-        "start_date": "~17",
+        "start_date": "~20",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "emily gregory",
+        "search_volume": 20000,
+        "start_date": "~2",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "magic vs cavaliers",
+        "search_volume": 20000,
+        "start_date": "~2",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "quadriplegic shooting",
+        "search_volume": 20000,
+        "start_date": "~14",
         "analysis": "trending_up"
       },
       {
         "trend": "camila morrone",
         "search_volume": 20000,
-        "start_date": "~19",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "cam thomas",
-        "search_volume": 20000,
-        "start_date": "~21",
+        "start_date": "~22",
         "analysis": "trending_up"
       },
       {
         "trend": "张雪峰",
         "search_volume": 20000,
-        "start_date": "~11",
+        "start_date": "~15",
         "analysis": "trending_up"
       },
       {
-        "trend": "chainsaw man ending",
+        "trend": "bryan hodgson wife",
         "search_volume": 20000,
-        "start_date": "~7",
+        "start_date": "~5",
         "analysis": "trending_up"
       },
       {
         "trend": "row",
+        "search_volume": 20000,
+        "start_date": "~21",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "dylan sprouse",
         "search_volume": 20000,
         "start_date": "~18",
         "analysis": "trending_up"
@@ -229,94 +259,82 @@
       {
         "trend": "mo salah",
         "search_volume": 20000,
-        "start_date": "~3",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "caterina scorsone",
-        "search_volume": 20000,
-        "start_date": "~22",
+        "start_date": "~7",
         "analysis": "trending_up"
       },
       {
         "trend": "mel schilling",
         "search_volume": 20000,
-        "start_date": "~10",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "tiger woods",
-        "search_volume": 20000,
-        "start_date": "~21",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "bucks vs clippers",
-        "search_volume": 20000,
-        "start_date": "~16",
-        "analysis": "timelapse"
-      },
-      {
-        "trend": "grizzlies vs hawks",
-        "search_volume": 20000,
-        "start_date": "~15",
-        "analysis": "timelapse"
-      },
-      {
-        "trend": "raptors vs jazz",
-        "search_volume": 20000,
         "start_date": "~14",
-        "analysis": "timelapse"
+        "analysis": "trending_up"
       },
       {
-        "trend": "nets vs trail blazers",
-        "search_volume": 20000,
-        "start_date": "~13",
-        "analysis": "timelapse"
-      },
-      {
-        "trend": "how many episodes in paradise season",
-        "search_volume": 220000,
-        "start_date": "~9",
-        "analysis": "timelapse"
-      },
-      {
-        "trend": "dodgers",
-        "search_volume": 20000,
-        "start_date": "~6",
-        "analysis": "timelapse"
-      },
-      {
-        "trend": "dallas mavericks",
+        "trend": "senators vs red wings",
         "search_volume": 20000,
         "start_date": "~3",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "harry potter",
+        "search_volume": 20000,
+        "start_date": "~11",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "bridgerton season",
+        "search_volume": 520000,
+        "start_date": "~13",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "texas refinery explosion",
+        "search_volume": 20000,
+        "start_date": "~21",
         "analysis": "timelapse"
+      },
+      {
+        "trend": "coco gauff",
+        "search_volume": 10000,
+        "start_date": "~2",
+        "analysis": "trending_up"
       }
     ],
     "JP": [
       {
         "trend": "坂口杏里",
         "search_volume": 200000,
-        "start_date": "~18",
+        "start_date": "~21",
         "analysis": "trending_up"
       },
       {
         "trend": "不二家洋菓子店",
         "search_volume": 50000,
-        "start_date": "~15",
+        "start_date": "~18",
         "analysis": "trending_up"
       },
       {
         "trend": "南太平洋 地震 速報",
         "search_volume": 20000,
+        "start_date": "~15",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "ポケモンチャンピオンズ",
+        "search_volume": 20000,
         "start_date": "~11",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "トンツカタン",
+        "search_volume": 20000,
+        "start_date": "~14",
         "analysis": "trending_up"
       },
       {
         "trend": "マクドナルド ハッピーセット",
         "search_volume": 20000,
-        "start_date": "~11",
-        "analysis": "trending_up"
+        "start_date": "~13",
+        "analysis": "timelapse"
       },
       {
         "trend": "ドイツ",
@@ -325,52 +343,40 @@
         "analysis": "timelapse"
       },
       {
-        "trend": "徳原恵梨",
-        "search_volume": 10000,
-        "start_date": "~12",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "ポケモンチャンピオンズ",
-        "search_volume": 10000,
-        "start_date": "~8",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "トンツカタン",
+        "trend": "チェンソーマン 最終回",
         "search_volume": 10000,
         "start_date": "~10",
         "analysis": "trending_up"
       },
       {
-        "trend": "中国大使館",
+        "trend": "徳原恵梨",
         "search_volume": 10000,
-        "start_date": "~13",
+        "start_date": "~16",
         "analysis": "trending_up"
       },
       {
-        "trend": "内博貴",
+        "trend": "中国大使館",
         "search_volume": 10000,
-        "start_date": "~12",
+        "start_date": "~17",
         "analysis": "trending_up"
       },
       {
         "trend": "しんぱち食堂",
         "search_volume": 10000,
-        "start_date": "~14",
+        "start_date": "~18",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "内博貴",
+        "search_volume": 10000,
+        "start_date": "~15",
         "analysis": "trending_up"
       },
       {
         "trend": "天皇皇后両陛下",
         "search_volume": 10000,
-        "start_date": "~13",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "新潟県教員 異動",
-        "search_volume": 202610000,
-        "start_date": "~23",
-        "analysis": "trending_up"
+        "start_date": "~15",
+        "analysis": "timelapse"
       },
       {
         "trend": "機動戦士ガンダム 閃光のハサウェイ",
@@ -381,7 +387,7 @@
       {
         "trend": "未来のムスコ 最終回",
         "search_volume": 10000,
-        "start_date": "~8",
+        "start_date": "~9",
         "analysis": "timelapse"
       },
       {
@@ -391,101 +397,101 @@
         "analysis": "timelapse"
       },
       {
-        "trend": "ローソン おにぎり",
-        "search_volume": 10000,
-        "start_date": "~8",
-        "analysis": "timelapse"
-      },
-      {
-        "trend": "ばけばけ",
-        "search_volume": 10000,
-        "start_date": "~5",
-        "analysis": "timelapse"
-      },
-      {
-        "trend": "小泉八雲",
-        "search_volume": 10000,
-        "start_date": "~1",
-        "analysis": "timelapse"
-      },
-      {
-        "trend": "チェンソーマン 最終回",
+        "trend": "张雪峰",
         "search_volume": 5000,
-        "start_date": "~7",
+        "start_date": "~14",
         "analysis": "trending_up"
       },
       {
         "trend": "anaモバイル",
         "search_volume": 5000,
-        "start_date": "~17",
+        "start_date": "~21",
         "analysis": "trending_up"
       },
       {
-        "trend": "张雪峰",
-        "search_volume": 5000,
-        "start_date": "~11",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "豊田自動織機",
-        "search_volume": 5000,
-        "start_date": "~15",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "松井秀喜",
+        "trend": "平成筑豊鉄道",
         "search_volume": 5000,
         "start_date": "~21",
         "analysis": "trending_up"
       },
       {
+        "trend": "外務省",
+        "search_volume": 5000,
+        "start_date": "~16",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "豊田自動織機",
+        "search_volume": 5000,
+        "start_date": "~18",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "吉沢亮",
+        "search_volume": 5000,
+        "start_date": "~1",
+        "analysis": "timelapse"
+      },
+      {
         "trend": "ジージェネエターナル",
         "search_volume": 5000,
-        "start_date": "~11",
-        "analysis": "trending_up"
+        "start_date": "~13",
+        "analysis": "timelapse"
+      },
+      {
+        "trend": "大塚明夫",
+        "search_volume": 5000,
+        "start_date": "~12",
+        "analysis": "timelapse"
+      },
+      {
+        "trend": "皇族費 秋篠宮",
+        "search_volume": 5000,
+        "start_date": "~14",
+        "analysis": "timelapse"
       }
     ],
     "GB": [
       {
-        "trend": "mel schilling",
+        "trend": "mafs",
         "search_volume": 200000,
-        "start_date": "~11",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "london weather",
-        "search_volume": 100000,
-        "start_date": "",
+        "start_date": "~14",
         "analysis": "trending_up"
       },
       {
         "trend": "mo salah",
         "search_volume": 50000,
-        "start_date": "~3",
+        "start_date": "~7",
         "analysis": "trending_up"
       },
       {
         "trend": "plug in solar panels",
         "search_volume": 50000,
+        "start_date": "~22",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "dwp payment date change",
+        "search_volume": 20000,
+        "start_date": "~16",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "miley cyrus",
+        "search_volume": 20000,
         "start_date": "~18",
         "analysis": "trending_up"
       },
       {
         "trend": "arsenal vs chelsea",
         "search_volume": 20000,
-        "start_date": "~3",
+        "start_date": "~6",
         "analysis": "trending_up"
       },
       {
-        "trend": "miley cyrus",
-        "search_volume": 20000,
-        "start_date": "~15",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "dwp payment date change",
-        "search_volume": 20000,
-        "start_date": "~13",
+        "trend": "channel",
+        "search_volume": 520000,
+        "start_date": "~7",
         "analysis": "trending_up"
       },
       {
@@ -495,69 +501,81 @@
         "analysis": "timelapse"
       },
       {
-        "trend": "channel",
-        "search_volume": 510000,
-        "start_date": "~4",
-        "analysis": "trending_up"
-      },
-      {
         "trend": "francesca bridgerton season",
         "search_volume": 510000,
-        "start_date": "~4",
+        "start_date": "~8",
         "analysis": "trending_up"
       },
       {
         "trend": "delta goodrem",
         "search_volume": 10000,
-        "start_date": "~3",
+        "start_date": "~6",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "uk foreign office travel warnings",
+        "search_volume": 10000,
+        "start_date": "~5",
+        "analysis": "timelapse"
+      },
+      {
+        "trend": "mark lamarr",
+        "search_volume": 5000,
+        "start_date": "~10",
         "analysis": "trending_up"
       },
       {
         "trend": "doncaster vs port vale",
         "search_volume": 5000,
-        "start_date": "~3",
+        "start_date": "~6",
         "analysis": "trending_up"
       },
       {
-        "trend": "stephanie hansen",
+        "trend": "caterina scorsone",
         "search_volume": 5000,
-        "start_date": "~2",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "alex cooper",
-        "search_volume": 5000,
-        "start_date": "~14",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "oldham athletic vs notts county",
-        "search_volume": 5000,
-        "start_date": "~3",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "bob monkhouse",
-        "search_volume": 5000,
-        "start_date": "~17",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "bbc weather",
-        "search_volume": 5000,
-        "start_date": "",
+        "start_date": "~20",
         "analysis": "trending_up"
       },
       {
         "trend": "ios",
         "search_volume": 26,
-        "start_date": "~4",
+        "start_date": "~7",
         "analysis": "trending_up"
       },
       {
-        "trend": "travel warnings uk",
+        "trend": "stephanie hansen",
         "search_volume": 5000,
         "start_date": "~6",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "mike lynch estate",
+        "search_volume": 5000,
+        "start_date": "~5",
+        "analysis": "timelapse"
+      },
+      {
+        "trend": "alex cooper",
+        "search_volume": 5000,
+        "start_date": "~18",
+        "analysis": "timelapse"
+      },
+      {
+        "trend": "oldham athletic vs notts county",
+        "search_volume": 5000,
+        "start_date": "~6",
+        "analysis": "timelapse"
+      },
+      {
+        "trend": "bob monkhouse",
+        "search_volume": 5000,
+        "start_date": "~20",
+        "analysis": "timelapse"
+      },
+      {
+        "trend": "sir gino",
+        "search_volume": 5000,
+        "start_date": "~8",
         "analysis": "timelapse"
       },
       {
@@ -567,33 +585,21 @@
         "analysis": "timelapse"
       },
       {
+        "trend": "bbc weather",
+        "search_volume": 5000,
+        "start_date": "~3",
+        "analysis": "timelapse"
+      },
+      {
         "trend": "lotto",
         "search_volume": 5000,
         "start_date": "~1",
         "analysis": "timelapse"
       },
       {
-        "trend": "kate mara",
-        "search_volume": 5000,
-        "start_date": "~4",
-        "analysis": "timelapse"
-      },
-      {
-        "trend": "mike lynch estate",
+        "trend": "sora",
         "search_volume": 2000,
-        "start_date": "~2",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "mark lamarr",
-        "search_volume": 2000,
-        "start_date": "~7",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "fc halifax town vs carlisle",
-        "search_volume": 2000,
-        "start_date": "~3",
+        "start_date": "~5",
         "analysis": "trending_up"
       }
     ],
@@ -601,55 +607,43 @@
       {
         "trend": "warnung vor sturmböen",
         "search_volume": 500000,
-        "start_date": "~10",
+        "start_date": "~14",
         "analysis": "trending_up"
       },
       {
         "trend": "adac beitragserhöhung",
         "search_volume": 20000,
-        "start_date": "~6",
+        "start_date": "~9",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "mehrwertsteuer erhöhung",
+        "search_volume": 20000,
+        "start_date": "~7",
         "analysis": "trending_up"
       },
       {
         "trend": "miley cyrus",
         "search_volume": 20000,
-        "start_date": "~13",
+        "start_date": "~16",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "vw rückruf elektroautos brandgefahr",
+        "search_volume": 20000,
+        "start_date": "~4",
         "analysis": "trending_up"
       },
       {
         "trend": "usa router verbot",
         "search_volume": 20000,
         "start_date": "~10",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "heizölpreise",
-        "search_volume": 20000,
-        "start_date": "~13",
         "analysis": "timelapse"
-      },
-      {
-        "trend": "mehrwertsteuererhöhung",
-        "search_volume": 10000,
-        "start_date": "~3",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "vw rückrufaktion",
-        "search_volume": 10000,
-        "start_date": "~7",
-        "analysis": "trending_up"
       },
       {
         "trend": "mel schilling",
         "search_volume": 10000,
-        "start_date": "~10",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "veronica ferres",
-        "search_volume": 10000,
-        "start_date": "~2",
+        "start_date": "~13",
         "analysis": "timelapse"
       },
       {
@@ -659,15 +653,15 @@
         "analysis": "timelapse"
       },
       {
-        "trend": "marcel reif",
-        "search_volume": 10000,
-        "start_date": "~4",
-        "analysis": "timelapse"
-      },
-      {
         "trend": "anna heiser",
         "search_volume": 10000,
         "start_date": "~10",
+        "analysis": "timelapse"
+      },
+      {
+        "trend": "marcel reif",
+        "search_volume": 10000,
+        "start_date": "~4",
         "analysis": "timelapse"
       },
       {
@@ -683,34 +677,58 @@
         "analysis": "timelapse"
       },
       {
-        "trend": "ursula von der leyen",
+        "trend": "netflix bridgerton staffel",
+        "search_volume": 55000,
+        "start_date": "~8",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "antimaterie",
         "search_volume": 5000,
-        "start_date": "~5",
+        "start_date": "~20",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "mo salah",
+        "search_volume": 5000,
+        "start_date": "~6",
         "analysis": "trending_up"
       },
       {
         "trend": "wolfsburg – olympique lyon",
         "search_volume": 5000,
-        "start_date": "~5",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "bill cosby",
-        "search_volume": 5000,
-        "start_date": "~23",
-        "analysis": "trending_up"
+        "start_date": "~6",
+        "analysis": "timelapse"
       },
       {
         "trend": "neandertaler",
+        "search_volume": 5000,
+        "start_date": "~8",
+        "analysis": "timelapse"
+      },
+      {
+        "trend": "katarina barley",
+        "search_volume": 5000,
+        "start_date": "~3",
+        "analysis": "timelapse"
+      },
+      {
+        "trend": "ursula von der leyen",
         "search_volume": 5000,
         "start_date": "~7",
         "analysis": "timelapse"
       },
       {
-        "trend": "wal gestrandet",
+        "trend": "ronzheimer",
         "search_volume": 5000,
-        "start_date": "~16",
-        "analysis": "trending_up"
+        "start_date": "~4",
+        "analysis": "timelapse"
+      },
+      {
+        "trend": "veronica ferres",
+        "search_volume": 5000,
+        "start_date": "~2",
+        "analysis": "timelapse"
       },
       {
         "trend": "jürgen klopp",
@@ -719,21 +737,9 @@
         "analysis": "timelapse"
       },
       {
-        "trend": "familienversicherung",
+        "trend": "ski alpin heute",
         "search_volume": 5000,
-        "start_date": "~16",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "ski alpin weltcup slalom damen",
-        "search_volume": 5000,
-        "start_date": "~3",
-        "analysis": "timelapse"
-      },
-      {
-        "trend": "disney plus",
-        "search_volume": 5000,
-        "start_date": "~11",
+        "start_date": "~8",
         "analysis": "timelapse"
       },
       {
@@ -743,7 +749,7 @@
         "analysis": "timelapse"
       },
       {
-        "trend": "donald trump",
+        "trend": "kostenlose mitversicherung krankenkasse",
         "search_volume": 5000,
         "start_date": "~4",
         "analysis": "timelapse"
@@ -753,32 +759,50 @@
       {
         "trend": "météo demain",
         "search_volume": 200000,
-        "start_date": "~2",
-        "analysis": "trending_up"
+        "start_date": "~3",
+        "analysis": "timelapse"
       },
       {
         "trend": "richard ferrand conseil constitutionnel",
-        "search_volume": 10000,
-        "start_date": "~5",
+        "search_volume": 20000,
+        "start_date": "~9",
         "analysis": "trending_up"
       },
       {
-        "trend": "gérard jugnot",
+        "trend": "jean paul rouve",
+        "search_volume": 10000,
+        "start_date": "~10",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "griezmann",
         "search_volume": 10000,
         "start_date": "~11",
         "analysis": "trending_up"
       },
       {
-        "trend": "arthur fils",
+        "trend": "vfl wolfsburg – équipe féminine de l'ol",
         "search_volume": 10000,
-        "start_date": "~3",
-        "analysis": "trending_up"
+        "start_date": "~7",
+        "analysis": "timelapse"
+      },
+      {
+        "trend": "gérard jugnot",
+        "search_volume": 10000,
+        "start_date": "~13",
+        "analysis": "timelapse"
       },
       {
         "trend": "baisse prix carburants",
         "search_volume": 10000,
-        "start_date": "~14",
-        "analysis": "trending_up"
+        "start_date": "~16",
+        "analysis": "timelapse"
+      },
+      {
+        "trend": "arthur fils",
+        "search_volume": 10000,
+        "start_date": "~4",
+        "analysis": "timelapse"
       },
       {
         "trend": "edouard philippe",
@@ -787,70 +811,52 @@
         "analysis": "timelapse"
       },
       {
-        "trend": "heat – spurs",
-        "search_volume": 10000,
-        "start_date": "~14",
-        "analysis": "timelapse"
-      },
-      {
-        "trend": "jean paul rouve",
-        "search_volume": 5000,
-        "start_date": "~6",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "rachida dati château de versailles",
-        "search_volume": 5000,
-        "start_date": "~1",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "miley cyrus",
+        "trend": "tariq ramadan",
         "search_volume": 5000,
         "start_date": "~13",
         "analysis": "trending_up"
       },
       {
+        "trend": "miley cyrus",
+        "search_volume": 5000,
+        "start_date": "~17",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "rachida dati versailles",
+        "search_volume": 5000,
+        "start_date": "~18",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "mohamed salah",
+        "search_volume": 5000,
+        "start_date": "~6",
+        "analysis": "trending_up"
+      },
+      {
         "trend": "garou",
         "search_volume": 5000,
-        "start_date": "~2",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "tariq ramadan",
-        "search_volume": 5000,
-        "start_date": "~9",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "forage hydrogène moselle",
-        "search_volume": 5000,
-        "start_date": "~2",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "griezmann",
-        "search_volume": 5000,
-        "start_date": "~8",
-        "analysis": "trending_up"
+        "start_date": "~3",
+        "analysis": "timelapse"
       },
       {
         "trend": "rappel chipolatas",
         "search_volume": 5000,
-        "start_date": "~5",
-        "analysis": "trending_up"
+        "start_date": "~6",
+        "analysis": "timelapse"
+      },
+      {
+        "trend": "forage hydrogène moselle",
+        "search_volume": 5000,
+        "start_date": "~3",
+        "analysis": "timelapse"
       },
       {
         "trend": "malik bentalha",
         "search_volume": 5000,
-        "start_date": "~2",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "celine dion concert",
-        "search_volume": 20265000,
-        "start_date": "~3",
-        "analysis": "trending_up"
+        "start_date": "~4",
+        "analysis": "timelapse"
       },
       {
         "trend": "referendum italie meloni",
@@ -865,59 +871,59 @@
         "analysis": "timelapse"
       },
       {
-        "trend": "senegal champion d afrique",
-        "search_volume": 5000,
-        "start_date": "~18",
+        "trend": "celine dion concert",
+        "search_volume": 20265000,
+        "start_date": "~4",
         "analysis": "timelapse"
+      },
+      {
+        "trend": "banque de france",
+        "search_volume": 2000,
+        "start_date": "~5",
+        "analysis": "trending_up"
       },
       {
         "trend": "ios",
         "search_volume": 26,
-        "start_date": "~4",
+        "start_date": "~7",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "euromillions",
+        "search_volume": 24,
+        "start_date": "~5",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "restaurant mediere cauchemar en cuisine",
+        "search_volume": 2000,
+        "start_date": "~2",
         "analysis": "trending_up"
       },
       {
         "trend": "gino paoli",
         "search_volume": 2000,
-        "start_date": "~10",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "philippe etchebest",
-        "search_volume": 2000,
-        "start_date": "~1",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "netflix bridgerton saison",
-        "search_volume": 52000,
-        "start_date": "~3",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "salah",
-        "search_volume": 2000,
-        "start_date": "~3",
-        "analysis": "trending_up"
+        "start_date": "~13",
+        "analysis": "timelapse"
       }
     ],
     "IN": [
       {
-        "trend": "class",
-        "search_volume": 8,
-        "start_date": "~21",
+        "trend": "5th board result",
+        "search_volume": 5,
+        "start_date": "~23",
         "analysis": "trending_up"
       },
       {
         "trend": "8th class result rajasthan board",
         "search_volume": 8,
-        "start_date": "~20",
+        "start_date": "~23",
         "analysis": "trending_up"
       },
       {
         "trend": "rcb",
         "search_volume": 100000,
-        "start_date": "~19",
+        "start_date": "~23",
         "analysis": "trending_up"
       },
       {
@@ -929,35 +935,41 @@
       {
         "trend": "isha rikhi",
         "search_volume": 50000,
-        "start_date": "~14",
+        "start_date": "~17",
         "analysis": "trending_up"
       },
       {
         "trend": "kal somani",
         "search_volume": 50000,
-        "start_date": "~12",
+        "start_date": "~15",
         "analysis": "trending_up"
       },
       {
         "trend": "tgcet results",
         "search_volume": 202650000,
-        "start_date": "~14",
+        "start_date": "~17",
         "analysis": "trending_up"
       },
       {
         "trend": "gta",
         "search_volume": 520000,
-        "start_date": "~13",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "lockdown in india",
-        "search_volume": 202620000,
-        "start_date": "~16",
+        "start_date": "~17",
         "analysis": "trending_up"
       },
       {
         "trend": "rcb tickets",
+        "search_volume": 202620000,
+        "start_date": "~23",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "कक्षा आठ का रिजल्ट",
+        "search_volume": 20000,
+        "start_date": "~18",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "lockdown in india",
         "search_volume": 202620000,
         "start_date": "~19",
         "analysis": "trending_up"
@@ -965,275 +977,335 @@
       {
         "trend": "spencer johnson",
         "search_volume": 10000,
-        "start_date": "~9",
+        "start_date": "~13",
         "analysis": "trending_up"
       },
       {
         "trend": "david payne",
         "search_volume": 10000,
-        "start_date": "~15",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "कक्षा आठ का रिजल्ट",
-        "search_volume": 10000,
-        "start_date": "~14",
+        "start_date": "~18",
         "analysis": "trending_up"
       },
       {
         "trend": "dhurandhar",
         "search_volume": 2,
-        "start_date": "~20",
+        "start_date": "~23",
         "analysis": "trending_up"
       },
       {
-        "trend": "modi news",
-        "search_volume": 10000,
-        "start_date": "~6",
+        "trend": "ss",
+        "search_volume": 51210000,
+        "start_date": "~15",
         "analysis": "trending_up"
       },
       {
-        "trend": "zinedine zidane",
+        "trend": "modi live",
         "search_volume": 10000,
-        "start_date": "~10",
+        "start_date": "~7",
         "analysis": "timelapse"
-      },
-      {
-        "trend": "au-w vs wi-w",
-        "search_volume": 10000,
-        "start_date": "~4",
-        "analysis": "timelapse"
-      },
-      {
-        "trend": "lottery result",
-        "search_volume": 10000,
-        "start_date": "~1",
-        "analysis": "timelapse"
-      },
-      {
-        "trend": "harshil kalia",
-        "search_volume": 5000,
-        "start_date": "~6",
-        "analysis": "trending_up"
       },
       {
         "trend": "cbse",
         "search_volume": 10,
-        "start_date": "~14",
+        "start_date": "~18",
         "analysis": "trending_up"
       },
       {
-        "trend": "ryan gosling",
+        "trend": "new zealand women's national cricket team vs south africa women's national cricket team match scorecard",
+        "search_volume": 5000,
+        "start_date": "",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "harshil kalia",
         "search_volume": 5000,
         "start_date": "~9",
         "analysis": "trending_up"
       },
       {
-        "trend": "atanu chakraborty hdfc bank",
+        "trend": "nvidia ceo jensen huang",
         "search_volume": 5000,
-        "start_date": "~19",
+        "start_date": "~18",
         "analysis": "trending_up"
       },
       {
-        "trend": "irctc",
+        "trend": "rama navami",
+        "search_volume": 20265000,
+        "start_date": "~23",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "pm sym",
         "search_volume": 5000,
-        "start_date": "~1",
-        "analysis": "timelapse"
+        "start_date": "~18",
+        "analysis": "trending_up"
       },
       {
         "trend": "fifa world cup",
         "search_volume": 5000,
-        "start_date": "~15",
+        "start_date": "~16",
+        "analysis": "timelapse"
+      },
+      {
+        "trend": "atanu chakraborty hdfc bank",
+        "search_volume": 5000,
+        "start_date": "~22",
         "analysis": "timelapse"
       }
     ],
     "BR": [
       {
-        "trend": "gerson brenner",
-        "search_volume": 200000,
-        "start_date": "~21",
+        "trend": "parcial bbb",
+        "search_volume": 26,
+        "start_date": "~13",
         "analysis": "trending_up"
       },
       {
-        "trend": "mavericks x warriors",
+        "trend": "paysandu x gas",
         "search_volume": 20000,
-        "start_date": "~21",
+        "start_date": "~4",
         "analysis": "trending_up"
       },
       {
-        "trend": "lotofacil",
-        "search_volume": 364320000,
+        "trend": "miley cyrus",
+        "search_volume": 20000,
+        "start_date": "~16",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "gerson brenner causa da morte",
+        "search_volume": 20000,
         "start_date": "~22",
         "analysis": "trending_up"
       },
       {
-        "trend": "parcial bbb",
-        "search_volume": 26,
-        "start_date": "~10",
+        "trend": "selecao",
+        "search_volume": 20000,
+        "start_date": "~17",
         "analysis": "trending_up"
       },
       {
         "trend": "previsão do tempo",
         "search_volume": 20000,
-        "start_date": "~13",
+        "start_date": "~16",
         "analysis": "timelapse"
+      },
+      {
+        "trend": "gshow votação",
+        "search_volume": 10000,
+        "start_date": "",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "salah",
+        "search_volume": 10000,
+        "start_date": "~7",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "copa verde",
+        "search_volume": 10000,
+        "start_date": "~22",
+        "analysis": "trending_up"
       },
       {
         "trend": "alcides bernal",
         "search_volume": 10000,
-        "start_date": "~3",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "miley cyrus",
-        "search_volume": 10000,
-        "start_date": "~12",
+        "start_date": "~6",
         "analysis": "trending_up"
       },
       {
         "trend": "lee haney",
         "search_volume": 10000,
-        "start_date": "~11",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "governador ratinho junior",
-        "search_volume": 10000,
-        "start_date": "~20",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "anita harley pernambucanas",
-        "search_volume": 10000,
         "start_date": "~14",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "copa sul sudeste",
+        "search_volume": 10000,
+        "start_date": "~9",
         "analysis": "trending_up"
       },
       {
         "trend": "amistoso da seleção brasileira",
         "search_volume": 10000,
-        "start_date": "~14",
+        "start_date": "~17",
         "analysis": "trending_up"
       },
       {
-        "trend": "seleção brasileira",
-        "search_volume": 10000,
-        "start_date": "~13",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "salah",
+        "trend": "vivi wanderley",
         "search_volume": 5000,
-        "start_date": "~3",
+        "start_date": "~6",
         "analysis": "trending_up"
       },
       {
-        "trend": "unig",
+        "trend": "mbappe",
         "search_volume": 5000,
-        "start_date": "~22",
+        "start_date": "~9",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "sport recife x jacuipense",
+        "search_volume": 5000,
+        "start_date": "~2",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "resumo da novela três graças",
+        "search_volume": 5000,
+        "start_date": "",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "lotofacil",
+        "search_volume": 36445000,
+        "start_date": "~2",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "anita harley pernambucanas",
+        "search_volume": 5000,
+        "start_date": "~17",
         "analysis": "trending_up"
       },
       {
         "trend": "roberto marquis",
         "search_volume": 5000,
-        "start_date": "~14",
+        "start_date": "~18",
         "analysis": "trending_up"
       },
       {
-        "trend": "flávio bolsonaro",
+        "trend": "pesquisa flavio bolsonaro x lula",
         "search_volume": 5000,
         "start_date": "~5",
         "analysis": "trending_up"
       },
       {
-        "trend": "chainsaw man",
+        "trend": "bolsonaro prisão domiciliar",
         "search_volume": 5000,
         "start_date": "~7",
         "analysis": "trending_up"
       },
       {
-        "trend": "reforma judicial itália",
-        "search_volume": 5000,
-        "start_date": "~4",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "heat x spurs",
-        "search_volume": 5000,
-        "start_date": "~12",
-        "analysis": "timelapse"
-      },
-      {
-        "trend": "huracán x barracas central",
+        "trend": "griezmann",
         "search_volume": 5000,
         "start_date": "~11",
         "analysis": "timelapse"
       },
       {
-        "trend": "resumo da novela três graças",
+        "trend": "pix",
         "search_volume": 5000,
-        "start_date": "~1",
+        "start_date": "~2",
         "analysis": "timelapse"
-      },
-      {
-        "trend": "vivi wanderley",
-        "search_volume": 2000,
-        "start_date": "~2",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "mbappe",
-        "search_volume": 2000,
-        "start_date": "~6",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "pesquisa flavio bolsonaro x lula",
-        "search_volume": 2000,
-        "start_date": "~2",
-        "analysis": "trending_up"
       }
     ],
     "CA": [
       {
-        "trend": "miley cyrus",
-        "search_volume": 10000,
-        "start_date": "~19",
+        "trend": "hurricanes – canadiens",
+        "search_volume": 20000,
+        "start_date": "~3",
         "analysis": "trending_up"
       },
       {
-        "trend": "raptors vs jazz",
-        "search_volume": 10000,
-        "start_date": "~16",
-        "analysis": "timelapse"
+        "trend": "nhl",
+        "search_volume": 20000,
+        "start_date": "~1",
+        "analysis": "trending_up"
       },
       {
-        "trend": "senators vs rangers",
+        "trend": "nhl scores",
+        "search_volume": 20000,
+        "start_date": "~1",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "maple leafs vs bruins",
         "search_volume": 10000,
-        "start_date": "~15",
-        "analysis": "timelapse"
+        "start_date": "~3",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "miley cyrus",
+        "search_volume": 10000,
+        "start_date": "~23",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "federal minimum wage increase",
+        "search_volume": 10000,
+        "start_date": "~2",
+        "analysis": "trending_up"
       },
       {
         "trend": "张雪峰",
+        "search_volume": 10000,
+        "start_date": "~13",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "nhl standings",
+        "search_volume": 10000,
+        "start_date": "",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "oilers vs mammoth",
         "search_volume": 5000,
-        "start_date": "~10",
+        "start_date": "",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "russian oil tanker headed to cuba",
+        "search_volume": 5000,
+        "start_date": "~6",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "camila morrone",
+        "search_volume": 5000,
+        "start_date": "~21",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "senators vs red wings",
+        "search_volume": 5000,
+        "start_date": "~3",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "sora",
+        "search_volume": 5000,
+        "start_date": "~5",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "mel schilling",
+        "search_volume": 5000,
+        "start_date": "~14",
         "analysis": "trending_up"
       },
       {
         "trend": "gregory bovino",
         "search_volume": 5000,
-        "start_date": "~4",
+        "start_date": "~8",
         "analysis": "trending_up"
       },
       {
-        "trend": "daredevil born again season",
-        "search_volume": 25000,
-        "start_date": "~23",
+        "trend": "mo salah",
+        "search_volume": 5000,
+        "start_date": "~6",
         "analysis": "trending_up"
       },
       {
         "trend": "moses moody",
         "search_volume": 5000,
-        "start_date": "~17",
+        "start_date": "~21",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "chainsaw man",
+        "search_volume": 5000,
+        "start_date": "~10",
         "analysis": "trending_up"
       },
       {
@@ -1249,99 +1321,33 @@
         "analysis": "timelapse"
       },
       {
-        "trend": "auditor general international students",
-        "search_volume": 5000,
-        "start_date": "~14",
-        "analysis": "timelapse"
-      },
-      {
-        "trend": "daniss jenkins",
-        "search_volume": 5000,
-        "start_date": "~10",
-        "analysis": "timelapse"
-      },
-      {
-        "trend": "camila morrone",
-        "search_volume": 2000,
-        "start_date": "~18",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "mo salah",
-        "search_volume": 2000,
-        "start_date": "~3",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "transpondeur",
-        "search_volume": 2000,
-        "start_date": "~3",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "mel schilling",
-        "search_volume": 2000,
-        "start_date": "~10",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "federal minimum wage",
+        "trend": "coco gauff",
         "search_volume": 2000,
         "start_date": "~2",
         "analysis": "trending_up"
       },
       {
-        "trend": "us record heat wave",
+        "trend": "el nino canada",
         "search_volume": 2000,
-        "start_date": "~5",
+        "start_date": "~4",
         "analysis": "trending_up"
       },
       {
-        "trend": "fortnite layoffs",
-        "search_volume": 2000,
-        "start_date": "~3",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "vile",
-        "search_volume": 2000,
-        "start_date": "~16",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "chainsaw man chapter",
-        "search_volume": 2322000,
-        "start_date": "~7",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "dayton james webber",
-        "search_volume": 2000,
-        "start_date": "~13",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "russian oil tanker headed to cuba",
+        "trend": "golden knights vs jets",
         "search_volume": 2000,
         "start_date": "~2",
         "analysis": "trending_up"
       },
       {
-        "trend": "sora",
+        "trend": "anton frondell",
         "search_volume": 2000,
-        "start_date": "~1",
+        "start_date": "~12",
         "analysis": "trending_up"
       },
       {
         "trend": "alex cooper",
         "search_volume": 2000,
-        "start_date": "~13",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "bridgerton season",
-        "search_volume": 52000,
-        "start_date": "~8",
+        "start_date": "~16",
         "analysis": "trending_up"
       }
     ],
@@ -1349,38 +1355,32 @@
       {
         "trend": "mel schilling",
         "search_volume": 100000,
-        "start_date": "~11",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "iran missiles uk",
-        "search_volume": 5000,
         "start_date": "~14",
         "analysis": "trending_up"
       },
       {
         "trend": "miley cyrus",
-        "search_volume": 5000,
-        "start_date": "~15",
+        "search_volume": 10000,
+        "start_date": "~18",
         "analysis": "trending_up"
       },
       {
-        "trend": "ben teo",
+        "trend": "mo salah",
         "search_volume": 5000,
-        "start_date": "~20",
+        "start_date": "~6",
         "analysis": "trending_up"
       },
       {
-        "trend": "eu trade deal australia luxury car tax",
+        "trend": "keli lane",
         "search_volume": 5000,
-        "start_date": "~2",
+        "start_date": "~23",
         "analysis": "trending_up"
       },
       {
-        "trend": "moses moody",
+        "trend": "iran missiles uk",
         "search_volume": 5000,
         "start_date": "~17",
-        "analysis": "trending_up"
+        "analysis": "timelapse"
       },
       {
         "trend": "zombie ships strait hormuz",
@@ -1389,40 +1389,28 @@
         "analysis": "timelapse"
       },
       {
-        "trend": "pistons vs lakers",
-        "search_volume": 5000,
-        "start_date": "~7",
-        "analysis": "timelapse"
-      },
-      {
-        "trend": "australia women vs west indies women",
-        "search_volume": 5000,
-        "start_date": "~2",
-        "analysis": "timelapse"
-      },
-      {
-        "trend": "mo salah",
+        "trend": "sora",
         "search_volume": 2000,
-        "start_date": "~3",
+        "start_date": "~4",
         "analysis": "trending_up"
       },
       {
-        "trend": "keli lane",
-        "search_volume": 2000,
-        "start_date": "~20",
+        "trend": "heartbreak high season",
+        "search_volume": 32000,
+        "start_date": "~18",
         "analysis": "trending_up"
       },
       {
-        "trend": "arsenal vs chelsea",
-        "search_volume": 2000,
-        "start_date": "~2",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "tropical cyclone narelle forecast",
+        "trend": "fuel crisis",
         "search_volume": 2000,
         "start_date": "~5",
         "analysis": "trending_up"
+      },
+      {
+        "trend": "electric cars",
+        "search_volume": 2000,
+        "start_date": "~2",
+        "analysis": "timelapse"
       },
       {
         "trend": "xpeng australia",
@@ -1431,21 +1419,27 @@
         "analysis": "timelapse"
       },
       {
+        "trend": "arsenal vs chelsea",
+        "search_volume": 2000,
+        "start_date": "~3",
+        "analysis": "timelapse"
+      },
+      {
+        "trend": "moses moody",
+        "search_volume": 2000,
+        "start_date": "~19",
+        "analysis": "timelapse"
+      },
+      {
+        "trend": "tropical cyclone narelle forecast",
+        "search_volume": 2000,
+        "start_date": "~6",
+        "analysis": "timelapse"
+      },
+      {
         "trend": "alex cooper",
         "search_volume": 2000,
         "start_date": "~14",
-        "analysis": "timelapse"
-      },
-      {
-        "trend": "sony playstation",
-        "search_volume": 2000,
-        "start_date": "~10",
-        "analysis": "timelapse"
-      },
-      {
-        "trend": "payne haas injury update",
-        "search_volume": 2000,
-        "start_date": "~8",
         "analysis": "timelapse"
       },
       {
@@ -1455,13 +1449,7 @@
         "analysis": "timelapse"
       },
       {
-        "trend": "bulls vs rockets",
-        "search_volume": 2000,
-        "start_date": "~6",
-        "analysis": "timelapse"
-      },
-      {
-        "trend": "mtg banned and restricted announcement",
+        "trend": "payne haas injury",
         "search_volume": 2000,
         "start_date": "~5",
         "analysis": "timelapse"
@@ -1473,27 +1461,45 @@
         "analysis": "timelapse"
       },
       {
-        "trend": "heartbreak high season",
-        "search_volume": 31000,
-        "start_date": "~14",
+        "trend": "hornets vs kings",
+        "search_volume": 1000,
+        "start_date": "~2",
         "analysis": "trending_up"
       },
       {
-        "trend": "fuel",
+        "trend": "abc strike",
         "search_volume": 1000,
+        "start_date": "~4",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "bridgerton season",
+        "search_volume": 5,
         "start_date": "~2",
         "analysis": "trending_up"
       },
       {
         "trend": "western sydney airport",
         "search_volume": 1000,
-        "start_date": "~2",
+        "start_date": "~5",
         "analysis": "trending_up"
+      },
+      {
+        "trend": "camila morrone",
+        "search_volume": 1000,
+        "start_date": "~13",
+        "analysis": "timelapse"
       },
       {
         "trend": "iran missiles",
         "search_volume": 1000,
         "start_date": "~6",
+        "analysis": "timelapse"
+      },
+      {
+        "trend": "ryan couchman",
+        "search_volume": 1000,
+        "start_date": "~15",
         "analysis": "timelapse"
       }
     ],
@@ -1501,13 +1507,13 @@
       {
         "trend": "gino paoli",
         "search_volume": 500000,
-        "start_date": "~10",
+        "start_date": "~14",
         "analysis": "trending_up"
       },
       {
         "trend": "santanchè",
         "search_volume": 100000,
-        "start_date": "~5",
+        "start_date": "~8",
         "analysis": "trending_up"
       },
       {
@@ -1517,82 +1523,82 @@
         "analysis": "timelapse"
       },
       {
-        "trend": "michelsen",
+        "trend": "sinner michelsen",
         "search_volume": 50000,
-        "start_date": "~21",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "hannah montana",
-        "search_volume": 202620000,
-        "start_date": "~16",
+        "start_date": "~5",
         "analysis": "trending_up"
       },
       {
         "trend": "marina berlusconi referendum",
         "search_volume": 20000,
-        "start_date": "~9",
-        "analysis": "trending_up"
+        "start_date": "~10",
+        "analysis": "timelapse"
       },
       {
         "trend": "carburante esaurito",
         "search_volume": 10000,
-        "start_date": "~5",
+        "start_date": "~9",
         "analysis": "trending_up"
       },
       {
         "trend": "previsioni meteo pasqua pasquetta",
         "search_volume": 10000,
-        "start_date": "~6",
+        "start_date": "~10",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "miley cyrus",
+        "search_volume": 10000,
+        "start_date": "~15",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "ibiza grande fratello",
+        "search_volume": 10000,
+        "start_date": "~4",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "renato biancardi",
+        "search_volume": 10000,
+        "start_date": "~17",
+        "analysis": "timelapse"
+      },
+      {
+        "trend": "mario tobino margherita",
+        "search_volume": 10000,
+        "start_date": "~1",
         "analysis": "trending_up"
       },
       {
         "trend": "roberto zaltieri pacchi amazon",
         "search_volume": 10000,
-        "start_date": "~3",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "muchova",
-        "search_volume": 10000,
-        "start_date": "~2",
+        "start_date": "~6",
         "analysis": "timelapse"
       },
       {
-        "trend": "alexander zverev",
-        "search_volume": 10000,
-        "start_date": "~8",
-        "analysis": "timelapse"
-      },
-      {
-        "trend": "ibiza grande fratello",
+        "trend": "salah",
         "search_volume": 5000,
-        "start_date": "",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "alessandra mussolini",
-        "search_volume": 5000,
-        "start_date": "",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "renato biancardi",
-        "search_volume": 5000,
-        "start_date": "~13",
+        "start_date": "~7",
         "analysis": "trending_up"
       },
       {
         "trend": "martin landaluce",
         "search_volume": 5000,
-        "start_date": "~5",
+        "start_date": "~9",
         "analysis": "trending_up"
+      },
+      {
+        "trend": "alessandra mussolini",
+        "search_volume": 5000,
+        "start_date": "~3",
+        "analysis": "timelapse"
       },
       {
         "trend": "monaco - olimpia milano",
         "search_volume": 5000,
-        "start_date": "~4",
-        "analysis": "trending_up"
+        "start_date": "~6",
+        "analysis": "timelapse"
       },
       {
         "trend": "taylor fritz",
@@ -1601,149 +1607,155 @@
         "analysis": "timelapse"
       },
       {
-        "trend": "leonid radvinsky morto",
+        "trend": "disney plus",
         "search_volume": 5000,
-        "start_date": "~13",
+        "start_date": "~15",
         "analysis": "timelapse"
       },
       {
-        "trend": "salah",
+        "trend": "frances tiafoe",
         "search_volume": 2000,
         "start_date": "~3",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "nicolo grande fratello",
-        "search_volume": 2000,
-        "start_date": "",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "landaluce",
-        "search_volume": 2000,
-        "start_date": "~6",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "griezmann",
-        "search_volume": 2000,
-        "start_date": "~7",
         "analysis": "trending_up"
       },
       {
         "trend": "ios",
         "search_volume": 26,
+        "start_date": "~8",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "dario cassini",
+        "search_volume": 2000,
         "start_date": "~4",
         "analysis": "trending_up"
       },
       {
-        "trend": "bersani",
+        "trend": "sora",
         "search_volume": 2000,
-        "start_date": "~2",
+        "start_date": "~4",
         "analysis": "trending_up"
       },
       {
-        "trend": "referendum travaglio",
+        "trend": "landaluce",
         "search_volume": 2000,
-        "start_date": "~1",
-        "analysis": "trending_up"
+        "start_date": "~9",
+        "analysis": "timelapse"
+      },
+      {
+        "trend": "francesca manzini",
+        "search_volume": 2000,
+        "start_date": "~3",
+        "analysis": "timelapse"
+      },
+      {
+        "trend": "elezioni danimarca",
+        "search_volume": 2000,
+        "start_date": "~5",
+        "analysis": "timelapse"
       }
     ],
     "ES": [
       {
         "trend": "noelia eutanasia",
-        "search_volume": 20000,
-        "start_date": "~6",
+        "search_volume": 50000,
+        "start_date": "~9",
         "analysis": "trending_up"
       },
       {
         "trend": "real madrid - hapoel tel aviv",
         "search_volume": 20000,
-        "start_date": "~3",
+        "start_date": "~6",
         "analysis": "trending_up"
       },
       {
         "trend": "carmen maura",
         "search_volume": 20000,
-        "start_date": "~1",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "barça - anadolu efes",
-        "search_volume": 20000,
         "start_date": "~3",
-        "analysis": "trending_up"
+        "analysis": "timelapse"
       },
       {
         "trend": "entradas shakira",
         "search_volume": 20000,
-        "start_date": "~14",
+        "start_date": "~16",
+        "analysis": "timelapse"
+      },
+      {
+        "trend": "miley cyrus",
+        "search_volume": 10000,
+        "start_date": "~18",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "barça - anadolu efes",
+        "search_volume": 10000,
+        "start_date": "~7",
         "analysis": "trending_up"
       },
       {
         "trend": "pilar alegría",
         "search_volume": 10000,
-        "start_date": "~6",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "martin landaluce",
-        "search_volume": 10000,
-        "start_date": "~6",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "tenerife",
-        "search_volume": 10000,
-        "start_date": "~1",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "miley cyrus",
-        "search_volume": 5000,
-        "start_date": "~14",
+        "start_date": "~9",
         "analysis": "trending_up"
       },
       {
         "trend": "valencia - olympiacos",
-        "search_volume": 5000,
-        "start_date": "~3",
-        "analysis": "trending_up"
+        "search_volume": 10000,
+        "start_date": "~6",
+        "analysis": "timelapse"
+      },
+      {
+        "trend": "martin landaluce",
+        "search_volume": 10000,
+        "start_date": "~9",
+        "analysis": "timelapse"
+      },
+      {
+        "trend": "canarias",
+        "search_volume": 710000,
+        "start_date": "~9",
+        "analysis": "timelapse"
       },
       {
         "trend": "movistar plus+ plan gratuito",
         "search_volume": 5000,
-        "start_date": "~2",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "maria jesus montero",
-        "search_volume": 5000,
-        "start_date": "~16",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "anboto",
-        "search_volume": 5000,
-        "start_date": "~12",
+        "start_date": "~6",
         "analysis": "trending_up"
       },
       {
         "trend": "gino paoli",
         "search_volume": 5000,
-        "start_date": "~10",
+        "start_date": "~13",
         "analysis": "trending_up"
       },
       {
-        "trend": "antea rodriguez",
+        "trend": "maria jesus montero",
         "search_volume": 5000,
-        "start_date": "~2",
+        "start_date": "~19",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "sora",
+        "search_volume": 5000,
+        "start_date": "~4",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "anboto",
+        "search_volume": 5000,
+        "start_date": "~14",
         "analysis": "timelapse"
       },
       {
         "trend": "griezmann",
         "search_volume": 5000,
         "start_date": "~7",
+        "analysis": "timelapse"
+      },
+      {
+        "trend": "antea rodriguez",
+        "search_volume": 5000,
+        "start_date": "~2",
         "analysis": "timelapse"
       },
       {
@@ -1753,117 +1765,129 @@
         "analysis": "timelapse"
       },
       {
-        "trend": "carmen ruiz",
-        "search_volume": 2000,
-        "start_date": "",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "malena alterio",
-        "search_volume": 2000,
-        "start_date": "",
-        "analysis": "trending_up"
-      },
-      {
         "trend": "frío polar",
         "search_volume": 2000,
-        "start_date": "~1",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "champions femenina",
-        "search_volume": 2000,
-        "start_date": "~4",
+        "start_date": "~5",
         "analysis": "trending_up"
       },
       {
         "trend": "salah",
         "search_volume": 2000,
-        "start_date": "~3",
+        "start_date": "~7",
         "analysis": "trending_up"
       },
       {
-        "trend": "disney plus",
+        "trend": "carrera militar profesión de riesgo",
+        "search_volume": 2000,
+        "start_date": "~2",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "carmen ruiz",
         "search_volume": 2000,
         "start_date": "~3",
-        "analysis": "trending_up"
+        "analysis": "timelapse"
       },
       {
-        "trend": "marrash",
+        "trend": "malena alterio",
         "search_volume": 2000,
-        "start_date": "~17",
-        "analysis": "trending_up"
+        "start_date": "~3",
+        "analysis": "timelapse"
       },
       {
-        "trend": "sora",
+        "trend": "champions femenina",
         "search_volume": 2000,
-        "start_date": "~1",
-        "analysis": "trending_up"
+        "start_date": "~7",
+        "analysis": "timelapse"
+      },
+      {
+        "trend": "maría zurita",
+        "search_volume": 2000,
+        "start_date": "~2",
+        "analysis": "timelapse"
       }
     ],
     "MX": [
       {
         "trend": "jorge kahwagi gastine",
         "search_volume": 20000,
-        "start_date": "~17",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "mavericks - warriors",
-        "search_volume": 10000,
-        "start_date": "~21",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "crunchyroll",
-        "search_volume": 10000,
         "start_date": "~20",
         "analysis": "trending_up"
       },
       {
-        "trend": "lakers - pistons",
-        "search_volume": 10000,
-        "start_date": "~6",
-        "analysis": "timelapse"
-      },
-      {
         "trend": "miley cyrus",
         "search_volume": 5000,
-        "start_date": "~19",
+        "start_date": "~23",
         "analysis": "trending_up"
       },
       {
         "trend": "guillermo abascal",
         "search_volume": 5000,
-        "start_date": "~16",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "stanley karol g",
-        "search_volume": 5000,
-        "start_date": "~20",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "harry potter",
-        "search_volume": 2000,
-        "start_date": "~7",
+        "start_date": "~19",
         "analysis": "trending_up"
       },
       {
         "trend": "martes de frescura",
         "search_volume": 24,
+        "start_date": "~14",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "harry potter",
+        "search_volume": 5000,
         "start_date": "~10",
         "analysis": "trending_up"
       },
       {
         "trend": "champions femenina",
         "search_volume": 2000,
-        "start_date": "~5",
+        "start_date": "~9",
         "analysis": "trending_up"
       },
       {
-        "trend": "arsenal vs chelsea femenino",
+        "trend": "sora openai",
+        "search_volume": 2000,
+        "start_date": "",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "kings - hornets",
+        "search_volume": 2000,
+        "start_date": "~2",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "michoacan",
+        "search_volume": 2000,
+        "start_date": "~6",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "jaime bonilla",
+        "search_volume": 2000,
+        "start_date": "~6",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "mohamed salah",
+        "search_volume": 2000,
+        "start_date": "~6",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "mexico vs",
+        "search_volume": 2000,
+        "start_date": "~1",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "griezmann",
+        "search_volume": 2000,
+        "start_date": "~11",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "pelicans - knicks",
         "search_volume": 2000,
         "start_date": "~2",
         "analysis": "trending_up"
@@ -1871,85 +1895,67 @@
       {
         "trend": "chainsaw man",
         "search_volume": 2322000,
-        "start_date": "~7",
+        "start_date": "~10",
         "analysis": "trending_up"
       },
       {
-        "trend": "griezmann",
-        "search_volume": 2000,
-        "start_date": "~7",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "muere leonid radvinsky",
+        "trend": "hanna montana",
         "search_volume": 2000,
         "start_date": "~9",
-        "analysis": "timelapse"
+        "analysis": "trending_up"
       },
       {
-        "trend": "bulls - rockets",
+        "trend": "liga de campeones femenina de la uefa",
         "search_volume": 2000,
-        "start_date": "~7",
+        "start_date": "~18",
         "analysis": "timelapse"
       },
       {
-        "trend": "auditorio nacional cristian castro",
-        "search_volume": 2000,
-        "start_date": "~7",
-        "analysis": "timelapse"
-      },
-      {
-        "trend": "spurs - heat",
+        "trend": "taylor fritz",
         "search_volume": 2000,
         "start_date": "~4",
         "analysis": "timelapse"
       },
       {
-        "trend": "michoacan",
-        "search_volume": 1000,
-        "start_date": "~3",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "mohamed salah",
-        "search_volume": 1000,
-        "start_date": "~3",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "hanna montana",
-        "search_volume": 1000,
-        "start_date": "~6",
+        "trend": "bridgerton temporada",
+        "search_volume": 51000,
+        "start_date": "~2",
         "analysis": "trending_up"
       },
       {
         "trend": "derrame de petróleo",
         "search_volume": 1000,
+        "start_date": "~11",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "junior - bucaramanga",
+        "search_volume": 1000,
+        "start_date": "~2",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "dylan sprouse",
+        "search_volume": 1000,
         "start_date": "~8",
         "analysis": "trending_up"
       },
       {
-        "trend": "taylor fritz",
+        "trend": "magic - cavaliers",
         "search_volume": 1000,
-        "start_date": "~4",
-        "analysis": "timelapse"
+        "start_date": "~1",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "seleccion mexicana",
+        "search_volume": 1000,
+        "start_date": "~14",
+        "analysis": "trending_up"
       },
       {
         "trend": "fecha fifa",
         "search_volume": 1000,
-        "start_date": "~6",
-        "analysis": "timelapse"
-      },
-      {
-        "trend": "martin landaluce",
-        "search_volume": 1000,
-        "start_date": "~5",
-        "analysis": "timelapse"
-      },
-      {
-        "trend": "alerta amber",
-        "search_volume": 1000,
-        "start_date": "~6",
+        "start_date": "~11",
         "analysis": "timelapse"
       }
     ]
