@@ -1,18 +1,12 @@
 {
-  "timestamp": "2026-06-01 15:54:57",
+  "timestamp": "2026-06-01 20:16:05",
   "data": {
     "KR": [
-      {
-        "trend": "네이버 주가",
-        "search_volume": 2000000,
-        "start_date": "~10",
-        "analysis": "timelapse"
-      },
       {
         "trend": "한화에어로스페이스",
         "search_volume": 2000,
         "start_date": "~13",
-        "analysis": "trending_up"
+        "analysis": "timelapse"
       },
       {
         "trend": "게임",
@@ -41,13 +35,7 @@
       {
         "trend": "kbo",
         "search_volume": 200,
-        "start_date": "~8",
-        "analysis": "timelapse"
-      },
-      {
-        "trend": "sxmb",
-        "search_volume": 200,
-        "start_date": "~1",
+        "start_date": "~12",
         "analysis": "timelapse"
       },
       {
@@ -60,6 +48,12 @@
         "trend": "하이닉스 화재",
         "search_volume": 200,
         "start_date": "~5",
+        "analysis": "timelapse"
+      },
+      {
+        "trend": "sxmb",
+        "search_volume": 200,
+        "start_date": "~1",
         "analysis": "timelapse"
       },
       {
@@ -77,8 +71,8 @@
       {
         "trend": "모스탄",
         "search_volume": 100,
-        "start_date": "~2",
-        "analysis": "timelapse"
+        "start_date": "~7",
+        "analysis": "trending_up"
       },
       {
         "trend": "kbo 올스타 투표",
@@ -137,51 +131,69 @@
     ],
     "US": [
       {
+        "trend": "myles garrett",
+        "search_volume": 100000,
+        "start_date": "~4",
+        "analysis": "trending_up"
+      },
+      {
         "trend": "euphoria finale",
         "search_volume": 100000,
-        "start_date": "~15",
+        "start_date": "~20",
         "analysis": "trending_up"
       },
       {
-        "trend": "brazil vs panama",
+        "trend": "odell beckham jr",
         "search_volume": 20000,
-        "start_date": "~22",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "russell henley",
-        "search_volume": 20000,
-        "start_date": "~13",
-        "analysis": "timelapse"
-      },
-      {
-        "trend": "cloud",
-        "search_volume": 20000,
-        "start_date": "~2",
-        "analysis": "timelapse"
-      },
-      {
-        "trend": "masters lottery",
-        "search_volume": 10000,
         "start_date": "~4",
         "analysis": "trending_up"
       },
       {
         "trend": "aj brown",
-        "search_volume": 10000,
-        "start_date": "~18",
+        "search_volume": 20000,
+        "start_date": "~22",
         "analysis": "trending_up"
       },
       {
-        "trend": "taylor morrison",
-        "search_volume": 10000,
-        "start_date": "~18",
+        "trend": "masters lottery",
+        "search_volume": 20000,
+        "start_date": "~8",
         "analysis": "trending_up"
+      },
+      {
+        "trend": "taylor swift",
+        "search_volume": 20000,
+        "start_date": "~5",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "brazil",
+        "search_volume": 20000,
+        "start_date": "~22",
+        "analysis": "timelapse"
+      },
+      {
+        "trend": "cloud",
+        "search_volume": 20000,
+        "start_date": "~10",
+        "analysis": "timelapse"
+      },
+      {
+        "trend": "pride month",
+        "search_volume": 10000,
+        "start_date": "~20",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "world cup",
+        "search_volume": 10000,
+        "start_date": "~7",
+        "analysis": "timelapse"
       },
       {
         "trend": "the heirloom hotel laurel ms",
         "search_volume": 10000,
-        "start_date": "~14",
+        "start_date": "~19",
         "analysis": "timelapse"
       },
       {
@@ -191,37 +203,13 @@
         "analysis": "timelapse"
       },
       {
-        "trend": "cracker barrel",
-        "search_volume": 40010000,
-        "start_date": "~14",
-        "analysis": "timelapse"
-      },
-      {
-        "trend": "usa vs",
-        "search_volume": 10000,
-        "start_date": "~6",
-        "analysis": "timelapse"
-      },
-      {
-        "trend": "clash in italy results",
-        "search_volume": 10000,
-        "start_date": "~9",
-        "analysis": "timelapse"
-      },
-      {
-        "trend": "casper ruud",
+        "trend": "nascar results",
         "search_volume": 10000,
         "start_date": "~4",
         "analysis": "timelapse"
       },
       {
-        "trend": "pride month",
-        "search_volume": 5000,
-        "start_date": "~16",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "scott michael campbell",
+        "trend": "serena williams",
         "search_volume": 5000,
         "start_date": "~7",
         "analysis": "trending_up"
@@ -229,49 +217,43 @@
       {
         "trend": "when is pride month",
         "search_volume": 5000,
-        "start_date": "~14",
+        "start_date": "~18",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "scott michael campbell",
+        "search_volume": 5000,
+        "start_date": "~11",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "anthropic ipo",
+        "search_volume": 5000,
+        "start_date": "~4",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "juneteenth",
+        "search_volume": 5000,
+        "start_date": "~8",
         "analysis": "trending_up"
       },
       {
         "trend": "june",
         "search_volume": 2026,
-        "start_date": "~4",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "dua lipa wedding",
-        "search_volume": 5000,
-        "start_date": "~22",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "world cup",
-        "search_volume": 5000,
-        "start_date": "~3",
+        "start_date": "~8",
         "analysis": "timelapse"
       },
       {
         "trend": "anna kalinskaya",
         "search_volume": 5000,
-        "start_date": "~4",
+        "start_date": "~6",
         "analysis": "timelapse"
       },
       {
-        "trend": "apartments",
+        "trend": "real estate",
         "search_volume": 5000,
         "start_date": "~8",
-        "analysis": "timelapse"
-      },
-      {
-        "trend": "colombia elections",
-        "search_volume": 5000,
-        "start_date": "~18",
-        "analysis": "timelapse"
-      },
-      {
-        "trend": "wvu baseball",
-        "search_volume": 5000,
-        "start_date": "~17",
         "analysis": "timelapse"
       },
       {
@@ -281,9 +263,21 @@
         "analysis": "timelapse"
       },
       {
-        "trend": "crypto atm",
+        "trend": "russell henley",
         "search_volume": 5000,
-        "start_date": "~1",
+        "start_date": "~13",
+        "analysis": "timelapse"
+      },
+      {
+        "trend": "apartments",
+        "search_volume": 5000,
+        "start_date": "~8",
+        "analysis": "timelapse"
+      },
+      {
+        "trend": "cracker barrel",
+        "search_volume": 4005000,
+        "start_date": "~14",
         "analysis": "timelapse"
       }
     ],
@@ -291,13 +285,25 @@
       {
         "trend": "jr西日本",
         "search_volume": 100000,
-        "start_date": "~18",
+        "start_date": "~23",
         "analysis": "trending_up"
       },
       {
         "trend": "yahoo",
         "search_volume": 50000,
         "start_date": "~6",
+        "analysis": "timelapse"
+      },
+      {
+        "trend": "マップ",
+        "search_volume": 20000,
+        "start_date": "~7",
+        "analysis": "timelapse"
+      },
+      {
+        "trend": "野田聖子",
+        "search_volume": 10000,
+        "start_date": "~4",
         "analysis": "timelapse"
       },
       {
@@ -313,21 +319,27 @@
         "analysis": "timelapse"
       },
       {
-        "trend": "マップ",
+        "trend": "yahoo ニュース",
         "search_volume": 10000,
-        "start_date": "~7",
+        "start_date": "~5",
         "analysis": "timelapse"
+      },
+      {
+        "trend": "田中かえ",
+        "search_volume": 5000,
+        "start_date": "~6",
+        "analysis": "trending_up"
       },
       {
         "trend": "ローソン 盛りすぎ",
         "search_volume": 5000,
-        "start_date": "~12",
+        "start_date": "~17",
         "analysis": "trending_up"
       },
       {
-        "trend": "伊藤孝恵",
+        "trend": "jr東日本",
         "search_volume": 5000,
-        "start_date": "~3",
+        "start_date": "~21",
         "analysis": "trending_up"
       },
       {
@@ -355,51 +367,33 @@
         "analysis": "timelapse"
       },
       {
-        "trend": "yahoo ニュース",
-        "search_volume": 5000,
-        "start_date": "~5",
-        "analysis": "timelapse"
-      },
-      {
         "trend": "地震速報",
         "search_volume": 5000,
         "start_date": "~1",
         "analysis": "timelapse"
       },
       {
-        "trend": "田中かえ",
-        "search_volume": 2000,
-        "start_date": "~1",
-        "analysis": "trending_up"
-      },
-      {
         "trend": "尾碕真花",
         "search_volume": 2000,
-        "start_date": "~5",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "嵐 会社設立",
-        "search_volume": 2000,
-        "start_date": "~17",
+        "start_date": "~9",
         "analysis": "trending_up"
       },
       {
         "trend": "ソフトバンク 株価",
         "search_volume": 2000,
-        "start_date": "~13",
+        "start_date": "~17",
         "analysis": "trending_up"
       },
       {
-        "trend": "野田聖子",
+        "trend": "嵐 会社設立",
         "search_volume": 2000,
-        "start_date": "~3",
+        "start_date": "~19",
         "analysis": "timelapse"
       },
       {
         "trend": "蓮舫",
         "search_volume": 2000,
-        "start_date": "~2",
+        "start_date": "~4",
         "analysis": "timelapse"
       },
       {
@@ -415,15 +409,15 @@
         "analysis": "timelapse"
       },
       {
-        "trend": "京浜東北線",
-        "search_volume": 2000,
-        "start_date": "~2",
-        "analysis": "timelapse"
-      },
-      {
         "trend": "マリオ",
         "search_volume": 2000,
         "start_date": "~7",
+        "analysis": "timelapse"
+      },
+      {
+        "trend": "京浜東北線",
+        "search_volume": 2000,
+        "start_date": "~2",
         "analysis": "timelapse"
       },
       {
@@ -441,46 +435,52 @@
     ],
     "GB": [
       {
-        "trend": "tube strikes",
+        "trend": "tube strike",
         "search_volume": 50000,
-        "start_date": "~7",
+        "start_date": "~13",
         "analysis": "trending_up"
       },
       {
         "trend": "google",
         "search_volume": 50000,
-        "start_date": "~9",
-        "analysis": "trending_up"
+        "start_date": "~10",
+        "analysis": "timelapse"
       },
       {
-        "trend": "soccer aid score",
+        "trend": "chatgpt",
         "search_volume": 50000,
-        "start_date": "~22",
-        "analysis": "trending_up"
+        "start_date": "~7",
+        "analysis": "timelapse"
       },
       {
         "trend": "maps",
         "search_volume": 20000,
-        "start_date": "~8",
-        "analysis": "trending_up"
+        "start_date": "~9",
+        "analysis": "timelapse"
       },
       {
-        "trend": "damson idris",
-        "search_volume": 20000,
-        "start_date": "~23",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "rosamund pike",
+        "trend": "outlook",
         "search_volume": 20000,
         "start_date": "~9",
-        "analysis": "trending_up"
+        "analysis": "timelapse"
+      },
+      {
+        "trend": "bbc",
+        "search_volume": 20000,
+        "start_date": "~9",
+        "analysis": "timelapse"
       },
       {
         "trend": "kevin keegan",
         "search_volume": 10000,
-        "start_date": "~6",
+        "start_date": "~10",
         "analysis": "trending_up"
+      },
+      {
+        "trend": "companies house",
+        "search_volume": 10000,
+        "start_date": "~9",
+        "analysis": "timelapse"
       },
       {
         "trend": "calculator",
@@ -495,21 +495,21 @@
         "analysis": "timelapse"
       },
       {
-        "trend": "dua lipa wedding",
+        "trend": "james milner",
         "search_volume": 5000,
-        "start_date": "~23",
+        "start_date": "~12",
         "analysis": "trending_up"
       },
       {
         "trend": "john kear",
         "search_volume": 5000,
-        "start_date": "~7",
+        "start_date": "~12",
         "analysis": "trending_up"
       },
       {
-        "trend": "james milner",
+        "trend": "taylor swift",
         "search_volume": 5000,
-        "start_date": "~7",
+        "start_date": "~5",
         "analysis": "trending_up"
       },
       {
@@ -527,123 +527,99 @@
       {
         "trend": "ftse",
         "search_volume": 1005000,
-        "start_date": "~5",
+        "start_date": "~10",
         "analysis": "timelapse"
       },
       {
-        "trend": "robbie williams",
+        "trend": "ns&i",
         "search_volume": 5000,
-        "start_date": "~23",
+        "start_date": "~21",
         "analysis": "timelapse"
       },
       {
-        "trend": "joe marler",
-        "search_volume": 5000,
+        "trend": "itvx",
+        "search_volume": 2000,
+        "start_date": "",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "when does love island start",
+        "search_volume": 20262000,
+        "start_date": "~2",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "sabalenka",
+        "search_volume": 2000,
+        "start_date": "~2",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "rosamund pike",
+        "search_volume": 2000,
         "start_date": "~13",
-        "analysis": "timelapse"
-      },
-      {
-        "trend": "molly mccann",
-        "search_volume": 5000,
-        "start_date": "~7",
-        "analysis": "timelapse"
-      },
-      {
-        "trend": "tv guide",
-        "search_volume": 5000,
-        "start_date": "~4",
-        "analysis": "timelapse"
+        "analysis": "trending_up"
       },
       {
         "trend": "malta",
         "search_volume": 2000,
-        "start_date": "~7",
+        "start_date": "~11",
         "analysis": "trending_up"
       },
       {
-        "trend": "rs",
+        "trend": "pat mcfadden",
         "search_volume": 2000,
-        "start_date": "~8",
+        "start_date": "~5",
         "analysis": "trending_up"
       },
       {
         "trend": "brazil fc",
         "search_volume": 2000,
-        "start_date": "~18",
+        "start_date": "~22",
         "analysis": "trending_up"
       },
       {
-        "trend": "map",
+        "trend": "eastenders spoilers",
         "search_volume": 2000,
-        "start_date": "~8",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "games",
-        "search_volume": 2000,
-        "start_date": "~5",
-        "analysis": "timelapse"
-      },
-      {
-        "trend": "lloyds bank",
-        "search_volume": 2000,
-        "start_date": "~10",
+        "start_date": "~1",
         "analysis": "trending_up"
       }
     ],
     "DE": [
       {
         "trend": "marcel bergmann",
-        "search_volume": 50000,
-        "start_date": "~18",
+        "search_volume": 20000,
+        "start_date": "~22",
         "analysis": "trending_up"
       },
       {
-        "trend": "fussball heute",
-        "search_volume": 50000,
-        "start_date": "~6",
-        "analysis": "timelapse"
+        "trend": "türkiye maci",
+        "search_volume": 10000,
+        "start_date": "~4",
+        "analysis": "trending_up"
       },
       {
-        "trend": "marla svenja liebich",
-        "search_volume": 20000,
-        "start_date": "~2",
+        "trend": "lok leipzig",
+        "search_volume": 10000,
+        "start_date": "~3",
         "analysis": "trending_up"
       },
       {
         "trend": "eishockey wm",
-        "search_volume": 202620000,
+        "search_volume": 202610000,
         "start_date": "~9",
         "analysis": "timelapse"
       },
       {
-        "trend": "wm spielplan",
-        "search_volume": 20000,
-        "start_date": "~13",
-        "analysis": "timelapse"
-      },
-      {
-        "trend": "undav",
-        "search_volume": 20000,
-        "start_date": "~8",
-        "analysis": "timelapse"
-      },
-      {
-        "trend": "zdf mediathek",
-        "search_volume": 10000,
-        "start_date": "~2",
-        "analysis": "timelapse"
-      },
-      {
-        "trend": "callum turner",
+        "trend": "sabalenka",
         "search_volume": 5000,
-        "start_date": "~23",
+        "start_date": "~2",
         "analysis": "trending_up"
       },
       {
-        "trend": "malta explosion",
+        "trend": "türkei spiel",
         "search_volume": 5000,
-        "start_date": "~7",
+        "start_date": "~22",
         "analysis": "trending_up"
       },
       {
@@ -653,114 +629,126 @@
         "analysis": "timelapse"
       },
       {
-        "trend": "hamburg olympia",
-        "search_volume": 5000,
-        "start_date": "~19",
-        "analysis": "timelapse"
+        "trend": "georg uecker",
+        "search_volume": 2000,
+        "start_date": "~2",
+        "analysis": "trending_up"
       },
       {
-        "trend": "deniz undav",
-        "search_volume": 5000,
+        "trend": "malta explosion",
+        "search_volume": 2000,
         "start_date": "~11",
-        "analysis": "timelapse"
+        "analysis": "trending_up"
       },
       {
-        "trend": "deutschland trikot",
-        "search_volume": 20265000,
-        "start_date": "~10",
-        "analysis": "timelapse"
-      },
-      {
-        "trend": "hradecky",
-        "search_volume": 5000,
-        "start_date": "~4",
-        "analysis": "timelapse"
-      },
-      {
-        "trend": "tatort diesmal ist es anders",
-        "search_volume": 5000,
-        "start_date": "~6",
-        "analysis": "timelapse"
-      },
-      {
-        "trend": "florian wirtz",
-        "search_volume": 5000,
-        "start_date": "~3",
-        "analysis": "timelapse"
-      },
-      {
-        "trend": "weltkindertag",
-        "search_volume": 20262000,
-        "start_date": "~22",
+        "trend": "mette marit",
+        "search_volume": 2000,
+        "start_date": "~8",
         "analysis": "trending_up"
       },
       {
         "trend": "sap aktie",
         "search_volume": 2000,
-        "start_date": "~4",
-        "analysis": "trending_up"
+        "start_date": "~8",
+        "analysis": "timelapse"
       },
       {
-        "trend": "fonseca",
+        "trend": "tv heute",
+        "search_volume": 2000,
+        "start_date": "~1",
+        "analysis": "timelapse"
+      },
+      {
+        "trend": "focus",
         "search_volume": 2000,
         "start_date": "~10",
         "analysis": "timelapse"
       },
       {
-        "trend": "casper ruud",
-        "search_volume": 2000,
-        "start_date": "~11",
+        "trend": "jennifer lawrence",
+        "search_volume": 1000,
+        "start_date": "~2",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "mein schiff",
+        "search_volume": 1000,
+        "start_date": "~1",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "toni garrn",
+        "search_volume": 1000,
+        "start_date": "~1",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "taylor swift",
+        "search_volume": 1000,
+        "start_date": "~4",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "linkin park hamburg",
+        "search_volume": 20261000,
+        "start_date": "~6",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "alejandro tabilo",
+        "search_volume": 1000,
+        "start_date": "~2",
         "analysis": "timelapse"
       },
       {
-        "trend": "ruud",
-        "search_volume": 2000,
-        "start_date": "~12",
-        "analysis": "timelapse"
-      },
-      {
-        "trend": "curacao",
-        "search_volume": 2000,
+        "trend": "maja chwalińska",
+        "search_volume": 1000,
         "start_date": "~5",
         "analysis": "timelapse"
       },
       {
-        "trend": "fritzy kromp",
-        "search_volume": 2000,
-        "start_date": "~3",
+        "trend": "marla svenja liebich",
+        "search_volume": 1000,
+        "start_date": "~5",
         "analysis": "timelapse"
       },
       {
-        "trend": "nathaniel brown",
-        "search_volume": 2000,
-        "start_date": "~3",
+        "trend": "alice schwarzer",
+        "search_volume": 1000,
+        "start_date": "~1",
         "analysis": "timelapse"
       },
       {
-        "trend": "cornelia poletto",
-        "search_volume": 2000,
-        "start_date": "~4",
+        "trend": "euphoria",
+        "search_volume": 1000,
+        "start_date": "~19",
+        "analysis": "timelapse"
+      },
+      {
+        "trend": "internationaler kindertag",
+        "search_volume": 1000,
+        "start_date": "~5",
+        "analysis": "timelapse"
+      },
+      {
+        "trend": "zachary svajda",
+        "search_volume": 1000,
+        "start_date": "~3",
         "analysis": "timelapse"
       }
     ],
     "FR": [
       {
-        "trend": "rublev",
-        "search_volume": 20000,
-        "start_date": "~13",
-        "analysis": "timelapse"
-      },
-      {
         "trend": "andré santini",
         "search_volume": 10000,
-        "start_date": "~9",
+        "start_date": "~13",
         "analysis": "trending_up"
       },
       {
-        "trend": "parry roland garros",
+        "trend": "diane parry",
         "search_volume": 10000,
         "start_date": "~2",
-        "analysis": "trending_up"
+        "analysis": "timelapse"
       },
       {
         "trend": "yahoo",
@@ -769,39 +757,15 @@
         "analysis": "timelapse"
       },
       {
-        "trend": "benoit magimel",
-        "search_volume": 10000,
-        "start_date": "~11",
-        "analysis": "timelapse"
-      },
-      {
-        "trend": "lyhanna",
-        "search_volume": 5000,
-        "start_date": "~21",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "callum turner",
-        "search_volume": 5000,
-        "start_date": "~22",
-        "analysis": "trending_up"
-      },
-      {
         "trend": "celine dion",
         "search_volume": 5000,
-        "start_date": "~8",
+        "start_date": "~13",
         "analysis": "trending_up"
       },
       {
-        "trend": "flavio cobolli",
+        "trend": "cobolli",
         "search_volume": 5000,
-        "start_date": "~6",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "potapova",
-        "search_volume": 5000,
-        "start_date": "~3",
+        "start_date": "~9",
         "analysis": "timelapse"
       },
       {
@@ -811,40 +775,46 @@
         "analysis": "timelapse"
       },
       {
-        "trend": "ruud fonseca",
+        "trend": "potapova",
         "search_volume": 5000,
-        "start_date": "~18",
+        "start_date": "~3",
         "analysis": "timelapse"
       },
       {
-        "trend": "asm",
-        "search_volume": 5000,
-        "start_date": "~12",
-        "analysis": "timelapse"
-      },
-      {
-        "trend": "andreeva",
-        "search_volume": 5000,
-        "start_date": "~2",
-        "analysis": "timelapse"
-      },
-      {
-        "trend": "laurent macron",
+        "trend": "arnaldi",
         "search_volume": 2000,
-        "start_date": "~20",
+        "start_date": "~2",
         "analysis": "trending_up"
       },
       {
-        "trend": "ciao energy",
+        "trend": "malte",
+        "search_volume": 2000,
+        "start_date": "~9",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "lyhanna disparition",
         "search_volume": 2000,
         "start_date": "~22",
         "analysis": "trending_up"
       },
       {
-        "trend": "dua lipa",
+        "trend": "loto",
         "search_volume": 2000,
-        "start_date": "~23",
+        "start_date": "~1",
         "analysis": "trending_up"
+      },
+      {
+        "trend": "auger aliassime",
+        "search_volume": 2000,
+        "start_date": "~3",
+        "analysis": "timelapse"
+      },
+      {
+        "trend": "smic",
+        "search_volume": 2000,
+        "start_date": "~14",
+        "analysis": "timelapse"
       },
       {
         "trend": "chwalinska maja",
@@ -859,15 +829,9 @@
         "analysis": "timelapse"
       },
       {
-        "trend": "smic",
+        "trend": "xenia fedorova",
         "search_volume": 2000,
-        "start_date": "~10",
-        "analysis": "timelapse"
-      },
-      {
-        "trend": "senegal etats unis",
-        "search_volume": 2000,
-        "start_date": "~16",
+        "start_date": "~22",
         "analysis": "timelapse"
       },
       {
@@ -877,35 +841,65 @@
         "analysis": "timelapse"
       },
       {
-        "trend": "choose france",
-        "search_volume": 2000,
-        "start_date": "~21",
+        "trend": "sabalenka osaka",
+        "search_volume": 1000,
+        "start_date": "~2",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "niska stade de france",
+        "search_volume": 1000,
+        "start_date": "~3",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "steven spielberg",
+        "search_volume": 1000,
+        "start_date": "~2",
         "analysis": "timelapse"
       },
       {
-        "trend": "classement top",
-        "search_volume": 142000,
-        "start_date": "~6",
+        "trend": "disclosure day",
+        "search_volume": 1000,
+        "start_date": "~1",
+        "analysis": "timelapse"
+      },
+      {
+        "trend": "masayoshi son",
+        "search_volume": 1000,
+        "start_date": "~1",
+        "analysis": "timelapse"
+      },
+      {
+        "trend": "cerundolo",
+        "search_volume": 1000,
+        "start_date": "~3",
+        "analysis": "timelapse"
+      },
+      {
+        "trend": "matteo berrettini",
+        "search_volume": 1000,
+        "start_date": "~3",
         "analysis": "timelapse"
       }
     ],
     "IN": [
       {
-        "trend": "andy flower",
-        "search_volume": 50000,
-        "start_date": "~22",
-        "analysis": "trending_up"
+        "trend": "chatgpt",
+        "search_volume": 200000,
+        "start_date": "~13",
+        "analysis": "timelapse"
       },
       {
         "trend": "epfo",
-        "search_volume": 20000,
-        "start_date": "~11",
+        "search_volume": 50000,
+        "start_date": "~15",
         "analysis": "trending_up"
       },
       {
         "trend": "irctc",
-        "search_volume": 20000,
-        "start_date": "~11",
+        "search_volume": 50000,
+        "start_date": "~15",
         "analysis": "trending_up"
       },
       {
@@ -915,106 +909,94 @@
         "analysis": "timelapse"
       },
       {
-        "trend": "callum turner",
+        "trend": "moneycontrol",
         "search_volume": 10000,
-        "start_date": "~23",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "jee advanced",
-        "search_volume": 2026,
-        "start_date": "~20",
+        "start_date": "~16",
         "analysis": "trending_up"
       },
       {
         "trend": "sbi",
         "search_volume": 10000,
-        "start_date": "~11",
+        "start_date": "~16",
         "analysis": "trending_up"
       },
       {
         "trend": "aadhar card",
         "search_volume": 10000,
-        "start_date": "~11",
+        "start_date": "~15",
         "analysis": "trending_up"
       },
       {
         "trend": "income tax",
         "search_volume": 10000,
-        "start_date": "~11",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "moneycontrol",
-        "search_volume": 10000,
-        "start_date": "~12",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "suman kalyanpur",
-        "search_volume": 5000,
-        "start_date": "~23",
-        "analysis": "trending_up"
+        "start_date": "~13",
+        "analysis": "timelapse"
       },
       {
         "trend": "brazil vs panama",
         "search_volume": 5000,
-        "start_date": "~18",
+        "start_date": "~22",
         "analysis": "trending_up"
       },
       {
         "trend": "ap eamcet result",
         "search_volume": 20265000,
-        "start_date": "~14",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "annapurna bhandar online apply",
-        "search_volume": 5000,
-        "start_date": "~8",
+        "start_date": "~18",
         "analysis": "trending_up"
       },
       {
         "trend": "hdfc bank",
         "search_volume": 5000,
-        "start_date": "~13",
+        "start_date": "~17",
         "analysis": "trending_up"
       },
       {
         "trend": "zoho",
-        "search_volume": 2000,
-        "start_date": "~11",
+        "search_volume": 5000,
+        "start_date": "~16",
         "analysis": "trending_up"
       },
       {
         "trend": "hindi news",
+        "search_volume": 5000,
+        "start_date": "~16",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "annapurna bhandar online apply",
+        "search_volume": 5000,
+        "start_date": "~9",
+        "analysis": "timelapse"
+      },
+      {
+        "trend": "annamalai",
         "search_volume": 2000,
         "start_date": "~12",
         "analysis": "trending_up"
       },
       {
-        "trend": "dinamalar",
+        "trend": "pf",
         "search_volume": 2000,
-        "start_date": "~14",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "annamalai",
-        "search_volume": 2000,
-        "start_date": "~8",
+        "start_date": "~13",
         "analysis": "trending_up"
       },
       {
         "trend": "dainik jagran",
         "search_volume": 2000,
-        "start_date": "~14",
-        "analysis": "trending_up"
+        "start_date": "~18",
+        "analysis": "timelapse"
       },
       {
-        "trend": "pf",
+        "trend": "dinamalar",
         "search_volume": 2000,
+        "start_date": "~19",
+        "analysis": "timelapse"
+      },
+      {
+        "trend": "jee advanced",
+        "search_volume": 20262000,
         "start_date": "~8",
-        "analysis": "trending_up"
+        "analysis": "timelapse"
       },
       {
         "trend": "unified portal",
@@ -1035,41 +1017,35 @@
         "analysis": "timelapse"
       },
       {
-        "trend": "ipl winners",
-        "search_volume": 2000,
+        "trend": "tim payne footballer",
+        "search_volume": 1000,
+        "start_date": "~6",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "telangana formation day",
+        "search_volume": 1000,
         "start_date": "~14",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "josaa",
+        "search_volume": 1000,
+        "start_date": "~16",
         "analysis": "timelapse"
       }
     ],
     "BR": [
       {
-        "trend": "jakub mensik",
-        "search_volume": 50000,
-        "start_date": "~19",
-        "analysis": "trending_up"
-      },
-      {
         "trend": "whatsapp",
-        "search_volume": 50000,
-        "start_date": "~5",
-        "analysis": "timelapse"
-      },
-      {
-        "trend": "resultado do jogo do brasil",
-        "search_volume": 50000,
-        "start_date": "~17",
+        "search_volume": 100000,
+        "start_date": "~10",
         "analysis": "trending_up"
       },
       {
-        "trend": "vasco x atlético-mg",
+        "trend": "jogos de seleção brasileira",
         "search_volume": 20000,
-        "start_date": "~24",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "jogos de copa do mundo",
-        "search_volume": 20000,
-        "start_date": "~17",
+        "start_date": "~21",
         "analysis": "trending_up"
       },
       {
@@ -1077,6 +1053,12 @@
         "search_volume": 20000,
         "start_date": "~1",
         "analysis": "timelapse"
+      },
+      {
+        "trend": "jogos de copa do mundo",
+        "search_volume": 10000,
+        "start_date": "~22",
+        "analysis": "trending_up"
       },
       {
         "trend": "sao paulo x",
@@ -1087,25 +1069,7 @@
       {
         "trend": "corpus christi é feriado nacional",
         "search_volume": 5000,
-        "start_date": "~6",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "feriado em junho",
-        "search_volume": 5000,
-        "start_date": "~6",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "panama esta na copa do mundo",
-        "search_volume": 5000,
-        "start_date": "~18",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "jogo",
-        "search_volume": 5000,
-        "start_date": "~18",
+        "start_date": "~10",
         "analysis": "trending_up"
       },
       {
@@ -1127,39 +1091,51 @@
         "analysis": "timelapse"
       },
       {
-        "trend": "callum turner",
+        "trend": "calendario junho",
+        "search_volume": 20262000,
+        "start_date": "~10",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "snake",
         "search_volume": 2000,
-        "start_date": "~23",
+        "start_date": "~9",
         "analysis": "trending_up"
       },
       {
         "trend": "bb",
         "search_volume": 2000,
-        "start_date": "~5",
+        "start_date": "~10",
         "analysis": "trending_up"
       },
       {
-        "trend": "namorada joao fonseca",
+        "trend": "colombia",
         "search_volume": 2000,
-        "start_date": "~8",
+        "start_date": "~22",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "feriado em junho",
+        "search_volume": 2000,
+        "start_date": "~6",
         "analysis": "timelapse"
       },
       {
-        "trend": "alemanha x",
+        "trend": "panama esta na copa do mundo",
         "search_volume": 2000,
-        "start_date": "~6",
+        "start_date": "~19",
+        "analysis": "timelapse"
+      },
+      {
+        "trend": "feriado junho",
+        "search_volume": 20262000,
+        "start_date": "~21",
         "analysis": "timelapse"
       },
       {
         "trend": "matheus cunha",
         "search_volume": 2000,
         "start_date": "~2",
-        "analysis": "timelapse"
-      },
-      {
-        "trend": "santa cruz",
-        "search_volume": 2000,
-        "start_date": "~4",
         "analysis": "timelapse"
       },
       {
@@ -1175,9 +1151,9 @@
         "analysis": "timelapse"
       },
       {
-        "trend": "jogo do galo",
+        "trend": "joao.fonseca",
         "search_volume": 2000,
-        "start_date": "~3",
+        "start_date": "~5",
         "analysis": "timelapse"
       },
       {
@@ -1185,6 +1161,24 @@
         "search_volume": 2000,
         "start_date": "~1",
         "analysis": "timelapse"
+      },
+      {
+        "trend": "sao paulo",
+        "search_volume": 2000,
+        "start_date": "~18",
+        "analysis": "timelapse"
+      },
+      {
+        "trend": "stop",
+        "search_volume": 1000,
+        "start_date": "~9",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "hino nacional",
+        "search_volume": 1000,
+        "start_date": "~22",
+        "analysis": "trending_up"
       }
     ],
     "CA": [
@@ -1195,51 +1189,63 @@
         "analysis": "timelapse"
       },
       {
-        "trend": "callum turner",
+        "trend": "myles garrett",
         "search_volume": 5000,
-        "start_date": "~23",
+        "start_date": "~2",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "epic",
+        "search_volume": 5000,
+        "start_date": "~7",
         "analysis": "trending_up"
       },
       {
         "trend": "calculator",
         "search_volume": 5000,
-        "start_date": "~2",
+        "start_date": "~6",
         "analysis": "trending_up"
       },
       {
-        "trend": "classroom",
+        "trend": "gemini",
         "search_volume": 5000,
-        "start_date": "~22",
-        "analysis": "trending_up"
+        "start_date": "~5",
+        "analysis": "timelapse"
       },
       {
         "trend": "brendan gallagher",
         "search_volume": 2000,
-        "start_date": "~1",
+        "start_date": "~5",
         "analysis": "trending_up"
       },
       {
-        "trend": "epic",
+        "trend": "games",
         "search_volume": 2000,
-        "start_date": "~2",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "euphoria finale",
-        "search_volume": 2000,
-        "start_date": "~13",
+        "start_date": "~6",
         "analysis": "trending_up"
       },
       {
         "trend": "slides",
         "search_volume": 2000,
-        "start_date": "~12",
+        "start_date": "~17",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "mike myers",
+        "search_volume": 2000,
+        "start_date": "~18",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "euphoria finale",
+        "search_volume": 2000,
+        "start_date": "~17",
         "analysis": "trending_up"
       },
       {
         "trend": "sam o'reilly",
         "search_volume": 2000,
-        "start_date": "~14",
+        "start_date": "~16",
         "analysis": "timelapse"
       },
       {
@@ -1249,33 +1255,69 @@
         "analysis": "timelapse"
       },
       {
-        "trend": "mike myers",
+        "trend": "taylor swift",
         "search_volume": 1000,
-        "start_date": "~14",
+        "start_date": "~4",
         "analysis": "trending_up"
       },
       {
-        "trend": "games",
+        "trend": "daphne joy",
         "search_volume": 1000,
-        "start_date": "~2",
+        "start_date": "~23",
         "analysis": "trending_up"
       },
       {
-        "trend": "freddie hamilton",
+        "trend": "pride month",
         "search_volume": 1000,
-        "start_date": "~2",
+        "start_date": "~7",
         "analysis": "trending_up"
+      },
+      {
+        "trend": "chess",
+        "search_volume": 1000,
+        "start_date": "~5",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "snake",
+        "search_volume": 1000,
+        "start_date": "~4",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "cn tower",
+        "search_volume": 1000,
+        "start_date": "~6",
+        "analysis": "timelapse"
+      },
+      {
+        "trend": "ontario",
+        "search_volume": 1000,
+        "start_date": "~6",
+        "analysis": "timelapse"
+      },
+      {
+        "trend": "word",
+        "search_volume": 1000,
+        "start_date": "~6",
+        "analysis": "timelapse"
+      },
+      {
+        "trend": "spce",
+        "search_volume": 1000,
+        "start_date": "~3",
+        "analysis": "timelapse"
       },
       {
         "trend": "world cup",
         "search_volume": 1000,
-        "start_date": "~3",
-        "analysis": "trending_up"
+        "start_date": "~5",
+        "analysis": "timelapse"
       },
       {
-        "trend": "anna kalinskaya",
+        "trend": "ai",
         "search_volume": 1000,
-        "start_date": "~3",
+        "start_date": "~6",
         "analysis": "timelapse"
       },
       {
@@ -1289,54 +1331,6 @@
         "search_volume": 1000,
         "start_date": "~14",
         "analysis": "timelapse"
-      },
-      {
-        "trend": "casper ruud",
-        "search_volume": 1000,
-        "start_date": "~4",
-        "analysis": "timelapse"
-      },
-      {
-        "trend": "fonseca",
-        "search_volume": 1000,
-        "start_date": "~3",
-        "analysis": "timelapse"
-      },
-      {
-        "trend": "eric cole",
-        "search_volume": 1000,
-        "start_date": "~4",
-        "analysis": "timelapse"
-      },
-      {
-        "trend": "jesus sanchez",
-        "search_volume": 1000,
-        "start_date": "~4",
-        "analysis": "timelapse"
-      },
-      {
-        "trend": "virat kohli",
-        "search_volume": 1000,
-        "start_date": "~2",
-        "analysis": "timelapse"
-      },
-      {
-        "trend": "hydro quebec panne",
-        "search_volume": 1000,
-        "start_date": "~19",
-        "analysis": "timelapse"
-      },
-      {
-        "trend": "spce",
-        "search_volume": 500,
-        "start_date": "~2",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "pride month",
-        "search_volume": 500,
-        "start_date": "~3",
-        "analysis": "trending_up"
       }
     ],
     "AU": [
@@ -1347,15 +1341,15 @@
         "analysis": "timelapse"
       },
       {
-        "trend": "callum turner",
-        "search_volume": 5000,
-        "start_date": "~21",
-        "analysis": "trending_up"
-      },
-      {
         "trend": "epic",
         "search_volume": 5000,
         "start_date": "~6",
+        "analysis": "timelapse"
+      },
+      {
+        "trend": "dua lipa wedding",
+        "search_volume": 2000,
+        "start_date": "~17",
         "analysis": "timelapse"
       },
       {
@@ -1365,16 +1359,10 @@
         "analysis": "timelapse"
       },
       {
-        "trend": "nine news",
-        "search_volume": 2000,
-        "start_date": "~17",
-        "analysis": "timelapse"
-      },
-      {
         "trend": "ticketmaster",
         "search_volume": 1000,
         "start_date": "~5",
-        "analysis": "trending_up"
+        "analysis": "timelapse"
       },
       {
         "trend": "jim jefferies",
@@ -1383,9 +1371,9 @@
         "analysis": "timelapse"
       },
       {
-        "trend": "shark channel",
-        "search_volume": 91000,
-        "start_date": "~2",
+        "trend": "services australia",
+        "search_volume": 1000,
+        "start_date": "~21",
         "analysis": "timelapse"
       },
       {
@@ -1395,9 +1383,9 @@
         "analysis": "timelapse"
       },
       {
-        "trend": "services australia",
-        "search_volume": 1000,
-        "start_date": "~14",
+        "trend": "shark channel",
+        "search_volume": 91000,
+        "start_date": "~2",
         "analysis": "timelapse"
       },
       {
@@ -1419,9 +1407,9 @@
         "analysis": "timelapse"
       },
       {
-        "trend": "ninemsn",
+        "trend": "hi",
         "search_volume": 1000,
-        "start_date": "~6",
+        "start_date": "~12",
         "analysis": "timelapse"
       },
       {
@@ -1431,27 +1419,33 @@
         "analysis": "timelapse"
       },
       {
+        "trend": "ig australia",
+        "search_volume": 500,
+        "start_date": "~5",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "euphoria",
+        "search_volume": 500,
+        "start_date": "~1",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "diana shnaider",
+        "search_volume": 500,
+        "start_date": "~2",
+        "analysis": "timelapse"
+      },
+      {
         "trend": "anna kalinskaya",
         "search_volume": 500,
         "start_date": "~4",
         "analysis": "timelapse"
       },
       {
-        "trend": "ksi",
-        "search_volume": 500,
-        "start_date": "~12",
-        "analysis": "timelapse"
-      },
-      {
         "trend": "kings birthday",
         "search_volume": 500,
         "start_date": "~4",
-        "analysis": "timelapse"
-      },
-      {
-        "trend": "ai",
-        "search_volume": 500,
-        "start_date": "~7",
         "analysis": "timelapse"
       },
       {
@@ -1467,16 +1461,10 @@
         "analysis": "timelapse"
       },
       {
-        "trend": "diana shnaider",
+        "trend": "taylor swift",
         "search_volume": 200,
-        "start_date": "~2",
-        "analysis": "timelapse"
-      },
-      {
-        "trend": "madison keys",
-        "search_volume": 200,
-        "start_date": "~1",
-        "analysis": "timelapse"
+        "start_date": "~4",
+        "analysis": "trending_up"
       },
       {
         "trend": "cook islands",
@@ -1485,47 +1473,53 @@
         "analysis": "timelapse"
       },
       {
-        "trend": "euphoria season",
-        "search_volume": 3,
-        "start_date": "~3",
+        "trend": "anastasia potapova",
+        "search_volume": 200,
+        "start_date": "~1",
+        "analysis": "timelapse"
+      },
+      {
+        "trend": "lynne mcgranger",
+        "search_volume": 200,
+        "start_date": "~1",
         "analysis": "timelapse"
       }
     ],
     "IT": [
       {
-        "trend": "cobolli",
+        "trend": "arnaldi",
+        "search_volume": 20000,
+        "start_date": "~2",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "berrettini",
         "search_volume": 20000,
         "start_date": "~6",
         "analysis": "timelapse"
       },
       {
-        "trend": "berrettini oggi",
+        "trend": "cobolli oggi",
         "search_volume": 10000,
-        "start_date": "~4",
-        "analysis": "trending_up"
+        "start_date": "~10",
+        "analysis": "timelapse"
       },
       {
         "trend": "claudio baglioni",
         "search_volume": 5000,
-        "start_date": "~6",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "callum turner",
-        "search_volume": 2000,
-        "start_date": "~23",
+        "start_date": "~10",
         "analysis": "trending_up"
       },
       {
         "trend": "oikonomou",
         "search_volume": 2000,
-        "start_date": "~2",
+        "start_date": "~6",
         "analysis": "trending_up"
       },
       {
-        "trend": "ebola cagliari",
+        "trend": "francesco bechis",
         "search_volume": 2000,
-        "start_date": "~21",
+        "start_date": "~8",
         "analysis": "timelapse"
       },
       {
@@ -1535,33 +1529,27 @@
         "analysis": "timelapse"
       },
       {
-        "trend": "ruud fonseca",
+        "trend": "meteo brescia",
         "search_volume": 2000,
-        "start_date": "~13",
+        "start_date": "",
         "analysis": "timelapse"
       },
       {
-        "trend": "il meteo",
-        "search_volume": 2000,
-        "start_date": "~3",
+        "trend": "malta",
+        "search_volume": 1000,
+        "start_date": "~9",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "licia colo",
+        "search_volume": 500,
+        "start_date": "~1",
         "analysis": "timelapse"
       },
       {
-        "trend": "francesco bechis",
-        "search_volume": 1000,
-        "start_date": "~4",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "prossima estrazione superenalotto",
-        "search_volume": 1000,
-        "start_date": "~22",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "arnaldi oggi",
-        "search_volume": 1000,
-        "start_date": "~3",
+        "trend": "scaletta cremonini",
+        "search_volume": 2026500,
+        "start_date": "~21",
         "analysis": "timelapse"
       },
       {
@@ -1571,63 +1559,21 @@
         "analysis": "timelapse"
       },
       {
-        "trend": "ilmeteo",
-        "search_volume": 1000,
-        "start_date": "~23",
-        "analysis": "timelapse"
-      },
-      {
-        "trend": "rublev",
-        "search_volume": 1000,
-        "start_date": "~12",
-        "analysis": "timelapse"
-      },
-      {
-        "trend": "olimpia milano",
-        "search_volume": 1000,
-        "start_date": "~3",
-        "analysis": "timelapse"
-      },
-      {
-        "trend": "meglio tardi che mai",
-        "search_volume": 1000,
-        "start_date": "~3",
-        "analysis": "timelapse"
-      },
-      {
-        "trend": "giorgia palmas",
-        "search_volume": 1000,
-        "start_date": "~2",
-        "analysis": "timelapse"
-      },
-      {
-        "trend": "licia colo",
-        "search_volume": 500,
-        "start_date": "~1",
-        "analysis": "timelapse"
-      },
-      {
-        "trend": "immobiliare",
-        "search_volume": 500,
-        "start_date": "~22",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "dua lipa matrimonio",
-        "search_volume": 500,
-        "start_date": "~20",
-        "analysis": "timelapse"
-      },
-      {
-        "trend": "malta",
-        "search_volume": 500,
-        "start_date": "~2",
-        "analysis": "timelapse"
-      },
-      {
         "trend": "brasile panama",
         "search_volume": 500,
         "start_date": "~13",
+        "analysis": "timelapse"
+      },
+      {
+        "trend": "ruud fonseca",
+        "search_volume": 500,
+        "start_date": "~13",
+        "analysis": "timelapse"
+      },
+      {
+        "trend": "fonseca",
+        "search_volume": 500,
+        "start_date": "~10",
         "analysis": "timelapse"
       },
       {
@@ -1637,19 +1583,61 @@
         "analysis": "timelapse"
       },
       {
-        "trend": "scaletta cremonini",
-        "search_volume": 2026500,
-        "start_date": "~15",
+        "trend": "gigi proietti",
+        "search_volume": 200,
+        "start_date": "",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "sabalenka",
+        "search_volume": 200,
+        "start_date": "~1",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "mad max fury road",
+        "search_volume": 200,
+        "start_date": "",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "virtus bologna",
+        "search_volume": 200,
+        "start_date": "~1",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "marco liorni",
+        "search_volume": 200,
+        "start_date": "~1",
+        "analysis": "timelapse"
+      },
+      {
+        "trend": "classifica atp",
+        "search_volume": 200,
+        "start_date": "~2",
+        "analysis": "timelapse"
+      },
+      {
+        "trend": "gianni mattioli",
+        "search_volume": 200,
+        "start_date": "~5",
+        "analysis": "timelapse"
+      },
+      {
+        "trend": "elisa balsamo",
+        "search_volume": 200,
+        "start_date": "~1",
+        "analysis": "timelapse"
+      },
+      {
+        "trend": "iva zanicchi",
+        "search_volume": 200,
+        "start_date": "~6",
         "analysis": "timelapse"
       }
     ],
     "ES": [
-      {
-        "trend": "raices",
-        "search_volume": 5000,
-        "start_date": "~22",
-        "analysis": "trending_up"
-      },
       {
         "trend": "seguridad social",
         "search_volume": 5000,
@@ -1657,21 +1645,9 @@
         "analysis": "timelapse"
       },
       {
-        "trend": "malaga cf",
-        "search_volume": 5000,
-        "start_date": "~2",
-        "analysis": "timelapse"
-      },
-      {
-        "trend": "callum turner",
-        "search_volume": 2000,
-        "start_date": "~23",
-        "analysis": "trending_up"
-      },
-      {
         "trend": "irene esser",
         "search_volume": 2000,
-        "start_date": "~5",
+        "start_date": "~9",
         "analysis": "trending_up"
       },
       {
@@ -1681,9 +1657,15 @@
         "analysis": "timelapse"
       },
       {
-        "trend": "mirandes",
-        "search_volume": 2000,
-        "start_date": "~12",
+        "trend": "rocio jurado",
+        "search_volume": 1000,
+        "start_date": "~22",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "miriam diaz aroca",
+        "search_volume": 1000,
+        "start_date": "~1",
         "analysis": "timelapse"
       },
       {
@@ -1699,18 +1681,6 @@
         "analysis": "timelapse"
       },
       {
-        "trend": "joao fonseca",
-        "search_volume": 1000,
-        "start_date": "~10",
-        "analysis": "timelapse"
-      },
-      {
-        "trend": "ruud",
-        "search_volume": 1000,
-        "start_date": "~10",
-        "analysis": "timelapse"
-      },
-      {
         "trend": "supervivientes",
         "search_volume": 1000,
         "start_date": "~6",
@@ -1723,39 +1693,21 @@
         "analysis": "timelapse"
       },
       {
-        "trend": "paco ureña",
-        "search_volume": 1000,
-        "start_date": "~4",
-        "analysis": "timelapse"
-      },
-      {
-        "trend": "las palmas",
-        "search_volume": 1000,
-        "start_date": "~3",
-        "analysis": "timelapse"
-      },
-      {
-        "trend": "burgos cf",
-        "search_volume": 1000,
-        "start_date": "~2",
-        "analysis": "timelapse"
-      },
-      {
-        "trend": "telemadrid en directo",
-        "search_volume": 1000,
-        "start_date": "~1",
-        "analysis": "timelapse"
-      },
-      {
-        "trend": "luis lorenzo",
+        "trend": "marta sanchez",
         "search_volume": 500,
-        "start_date": "~21",
+        "start_date": "",
         "analysis": "trending_up"
       },
       {
-        "trend": "rocio jurado",
+        "trend": "sabalenka",
         "search_volume": 500,
-        "start_date": "~18",
+        "start_date": "",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "lecturas",
+        "search_volume": 500,
+        "start_date": "~23",
         "analysis": "trending_up"
       },
       {
@@ -1765,21 +1717,27 @@
         "analysis": "timelapse"
       },
       {
-        "trend": "pau",
+        "trend": "fotmob",
         "search_volume": 500,
         "start_date": "~21",
         "analysis": "timelapse"
       },
       {
-        "trend": "las provincias",
+        "trend": "sepe",
         "search_volume": 500,
-        "start_date": "~18",
+        "start_date": "~9",
         "analysis": "timelapse"
       },
       {
-        "trend": "sepe",
+        "trend": "fonseca",
         "search_volume": 500,
-        "start_date": "~6",
+        "start_date": "~10",
+        "analysis": "timelapse"
+      },
+      {
+        "trend": "ruud",
+        "search_volume": 500,
+        "start_date": "~10",
         "analysis": "timelapse"
       },
       {
@@ -1789,54 +1747,78 @@
         "analysis": "timelapse"
       },
       {
-        "trend": "casper ruud",
+        "trend": "levante emv",
         "search_volume": 500,
-        "start_date": "~3",
+        "start_date": "~11",
+        "analysis": "timelapse"
+      },
+      {
+        "trend": "wordle",
+        "search_volume": 500,
+        "start_date": "~1",
+        "analysis": "timelapse"
+      },
+      {
+        "trend": "silvia salas",
+        "search_volume": 200,
+        "start_date": "~1",
+        "analysis": "timelapse"
+      },
+      {
+        "trend": "monica marchante",
+        "search_volume": 200,
+        "start_date": "~9",
+        "analysis": "timelapse"
+      },
+      {
+        "trend": "emily blunt",
+        "search_volume": 200,
+        "start_date": "~2",
+        "analysis": "timelapse"
+      },
+      {
+        "trend": "kiss fm",
+        "search_volume": 200,
+        "start_date": "~2",
         "analysis": "timelapse"
       }
     ],
     "MX": [
       {
+        "trend": "sat",
+        "search_volume": 20000,
+        "start_date": "~18",
+        "analysis": "trending_up"
+      },
+      {
         "trend": "jovenes construyendo el futuro",
         "search_volume": 10000,
-        "start_date": "~14",
+        "start_date": "~18",
         "analysis": "trending_up"
       },
       {
-        "trend": "sat",
+        "trend": "whatsapp app",
         "search_volume": 10000,
-        "start_date": "~14",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "whatsapp",
-        "search_volume": 5000,
-        "start_date": "~1",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "classroom",
-        "search_volume": 5000,
-        "start_date": "~21",
+        "start_date": "~5",
         "analysis": "trending_up"
       },
       {
         "trend": "lista de convocados para el mundial",
         "search_volume": 2026,
-        "start_date": "~18",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "callum turner",
-        "search_volume": 2000,
         "start_date": "~23",
         "analysis": "trending_up"
       },
       {
-        "trend": "elecciones colombia",
+        "trend": "teams",
         "search_volume": 2000,
-        "start_date": "~23",
+        "start_date": "~7",
         "analysis": "trending_up"
+      },
+      {
+        "trend": "mundial",
+        "search_volume": 2000,
+        "start_date": "~6",
+        "analysis": "timelapse"
       },
       {
         "trend": "pasaporte mexicano",
@@ -1845,69 +1827,57 @@
         "analysis": "timelapse"
       },
       {
-        "trend": "teams",
+        "trend": "noruega vs suecia",
         "search_volume": 1000,
-        "start_date": "~2",
+        "start_date": "~4",
         "analysis": "trending_up"
       },
       {
-        "trend": "whatsapp app",
+        "trend": "snake",
         "search_volume": 1000,
-        "start_date": "~1",
+        "start_date": "~6",
         "analysis": "trending_up"
       },
       {
         "trend": "tipo de cambio",
         "search_volume": 1000,
-        "start_date": "~1",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "juegos",
-        "search_volume": 1000,
-        "start_date": "~21",
+        "start_date": "~5",
         "analysis": "trending_up"
       },
       {
         "trend": "euphoria",
         "search_volume": 1000,
-        "start_date": "~12",
+        "start_date": "~17",
         "analysis": "timelapse"
       },
       {
-        "trend": "estados unidos vs",
-        "search_volume": 1000,
-        "start_date": "~10",
+        "trend": "elecciones en colombia",
+        "search_volume": 20261000,
+        "start_date": "~16",
         "analysis": "timelapse"
       },
       {
-        "trend": "usa vs senegal",
-        "search_volume": 1000,
-        "start_date": "~11",
-        "analysis": "timelapse"
-      },
-      {
-        "trend": "alemania vs",
-        "search_volume": 1000,
-        "start_date": "~8",
-        "analysis": "timelapse"
-      },
-      {
-        "trend": "snake",
+        "trend": "taylor swift",
         "search_volume": 500,
         "start_date": "~2",
-        "analysis": "trending_up"
+        "analysis": "timelapse"
       },
       {
-        "trend": "hola",
+        "trend": "scotiabank",
         "search_volume": 500,
-        "start_date": "~19",
-        "analysis": "trending_up"
+        "start_date": "~4",
+        "analysis": "timelapse"
       },
       {
-        "trend": "joao fonseca",
+        "trend": "imss",
         "search_volume": 500,
-        "start_date": "~5",
+        "start_date": "~4",
+        "analysis": "timelapse"
+      },
+      {
+        "trend": "la jornada",
+        "search_volume": 500,
+        "start_date": "~6",
         "analysis": "timelapse"
       },
       {
@@ -1917,34 +1887,52 @@
         "analysis": "timelapse"
       },
       {
-        "trend": "casper ruud",
-        "search_volume": 500,
+        "trend": "austria vs tunez",
+        "search_volume": 200,
+        "start_date": "~1",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "austria vs",
+        "search_volume": 200,
+        "start_date": "~1",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "turquia vs",
+        "search_volume": 200,
+        "start_date": "~1",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "calendario mundial",
+        "search_volume": 2026200,
+        "start_date": "~6",
+        "analysis": "trending_up"
+      },
+      {
+        "trend": "calendario junio",
+        "search_volume": 2026200,
         "start_date": "~4",
         "analysis": "timelapse"
       },
       {
-        "trend": "claudia sheinbaum",
-        "search_volume": 500,
-        "start_date": "~5",
+        "trend": "myles garrett",
+        "search_volume": 200,
+        "start_date": "~1",
         "analysis": "timelapse"
       },
       {
-        "trend": "la jornada",
+        "trend": "dia de la marina",
         "search_volume": 200,
-        "start_date": "~3",
-        "analysis": "trending_up"
+        "start_date": "~2",
+        "analysis": "timelapse"
       },
       {
-        "trend": "junio",
+        "trend": "odessa",
         "search_volume": 200,
-        "start_date": "~1",
-        "analysis": "trending_up"
-      },
-      {
-        "trend": "scotiabank",
-        "search_volume": 200,
-        "start_date": "~1",
-        "analysis": "trending_up"
+        "start_date": "~7",
+        "analysis": "timelapse"
       }
     ]
   }
