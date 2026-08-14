@@ -1,10 +1,5 @@
 [
   {
-    "title": "For the love of god stop using CPU limits in Kubernetes",
-    "link": "https://github.com/inevolin/k8s-cpu-limits-analyzed",
-    "date": "Fri, 14 Aug 2026 10:41:21 +0000"
-  },
-  {
     "title": "Why does Opus 5 feel worse to work with?",
     "link": "https://mun-logadan.github.io/why-does-opus-5-feel-worse/",
     "date": "Fri, 14 Aug 2026 10:12:48 +0000"
@@ -48,5 +43,10 @@
     "title": "Understanding is the new bottleneck",
     "link": "https://www.geoffreylitt.com/2026/07/02/understanding-is-the-new-bottleneck",
     "date": "Thu, 13 Aug 2026 18:47:19 +0000"
+  },
+  {
+    "title": "Single log line is 49KB+ (ext4) / 110KB+ (btrfs) of systemd-journald disk writes",
+    "link": "https://github.com/systemd/systemd/issues/40262",
+    "date": "Thu, 13 Aug 2026 18:41:01 +0000"
   }
 ]
